@@ -1,5 +1,5 @@
 project:
-    type: thesis
+    type: tufte
 book:
   title: Thesis title
   author: Jane Doe
@@ -9,7 +9,5 @@ book:
     - intro.qmd
     - summary.qmd
     - references.qmd
-reference-location: margin
-citation-location: margin
 bibliography: references.bib
 

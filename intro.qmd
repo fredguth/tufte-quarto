@@ -5,7 +5,11 @@ Ali Rahimi[^2] started a controversy by frankly declaring  [@rahimi:2017
 12'10"]. His concerns on the lack of theoretical understanding of
 machine learning for critical decision-making are rightful:
 
-The next day, Yann LeCun[^3] responded:  
+> Rahimi speech
+
+The next day, Yann LeCun[^3] responded: 
+
+| Bla blab balablblaab
 
 Both researchers, at least, agree upon one thing: the practice of
 machine learning has outpaced its theoretical development. That is
