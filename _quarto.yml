@@ -1,0 +1,15 @@
+project:
+    type: thesis
+book:
+  title: Thesis title
+  author: Jane Doe
+  date: "10/18/2022"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - summary.qmd
+    - references.qmd
+reference-location: margin
+citation-location: margin
+bibliography: references.bib
+
