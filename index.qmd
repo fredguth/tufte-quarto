@@ -1,7 +1,6 @@
-# Preface {.unnumbered}
+::: {.content-hidden unless-format="html"}
+# Welcome {.unnumbered .unlisted}
 
-This is a Quarto book.
+This is a Tufte-Quarto book.
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
-
-
+:::

@@ -1,0 +1,21 @@
+
+%  TITLE PAGE
+
+$if(book.title)$
+\title{$title$} 
+$endif$
+$if(book.author)$
+\author{$author$} 
+$endif$
+$if(book.publisher)$
+\publisher{$book.publisher$}
+$endif$
+\setcounter{tocdepth}{$if(toc-depth)$$toc-depth$$else$2$endif$} % The depth to which the document sections are printed to the table of contents
+$if(tufte.cover)$
+\includepdf{$tufte.cover$} 
+$endif$
+
+
+
+
+

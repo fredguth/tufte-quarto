@@ -1,0 +1,35 @@
+# The Design of Tufte's Books
+
+The pages of a book are usually divided into three major
+sections: the front matter (also called preliminary matter or prelim), the
+main matter (the core text of the book), and the back matter (or end
+matter).
+
+The front matter of a book refers to all of the material that
+comes before the main text.  The following table from shows a list of
+material that appears in the front matter of \VDQI, \EI, \VE, and \BE
+along with its page number.  Page numbers that appear in parentheses refer
+to folios that do not have a printed page number (but they are still
+counted in the page number sequence).
+
+he design of the front matter in Tufte's books varies slightly from the
+traditional design of front matter.  First, the pages in front matter are
+traditionally numbered with lowercase roman numerals (e.g., i, ii, iii,
+iv,~\ldots).  Second, the front matter page numbering sequence is usually
+separate from the main matter page numbering.  That is, the page numbers
+restart at 1 when the main matter begins.  In contrast, Tufte has
+enumerated his pages with arabic numerals that share the same page counting
+sequence as the main matter.  
+
+There are also some variations in design across Tufte's four books.  The
+page opposite the full title page (labeled ``frontispiece'' in the above
+table) has different content in each of the books.  In \VDQI, this page is
+blank; in \EI and \VE, this page holds a frontispiece; and in \BE, this
+page contains three epigraphs.
+
+The dedication appears on page~6 in \vdqi (opposite the introduction), and
+is placed on its own spread in the other books.  In \ve, an epigraph shares
+the spread with the opening page of the introduction.
+
+None of the page numbers (folios) of the front matter are expressed except in
+\be, where the folios start to appear on the dedication page.

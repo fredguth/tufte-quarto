@@ -3,11 +3,23 @@ project:
 book:
   title: Thesis title
   author: Jane Doe
+  publisher: The Publisher
   date: "10/18/2022"
   chapters:
     - index.qmd
-    - intro.qmd
+    # - epigraph.qmd
+    - dedication.qmd
+    - introduction.qmd
+    - design.qmd
     - summary.qmd
     - references.qmd
 bibliography: references.bib
+tufte:
+  cover: Images/cover-letter.pdf
+  dedication: |
+    This thesis is dedicated to my family.
+  epigraph:
+    text: |
+      The best way to predict the future is to invent it.
+    source: Alan Kay
 

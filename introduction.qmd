@@ -1,0 +1,5 @@
+# Introduction
+
+This sample book discusses the design of Edward Tufte's
+books [ @Tufte1990; @Tufte1997; @Tufte2001;@Tufte2006]
+and the use [Quarto](quarto.org).

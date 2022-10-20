@@ -8,19 +8,32 @@ contributes:
       type: book
       output-dir: _tufte
     format:
-      html: default
+      html:
+        page-layout: full
+        reference-location: margin
+        citation-location: margin
+        title-block-style: none
       pdf:
         documentclass: tufte-book
         classoption: ["12pt", "british"]
+        number-sections: false
         format-resources:
           - tufte-book.cls
           - tufte-common.def
           - tufte.bst
         include-in-header: 
           - "partials/in-header.tex"
-        # include-before-body:
-        #   - "partials/before-body.tex"
+        template-partials:
+          - "partials/title.tex"
+        include-before-body:
+          - "partials/before-body.tex"
         keep-tex: true
+        toc-depth: 3
+
+
+
+
+
 
         # citation-location: margin
         # reference-location: margin
