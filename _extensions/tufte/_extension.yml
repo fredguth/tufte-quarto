@@ -34,6 +34,7 @@ contributes:
         toc-depth: 2
         toc-title: "Contents"
         indent: 0px
+        biblio-style: dinat
 
 
 

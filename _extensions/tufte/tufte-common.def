@@ -143,7 +143,7 @@
 }
 
 \newcommand*{\@tufte@marginnote@justification}{\@tufte@justification@autodetect}
-\define@choicekey*+[tufte]{common}{marginnoteTFT}[\@tufte@kvtext\@tufte@kvnum]{justified,raggedleft,raggedright,raggedouter,auto}[auto]{%
+\define@choicekey*+[tufte]{common}{marginnote}[\@tufte@kvtext\@tufte@kvnum]{justified,raggedleft,raggedright,raggedouter,auto}[auto]{%
   \ifcase\@tufte@kvnum\relax
     \renewcommand*{\@tufte@marginnote@justification}{\justifying}% justified
   \or
@@ -199,19 +199,19 @@
 % The ``marginals'' key simultaneously sets the same justification for all marginal material
 \define@choicekey*+[tufte]{common}{marginals}[\@tufte@kvtext\@tufte@kvnum]{justified,raggedleft,raggedright,raggedouter,auto}[auto]{%
   \ifcase\@tufte@kvnum\relax
-    \ExecuteOptionsX[tufte]<common>{citation=justified,sidenoteTFT=justified,caption=justified,marginnoteTFT=justified}% justified
+    \ExecuteOptionsX[tufte]<common>{citation=justified,sidenote=justified,caption=justified,marginnote=justified}% justified
   \or
-    \ExecuteOptionsX[tufte]<common>{citation=raggedleft,sidenoteTFT=raggedleft,caption=raggedleft,marginnoteTFT=raggedleft}% ragged left
+    \ExecuteOptionsX[tufte]<common>{citation=raggedleft,sidenote=raggedleft,caption=raggedleft,marginnote=raggedleft}% ragged left
   \or
-    \ExecuteOptionsX[tufte]<common>{citation=raggedright,sidenoteTFT=raggedright,caption=raggedright,marginnoteTFT=raggedright}% ragged right
+    \ExecuteOptionsX[tufte]<common>{citation=raggedright,sidenote=raggedright,caption=raggedright,marginnote=raggedright}% ragged right
   \or
-    \ExecuteOptionsX[tufte]<common>{citation=raggedouter,sidenoteTFT=raggedouter,caption=raggedouter,marginnoteTFT=raggedouter}% ragged outer (flush right on verso pages, flush left on recto pages)
+    \ExecuteOptionsX[tufte]<common>{citation=raggedouter,sidenote=raggedouter,caption=raggedouter,marginnote=raggedouter}% ragged outer (flush right on verso pages, flush left on recto pages)
   \or
-    \ExecuteOptionsX[tufte]<common>{citation=auto,sidenoteTFT=auto,caption=auto,marginnoteTFT=auto}% autodetects best justification mode based on all class options
+    \ExecuteOptionsX[tufte]<common>{citation=auto,sidenote=auto,caption=auto,marginnote=auto}% autodetects best justification mode based on all class options
   \fi
 }{%
   \@tufte@warning@noline{Invalid option `#1' for marginals key. Must be one of: justified, raggedleft, raggedright, raggedouter, auto}
-  \ExecuteOptionsX[tufte]<common>{citation=auto,sidenoteTFT=auto,caption=auto,marginnoteTFT=auto}% autodetects best justification mode based on all class options
+  \ExecuteOptionsX[tufte]<common>{citation=auto,sidenote=auto,caption=auto,marginnote=auto}% autodetects best justification mode based on all class options
 }
 
 
@@ -891,7 +891,7 @@
   % Snag the last bibentry in the list for later comparison
   \let\@temp@last@bibkey\@empty%
   \@for\@temp@bibkey:=#2\do{\let\@temp@last@bibkey\@temp@bibkey}%
-  \sidenoteTFT[][#1]{%
+  \sidenote[][#1]{%
     % Loop through all the bibentries, separating them with semicolons and spaces
     \normalsize\normalfont\@tufte@citation@font%
     \setcounter{@tufte@num@bibkeys}{0}%
@@ -1078,7 +1078,7 @@
   \kern\multiplefootnotemarker\relax% add new \kern here to replace the one we yanked
 }
 
-\newcommand{\sidenoteTFT}{\optparams{\@tufte@sidenote}{[][0pt]}}
+\newcommand{\sidenote}{\optparams{\@tufte@sidenote}{[][0pt]}}
 \renewcommand{\footnote}{\optparams{\@tufte@sidenote}{[][0pt]}}
 
 %%
@@ -1127,7 +1127,7 @@
 %%
 % Margin figure environment
 
-\newenvironment{marginfigureTFT}[1][-1.2ex]%
+\newenvironment{marginfigure}[1][-1.2ex]%
   {\begin{@tufte@margin@float}[#1]{figure}}
   {\end{@tufte@margin@float}}
 
@@ -1135,7 +1135,7 @@
 %%
 % Margin table environment
 
-\newenvironment{margintableTFT}[1][-1.2ex]%
+\newenvironment{margintable}[1][-1.2ex]%
   {\begin{@tufte@margin@float}[#1]{table}}
   {\end{@tufte@margin@float}}
 
