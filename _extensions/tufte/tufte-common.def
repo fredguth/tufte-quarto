@@ -1127,17 +1127,17 @@
 %%
 % Margin figure environment
 
-\newenvironment{marginfigure}[1][-1.2ex]%
-  {\begin{@tufte@margin@float}[#1]{figure}}
-  {\end{@tufte@margin@float}}
+% \newenvironment{marginfigure}[1][-1.2ex]%
+%   {\begin{@tufte@margin@float}[#1]{figure}}
+%   {\end{@tufte@margin@float}}
 
 
-%%
-% Margin table environment
+% %%
+% % Margin table environment
 
-\newenvironment{margintable}[1][-1.2ex]%
-  {\begin{@tufte@margin@float}[#1]{table}}
-  {\end{@tufte@margin@float}}
+% \newenvironment{margintable}[1][-1.2ex]%
+%   {\begin{@tufte@margin@float}[#1]{table}}
+%   {\end{@tufte@margin@float}}
 
 
 %%
