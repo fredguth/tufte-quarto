@@ -5,8 +5,8 @@ book:
     The emergence of\
     an Information Bottleneck Theory\
     of Deep Learning\
-  # titlegraphic: Images/cover.pdf
-  title-short: IBToDL
+  # title-short used in the head, only way I found not to insert long title there
+  title-short: $$~$$ # Q: Why blank space without mathmode didn't work?
   output-file: IBToDL
   author: Fred Guth
   publisher: Universidade de Brasília
@@ -41,6 +41,6 @@ tufte:
   format:
     pdf:
       classoption: ["12pt", "british"]
-  cover: "Images/cover.pdf"
-  coversheet: "Images/coversheet.pdf"
+  # cover: "Images/cover.pdf"
+  # coversheet: "Images/coversheet.pdf"
 

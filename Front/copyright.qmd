@@ -1,20 +1,47 @@
 ::: {.content-hidden unless-format="pdf"}
 <!-- Q: Why it appears in the TOC? -->
 
-\vfill
+
+\begin{fullwidth}
+~\vfill
+\thispagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{\baselineskip}
+Copyright \copyright\ \the\year\ \thanklessauthor
+
+\par\smallcaps{Published by \thanklesspublisher}
+
+\par\smallcaps{tufte-latex.github.io/tufte-latex/}
+
+\par Licensed under the Apache License, Version 2.0 (the ``License''); you may not
+use this file except in compliance with the License. You may obtain a copy
+of the License at \url{http://www.apache.org/licenses/LICENSE-2.0}. Unless
+required by applicable law or agreed to in writing, software distributed
+under the License is distributed on an \smallcaps{``AS IS'' BASIS, WITHOUT
+WARRANTIES OR CONDITIONS OF ANY KIND}, either express or implied. See the
+License for the specific language governing permissions and limitations
+under the License.\index{license}
+
+\par\textit{First printing, \monthyear}
+\end{fullwidth}
+
+<!-- \vfill
 
 Copyright © 2022 Fred Guth
 
 
-PUBLISHED BY FREDGUTH
+\uppercase{PUBLISHED BY FREDGUTH}
 
 
-FREDGUTH.GITHUB.IO/TUFTE-QUARTO/
+\uppercase{FREDGUTH.GITHUB.IO/TUFTE-QUARTO/}
 
 
 Licensed under the Apache License, Version 2.0 (the “License”); you may not use this file except in compli- ance with the License. You may obtain a copy of the License at [http://www.apache.org/licenses/LICENSE-2.0]([)http://www.apache.org/licenses/LICENSE-2.0). Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an “AS IS” BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
 
 
 *First printing, October 2022*
+ -->
 
+
+ 
 :::

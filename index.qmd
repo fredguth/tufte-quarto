@@ -1,6 +1,7 @@
 
 ::: {.content-hidden unless-format="html"}
 
+<!-- Q:  Why is this appearing on PDF? -->
 # Welcome {.unnumbered .unlisted}
 
 This is a Tufte-Quarto book.

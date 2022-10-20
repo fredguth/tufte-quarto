@@ -13,6 +13,7 @@ contributes:
         reference-location: margin
         citation-location: margin
         title-block-style: none
+        css: styles.css
       pdf:
         documentclass: tufte-book
         number-sections: false
@@ -28,7 +29,7 @@ contributes:
         include-before-body:
           - "partials/before-body.tex"
         keep-tex: true
-        toc-depth: 3
+        toc-depth: 2
         toc-title: "Contents"
         indent: 0px
 

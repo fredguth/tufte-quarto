@@ -1,14 +1,21 @@
 # Introduction {#ch:introduction}
 
-In his acceptance speech for the Test-of-Time award in NeurIPS 2017,[^1] Ali Rahimi[^2] started a controversy by frankly declaring  [@rahimi:2017 12'10"]. His concerns on the lack of theoretical understanding of machine learning for critical decision-making are rightful:
+In his acceptance speech for the Test-of-Time award in NeurIPS 2017,[^1] Ali Rahimi[^2] started a controversy by frankly declaring [@rahimi:2017 12'10"]. His concerns on the lack of theoretical understanding of machine learning for critical decision-making are rightful:
 > |
+    ‘We are building systems that govern healthcare and mediate our civic dialogue. We would influence elections. I would like to live in a society whose systems are built on top of verifiable, rigorous, thorough knowledge and not on alchemy.’
 
-The next day, Yann LeCun[^3] responded:  
+The next day, Yann LeCun[^3] responded:
 > |
+    ‘Criticising an entire com- munity (. . .) for practising “alchemy”, simply because our current theoretical tools have not caught up with our practice is dangerous.’
+
 
 Both researchers, at least, agree upon one thing: the practice of machine learning has outpaced its theoretical development. That is certainly a research opportunity.
 
 ### A Tale of Babylonians and Greeks {#sec:greeks}
+
+<!-- Q: How to solve marginnote already defined? -->
+<!-- ![Richard Feynman, Nobel laureate physicist.](feynman.pdf){.column-margin #fig-feynman} -->
+
 
 Richard Feynman ([\[fig:feynman\]][1]) used to lecture this story [@feynman:1994]: Babylonians were pioneers in mathematics; Yet, the Greeks took the credit. We are used to the Greek way of doing Math: start from the most basic axioms and build up a knowledge system. Babylonians were quite the opposite; they were pragmatic. No knowledge was considered more fundamental than others, and there was no urge to derive proofs in a particular order. Babylonians were concerned with the phenomena, Greeks with the ordinance. In Feynman's view, science is constructed in the Babylonian way. There is no fundamental truth. Theories try to connect dots from different pieces of knowledge. Only as science advances, one can worry about reformulation, simplification and ordering. Scientists are Babylonians; mathematicians are Greeks.
 
@@ -26,7 +33,7 @@ Understanding the epistemic contrast between mathematics and science will help u
 
 **Science is a narrative** of how we understand Nature [@gleiser:2018]. In science, we collect facts, but they need interpretation. The logical conclusion from the hypothesis that predicts some behaviour in nature gives a plausible *meaning* to what we observed.
 
-To illustrate, take the ancient human desire of flying. There have always been stories of men strapping wings to themselves and attempting to fly by jumping from a tower and flapping those wings like birds (see ) [@farrington:2016]. While concepts like lift, stability, and control were poorly understood, most human flight attempts ended in severe injury or even death. It did not matter how much evidence, how many hours of seeing different animals flying, those ludicrous brave men experienced; the *meaning* they took from what they saw was wrong, and their predictions incorrect.
+To illustrate, take the ancient human desire of flying. There have always been stories of men strapping wings to themselves and attempting to fly by jumping from a tower and flapping those wings like birds [see @farrington:2016]. While concepts like lift, stability, and control were poorly understood, most human flight attempts ended in severe injury or even death. It did not matter how much evidence, how many hours of seeing different animals flying, those ludicrous brave men experienced; the *meaning* they took from what they saw was wrong, and their predictions incorrect.
 
 They did not die in vain[^4]; Science advances when scientists are wrong. Theories must be falsifiable, and scientists cheer for their failure. When it fails, there is room for new approaches. Only when we understood the observations in animal flight from the aerodynamics perspective, we learned to fly better than any other animal before. Science works by a "natural selection" of ideas, where only the fittest ones survive until a better one is born. Chaitin also points out that an idea has "fertility" to the extent to which it "illuminates us, inspires us with other ideas, and suggests unsuspected connections and new viewpoints" [@chaitin:2006 p. 9].
 

@@ -1,10 +1,16 @@
 <!-- Q: How to hide a heading but show it in the toc? -->
 # Dedication {.content-hidden} 
-
-
-This work is dedicated to my beloved wife, Júlia.
-
-\vspace{4cm}
+<!-- Hmmm, I believe this will disappear as soon I create a filter similar to abstract-section  -->
+</BR>
+</BR>
+*This work is dedicated to my beloved wife, Júlia.*
+</BR>
+</BR>
+</BR>
+</BR>
+</BR>
+</BR>
+\vfill
 
 > |
     O correr da vida embrulha tudo. \

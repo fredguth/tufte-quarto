@@ -201,6 +201,13 @@
 
 \newcommand{\blankpage}{\newpage\hbox{}\thispagestyle{empty}\newpage}
 
+
+% insert 4cm before quote
+\renewenvironment{quote}
+               {\hspace{4cm}\list{}{\rightmargin\leftmargin}%
+                \small%
+                \item\relax}
+               {\endlist}
 \makeatletter
 \makeatother
 \makeatletter
@@ -250,6 +257,10 @@
 \makeatother
 \makeatletter
 \@ifundefined{shadecolor}{\definecolor{shadecolor}{rgb}{.97, .97, .97}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{sidenotes}{}{\usepackage{sidenotes}}
+\@ifpackageloaded{marginnote}{}{\usepackage{marginnote}}
 \makeatother
 \makeatletter
 \makeatother
@@ -348,7 +359,7 @@ under the License.\index{license}
 \end{fullwidth}
 
 
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[frame hidden, breakable, borderline west={3pt}{0pt}{shadecolor}, enhanced, boxrule=0pt, sharp corners, interior hidden]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[borderline west={3pt}{0pt}{shadecolor}, boxrule=0pt, frame hidden, interior hidden, sharp corners, breakable, enhanced]}{\end{tcolorbox}}\fi
 
 \renewcommand*\contentsname{Contents}
 {
@@ -456,14 +467,20 @@ keeping me sane and happy.
 In his acceptance speech for the Test-of-Time award in NeurIPS
 2017,\footnote{Conference on Neural Information Processing.} Ali
 Rahimi\footnote{Research Scientist, Google.} started a controversy by
-frankly declaring ~(Rahimi 2018, 12'10''). His concerns on the lack of
+frankly declaring (Rahimi 2018, 12'10''). His concerns on the lack of
 theoretical understanding of machine learning for critical
-decision-making are rightful: \textgreater{} \textbar{}
+decision-making are rightful: \textgreater{} \textbar{} `We are building
+systems that govern healthcare and mediate our civic dialogue. We would
+influence elections. I would like to live in a society whose systems are
+built on top of verifiable, rigorous, thorough knowledge and not on
+alchemy.'
 
 The next day, Yann LeCun\footnote{Deep Learning pioneer and 2018 Turing
   award winner.
   \url{https://www.facebook.com/yann.lecun/posts/10154938130592143}}
-responded: ~ \textgreater{} \textbar{}
+responded: \textgreater{} \textbar{} `Criticising an entire com- munity
+(. . .) for practising ``alchemy'', simply because our current
+theoretical tools have not caught up with our practice is dangerous.'
 
 Both researchers, at least, agree upon one thing: the practice of
 machine learning has outpaced its theoretical development. That is
@@ -471,6 +488,16 @@ certainly a research opportunity.
 
 \hypertarget{sec:greeks}{%
 \subsection{A Tale of Babylonians and Greeks}\label{sec:greeks}}
+
+\begin{marginfigure}
+
+{\centering \includegraphics{Chapters/feynman.pdf}
+
+}
+
+\caption{\label{fig-feynman}Richard Feynman, Nobel laureate physicist.}
+
+\end{marginfigure}
 
 Richard Feynman (\protect\hyperlink{fig:feynman}{{[}fig:feynman{]}})
 used to lecture this story~(Feynman 1994): Babylonians were pioneers in
@@ -529,12 +556,12 @@ observed.
 To illustrate, take the ancient human desire of flying. There have
 always been stories of men strapping wings to themselves and attempting
 to fly by jumping from a tower and flapping those wings like birds (see
-)~(Farrington 2016). While concepts like lift, stability, and control
-were poorly understood, most human flight attempts ended in severe
-injury or even death. It did not matter how much evidence, how many
-hours of seeing different animals flying, those ludicrous brave men
-experienced; the \emph{meaning} they took from what they saw was wrong,
-and their predictions incorrect.
+Farrington 2016). While concepts like lift, stability, and control were
+poorly understood, most human flight attempts ended in severe injury or
+even death. It did not matter how much evidence, how many hours of
+seeing different animals flying, those ludicrous brave men experienced;
+the \emph{meaning} they took from what they saw was wrong, and their
+predictions incorrect.
 
 They did not die in vain\footnote{Those ``researchers'' deserved, at
   least, a Darwin Award of Science. The Darwin Award is satirical

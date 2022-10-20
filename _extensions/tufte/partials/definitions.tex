@@ -58,3 +58,10 @@
 
 \newcommand{\blankpage}{\newpage\hbox{}\thispagestyle{empty}\newpage}
 
+
+% insert 4cm before quote
+\renewenvironment{quote}
+               {\hspace{4cm}\list{}{\rightmargin\leftmargin}%
+                \small%
+                \item\relax}
+               {\endlist}
