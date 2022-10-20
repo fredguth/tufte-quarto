@@ -7,42 +7,53 @@ contributes:
     project:
       type: book
       output-dir: _tufte
-    thesis:
-      reader-mode: true
     format:
       html: default
       pdf:
-        citation-location: margin
-        reference-location: margin
-        # format-resources:
-          # - tufte-book.cls
-          # - tufte-common.def
-          # - tufte.bst
+        documentclass: tufte-book
+        classoption: ["12pt", "british"]
+        format-resources:
+          - tufte-book.cls
+          - tufte-common.def
+          - tufte.bst
+        include-in-header: 
+          - "partials/in-header.tex"
+        # include-before-body:
+        #   - "partials/before-body.tex"
         keep-tex: true
-        documentclass: scrbook
-        classoption:
-          - a4paper
-          - 12pt
-          - twoside
-          - brazil
-          - british
-          - open=right
-        geometry:
-          - paper=a4paper
-          - left=24.8mm
-          - top=27.4mm
-          - headsep=2\baselineskip
-          - textwidth=107mm
-          - marginparsep=8.2mm
-          - marginparwidth=49.4mm
-          - headheight=\baselineskip
-          - bottom=2cm
-          - heightrounded
-          - includeheadfoot
-          - includemp
-        toc: true
-        toc-depth: 2
-        toc-title: Contents
-        papersize: a4paper
-        mainfont: "TeX Gyre Pagella"
-        sansfont: "TeX Gyre Heros"
+
+        # citation-location: margin
+        # reference-location: margin
+          # - partials/title.tex
+        #   - partials/before-body.tex
+        #   - partials/definitions.tex
+        # include-before-body:
+        #   - partials/definitions.tex
+        # documentclass: scrbook
+        # documentclass: tufte-book
+        # classoption:
+        #   - a4paper
+        #   - 12pt
+        #   - twoside
+        #   - brazil
+        #   - british
+        #   - open=right
+        # geometry:
+        #   - paper=a4paper
+        #   - left=24.8mm
+        #   - top=27.4mm
+        #   - headsep=2\baselineskip
+        #   - textwidth=107mm
+        #   - marginparsep=8.2mm
+        #   - marginparwidth=49.4mm
+        #   - headheight=\baselineskip
+        #   - bottom=2cm
+        #   - heightrounded
+        #   - includeheadfoot
+        #   - includemp
+        # toc: true
+        # toc-depth: 2
+        # toc-title: Contents
+        # papersize: a4paper
+        # mainfont: "TeX Gyre Pagella"
+        # sansfont: "TeX Gyre Heros"
