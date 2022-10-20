@@ -1,2 +1,6 @@
 /env/
 /.quarto/
+*.tex
+*.csl
+*.bst
+*.pdf
