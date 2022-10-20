@@ -6,11 +6,6 @@
 *This work is dedicated to my beloved wife, Júlia.*
 </BR>
 </BR>
-</BR>
-</BR>
-</BR>
-</BR>
-\vfill
 
 > |
     O correr da vida embrulha tudo. \
@@ -22,4 +17,3 @@
     \
     --- Guimarães Rosa
 
-<!--  Q: how to change blockquote style in pdf and html?  -->
