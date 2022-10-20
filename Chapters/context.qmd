@@ -1,6 +1,6 @@
 # Introduction {#ch:introduction}
 
-In his acceptance speech for the Test-of-Time award in NeurIPS 2017,[^1] Ali Rahimi[^2] started a controversy by frankly declaring [@rahimi:2017 12'10"]. His concerns on the lack of theoretical understanding of machine learning for critical decision-making are rightful:
+In his acceptance speech for the Test-of-Time award in NeurIPS 2017,[^1] Ali Rahimi[^2] started a controversy by frankly declaring [@rahimi2017 12'10"]. His concerns on the lack of theoretical understanding of machine learning for critical decision-making are rightful:
 
 > |
     ‘We are building systems that govern healthcare and mediate our civic dialogue. We would influence elections. I would like to live in a society whose systems are built on top of verifiable, rigorous, thorough knowledge and not on alchemy.’
@@ -12,15 +12,19 @@ The next day, Yann LeCun[^3] responded:
 
 Both researchers, at least, agree upon one thing: the practice of machine learning has outpaced its theoretical development. That is certainly a research opportunity.
 
+[^2]: Research Scientist, Google. 
+
+![Richard Feynman, Nobel laureate physicist.](/Images/Feynman.pdf){.column-margin #fig-feynman}
+
+## Context 
 ### A Tale of Babylonians and Greeks {#sec:greeks}
 
-<!-- Q: How to solve marginnote already defined? -->
-<!-- ![Richard Feynman, Nobel laureate physicist.](feynman.pdf){.column-margin #fig-feynman} -->
 
+Richard Feynman [@fig-feynman] used to lecture this story [@feynman1994]: Babylonians were pioneers in mathematics; Yet, the Greeks took the credit. We are used to the Greek way of doing Math: start from the most basic axioms and build up a knowledge system. Babylonians were quite the opposite; they were pragmatic. No knowledge was considered more fundamental than others, and there was no urge to derive proofs in a particular order. Babylonians were concerned with the phenomena, Greeks with the ordinance. In Feynman's view, science is constructed in the Babylonian way. There is no fundamental truth. Theories try to connect dots from different pieces of knowledge. Only as science advances, one can worry about reformulation, simplification and ordering. Scientists are Babylonians; mathematicians are Greeks.
 
-Richard Feynman ([\[fig:feynman\]][1]) used to lecture this story [@feynman:1994]: Babylonians were pioneers in mathematics; Yet, the Greeks took the credit. We are used to the Greek way of doing Math: start from the most basic axioms and build up a knowledge system. Babylonians were quite the opposite; they were pragmatic. No knowledge was considered more fundamental than others, and there was no urge to derive proofs in a particular order. Babylonians were concerned with the phenomena, Greeks with the ordinance. In Feynman's view, science is constructed in the Babylonian way. There is no fundamental truth. Theories try to connect dots from different pieces of knowledge. Only as science advances, one can worry about reformulation, simplification and ordering. Scientists are Babylonians; mathematicians are Greeks.
+[^1]: Conference on Neural Information Processing.
 
-Mathematics and science are both tools for knowledge acquisition. They are also social constructs that rely on peer-reviewing. They are somewhat different, however.
+<!-- Mathematics and science are both tools for knowledge acquisition. They are also social constructs that rely on peer-reviewing. They are somewhat different, however.
 
 Science is empiric, based on facts collected from **experience**. When physicists around the world measured events that corroborated Newton's *"Law of Universal Gravitation"*, they did not prove it correct; they just made his theory more and more plausible. Still, only one experiment was needed to show that Einstein's *Relativity Theory* was even more believable. In contrast, we can and do prove things in mathematics.
 
@@ -38,9 +42,9 @@ To illustrate, take the ancient human desire of flying. There have always been s
 
 They did not die in vain[^4]; Science advances when scientists are wrong. Theories must be falsifiable, and scientists cheer for their failure. When it fails, there is room for new approaches. Only when we understood the observations in animal flight from the aerodynamics perspective, we learned to fly better than any other animal before. Science works by a "natural selection" of ideas, where only the fittest ones survive until a better one is born. Chaitin also points out that an idea has "fertility" to the extent to which it "illuminates us, inspires us with other ideas, and suggests unsuspected connections and new viewpoints" [@chaitin:2006 p. 9].
 
-Being a Babylonian enterprise, science has no clear path. One of the exciting facts one can learn by studying its history is that robust discoveries have arisen through the study of phenomena in human-made devices [@pierce:1980]. For instance, Carnot's first and only scientific work [@klein:1974] gave birth to thermodynamics: the study of energy, the conversion between its different forms, and the ability of energy to do work; the science that explains how steam engines work. However, steam engines came before Carnot's work and were studied by him. Such human-made devices may present a simplified instance of more complex natural phenomena.
+Being a Babylonian enterprise, science has no clear path. One of the exciting facts one can learn by studying its history is that robust discoveries have arisen through the study of phenomena in human-made devices [@pierce1980]. For instance, Carnot's first and only scientific work [@klein1974] gave birth to thermodynamics: the study of energy, the conversion between its different forms, and the ability of energy to do work; the science that explains how steam engines work. However, steam engines came before Carnot's work and were studied by him. Such human-made devices may present a simplified instance of more complex natural phenomena.
 
-Another example is Information Theory. Several insights of Shannon's theory of communication were generalisations of ideas already present in Telegraphy [@shannon:1948]. New theories in artificial intelligence can, therefore, be developed from insights in the study of deep learning phenomena.[^5]
+Another example is Information Theory. Several insights of Shannon's theory of communication were generalisations of ideas already present in Telegraphy [@shannon1948]. New theories in artificial intelligence can, therefore, be developed from insights in the study of deep learning phenomena.[^5]
 
 ### Bringing science to Computer Science {#sec:bringing_science}
 
@@ -108,7 +112,7 @@ In the research conducted, we produced three main results that, to the extent of
 
 1.  The dissertation itself is the main expected result: a comprehensive digest of the [IBT]{acronym-label="IBT" acronym-form="singular+short"} literature and a snapshot analysis of the field in its current form, focusing on its theoretical implications for generalisation.
 
-2.  We propose an Information-Theoretical learning problem different from [MDL]{acronym-label="MDL" acronym-form="singular+short"} proposed by  [@hinton:1993] for which we derived bounds using Shannon's . These results, however, are only indicative as they lack peer review to be validated.
+2.  We propose an Information-Theoretical learning problem different from [MDL]{acronym-label="MDL" acronym-form="singular+short"} proposed by  [@hinton1993] for which we derived bounds using Shannon's . These results, however, are only indicative as they lack peer review to be validated.
 
 3.  We present a critique on @achille:2019phd's explanation [@achille:2019phd; @achille:2017emergence] for the role of layers in Deep Representation in the [IBT]{acronym-label="IBT" acronym-form="singular+short"} perspective ([\[sec:achille_proof_critique\]][4]), pointing out a weakness in the argument that, as far as we know, has not yet been presented. We then propose a counter-intuitive *hypothesis* that layers reduce the model's "effective" hypothesis space. This *hypothesis* is not formally proven in the present work, but we try to give the intuition behind it ([\[sec:proposed_hypothesis\]][5]). This result has not yet been validated as well.
 
@@ -143,10 +147,10 @@ The dissertation is divided into two main parts ([\[pt:background\]][6] and [\[p
 We found out that [IBT]{acronym-label="IBT" acronym-form="singular+short"} does not invalidate [MLT]{acronym-label="MLT" acronym-form="singular+short"}; it just interprets complexity not as a function of the data (number of parameters) but as a function of the information contained in the data. With this interpretation, there is no paradox in improving generalisation by adding layers.
 
 Furthermore, they both share more or less the same "genealogy" of assumptions. [IBT]{acronym-label="IBT" acronym-form="singular+short"} can be seen as particular case of [MLT]{acronym-label="MLT" acronym-form="singular+short"}. Nevertheless, [IBT]{acronym-label="IBT" acronym-form="singular+short"} allows us to better understand the training process and provide a different narrative that helps us comprehend Deep Learning phenomena in a more general way.
+-->
 
-[^1]: Conference on Neural Information Processing.
 
-[^2]: Research Scientist, Google.
+<!-- 
 
 [^3]: Deep Learning pioneer and 2018 Turing award winner. <https://www.facebook.com/yann.lecun/posts/10154938130592143>
 
@@ -166,7 +170,7 @@ Furthermore, they both share more or less the same "genealogy" of assumptions. [
 
 [^11]: Not even the term [IBT]{acronym-label="IBT" acronym-form="singular+short"} is universally adopted.
 
-[^12]: [ITL]{acronym-label="ITL" acronym-form="singular+short"} makes the opposite path we are taking, bringing concepts of machine learning to information theory problems.
+[^12]: [ITL]{acronym-label="ITL" acronym-form="singular+short"} makes the opposite path we are taking, bringing concepts of machine learning to information theory problems. -->
 
   <!-- [1]: #fig:feynman {reference-type="ref" reference="fig:feynman"}
   [2]: #fig:machine_learning_2x {reference-type="ref" reference="fig:machine_learning_2x"}

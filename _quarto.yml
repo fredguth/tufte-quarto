@@ -13,9 +13,9 @@ book:
   date: "20/02/2022"
   chapters:
     - index.qmd
-    - Front/copyright.qmd
-    - Front/dedication.qmd
-    - Front/ack.qmd
+    # - Front/copyright.qmd
+    # - Front/dedication.qmd
+    # - Front/ack.qmd
     # - Front/epigraph.qmd
     - Chapters/context.qmd
     # - part: background.qmd
