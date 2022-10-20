@@ -15,7 +15,6 @@ contributes:
         title-block-style: none
       pdf:
         documentclass: tufte-book
-        classoption: ["12pt", "british"]
         number-sections: false
         format-resources:
           - tufte-book.cls
@@ -23,18 +22,20 @@ contributes:
           - tufte.bst
         include-in-header: 
           - "partials/in-header.tex"
+          - "partials/definitions.tex"
         template-partials:
           - "partials/title.tex"
         include-before-body:
           - "partials/before-body.tex"
         keep-tex: true
         toc-depth: 3
+        toc-title: "Contents"
+        indent: 0px
 
 
 
 
-
-
+# TODO Remove before publishing
         # citation-location: margin
         # reference-location: margin
           # - partials/title.tex

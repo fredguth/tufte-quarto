@@ -1,0 +1,19 @@
+<!-- Q: How to hide a heading but show it in the toc? -->
+# Dedication {.content-hidden} 
+
+
+This work is dedicated to my beloved wife, Júlia.
+
+\vspace{4cm}
+
+> |
+    O correr da vida embrulha tudo. \
+    A vida é assim: \
+    esquenta e esfria, \
+    aperta e daí afrouxa, \
+    sossega e depois desinquieta. \
+    O que ela quer da gente é coragem\
+    \
+    --- Guimarães Rosa
+
+<!--  Q: how to change blockquote style in pdf and html?  -->

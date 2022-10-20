@@ -1,25 +1,46 @@
 project:
     type: tufte
 book:
-  title: Thesis title
-  author: Jane Doe
-  publisher: The Publisher
-  date: "10/18/2022"
+  title: |
+    The emergence of\
+    an Information Bottleneck Theory\
+    of Deep Learning\
+  # titlegraphic: Images/cover.pdf
+  title-short: IBToDL
+  output-file: IBToDL
+  author: Fred Guth
+  publisher: Universidade de Brasília
+  date: "20/02/2022"
   chapters:
     - index.qmd
-    # - epigraph.qmd
-    - dedication.qmd
-    - introduction.qmd
-    - design.qmd
-    - summary.qmd
-    - references.qmd
-bibliography: references.bib
+    - Front/copyright.qmd
+    - Front/dedication.qmd
+    - Front/ack.qmd
+    # - Front/epigraph.qmd
+    - Chapters/context.qmd
+    # - part: background.qmd
+    #   chapters:
+    #     - Chapters/ai.qmd
+    #     - Chapters/prob.qmd
+    #     - Chapters/mlt.qmd
+    #     - Chapters/info.qmd
+    # - part: intermezzo.qmd
+    # - part: emergence.qmd
+    #   chapters: 
+    #     - Chapters/ib-method.qmd
+    #     - Chapters/ib-rl.qmd
+    #     - Chapters/ib-dl.qmd
+    # - Chapters/conclusion.qmd
+    # - Back/notation.qmd
+    # - Back/acronyms.qmd
+    # - Back/colophon.qmd
+
+bibliography: bibliography.bib
+
 tufte:
-  cover: Images/cover-letter.pdf
-  dedication: |
-    This thesis is dedicated to my family.
-  epigraph:
-    text: |
-      The best way to predict the future is to invent it.
-    source: Alan Kay
+  format:
+    pdf:
+      classoption: ["12pt", "british"]
+  cover: "Images/cover.pdf"
+  coversheet: "Images/coversheet.pdf"
 

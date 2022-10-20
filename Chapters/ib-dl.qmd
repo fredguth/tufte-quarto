@@ -1,0 +1,364 @@
+# The Information Bottleneck and Deep Learning {#ch:ib_and_dl}
+
+This chapter presents [IBT]{acronym-label="IBT" acronym-form="singular+short"} for Deep Learning, the context where all [IBT]{acronym-label="IBT" acronym-form="singular+short"} papers focus. All previous chapters brought concepts needed to understand this chapter. In chronological order, the research from which [\[ch:ib\]][1] is based was published almost 20 years earlier than the contents presented in [\[ch:ib_and_rl\]][2], which were published more or less simultaneously as the contents of this chapter.
+
+## Deep Learning in the IBT perspective
+
+In [MLT]{acronym-label="MLT" acronym-form="singular+short"}, the analysis of learning algorithms is based on a hypothesis space. This choice may have biased the Deep Learning community focus on architectures. For many, [DL]{acronym-label="DL" acronym-form="singular+full"} and [DNNs]{acronym-label="DNN" acronym-form="plural+full"} are interchangeable names.
+
+The [IBT]{acronym-label="IBT" acronym-form="singular+short"} perspective has a holistic view of [DL]{acronym-label="DL" acronym-form="singular+full"} where each of its components has a role.
+
+### Deep Neural Network in IBT
+
+[IBT]{acronym-label="IBT" acronym-form="singular+short"} assumes that [DNN]{acronym-label="DNN" acronym-form="singular+short"} layers are random variables that form a Markov chain from the target variable to the prediction. Each layer is a representation $\rvZ_i$ of the input at a different "resolution"/abstraction ([\[sec:resolution\]][3]). These representations act like bottlenecks in the input-output channel. Thus, each bottleneck defines a unique encoder/decoder scheme.
+
+### [SGD]{acronym-label="SGD" acronym-form="singular+short"} in [IBT]{acronym-label="IBT" acronym-form="singular+short"} {#sec:SGD_in_IBT}
+
+One of the most contentious topics in [IBT]{acronym-label="IBT" acronym-form="singular+short"} is the assumption that $q(z|x)$ and $q(y|z)$ are stochastic. Noise plays a very important role in training  [@hinton:1993; @achille:2017emergence; @kingma:2015]. In [IBT]{acronym-label="IBT" acronym-form="singular+short"}, noise reduces capacity and, therefore, the size of the typical hypothesis space (as it will be shown in [1.5.2]).
+
+Counter-intuitively,  @chaudhari:2018SGD prove (with theory and extensive empirical evidence) that [SGD]{acronym-label="SGD" acronym-form="singular+short"} performs variational inference for a different loss than the one used to compute the gradients and that this loss has a regulariser term that is equivalent to the information bottleneck principle ([\[th:specialib\]][4]) [@chaudhari:2018SGD].
+
+### Loss function in IBT
+
+The [IB]{acronym-label="IB" acronym-form="singular+short"} Principle ([\[ch:ib\]][1]) provides compelling grounds for the use of the [KL]{acronym-label="KL" acronym-form="singular+full"} as the canonical loss function. It is equivalent by a constant to the cross-entropy loss, which became ubiquitous in [DL]{acronym-label="DL" acronym-form="singular+short"} (as shown in [\[sec:rethink_generalisation\]][5]).
+
+## Literature
+
+We are using the name [IBT]{acronym-label="IBT" acronym-form="singular+full"} as an "umbrella" to designate the work that relates to our selected literature ([\[ch:literature\]][6]). Frankly, the designation has not been adopted consistently. Nonetheless, we can identify three kinds of literature:
+
+1.  IB-based analysis of Deep Learning
+
+2.  IB-Deep Learning applications
+
+3.  IB-based theory of Deep Learning
+
+We will detail each kind of literature in the following sections.
+
+## IB-based analysis of Deep Learning
+
+### Opening the black-box: the information plane
+
+One of the critiques on current [MLT]{acronym-label="MLT" acronym-form="singular+short"} is on its choice of treating the models as black-boxes ([\[blackbox\]][7]). This choice allows [MLT]{acronym-label="MLT" acronym-form="singular+short"} to be more general, independent of the class of hypothesis. At the same time, the current theory provides little guidance for what happens during training, letting the community figure out many possible competing explanations.
+
+There is nothing wrong with the choice. It may be an advantage in most cases. But in the case of Deep Learning, where there are still many phenomena with no clear winner explanation and where there is a growing demand for understanding why [DNNs]{acronym-label="DNN" acronym-form="plural+short"} make this or that choice, a different choice may help.
+
+This is what motivated  @shwartz-ziv:2017 [@shwartz-ziv:2017], according to Tishby himself [@tishby:2020DeepMath].  @shwartz-ziv:2017 propose using the mutual information between the activations in different layers and the input. Despite being a measure difficult to calculate, it has the potential of "opening the black-box", it allows in Tishby's words to see training with an "X-Ray" [@tishby:2020DeepMath]
+
+### Information Plane and Deep Learning
+
+ @shwartz-ziv:2017 hypothesis was that the information-plane ([\[sec:information-plane\]][8]) could be their "X-Ray"  [@shwartz-ziv:2017]. To overcome the difficulty of calculating the mutual information[^1], they created a synthetic dataset for which they knew in advance the usually unknown distribution $\PXY$, added a noisy layer to guarantee the stochastic mapping[^2] and calculated the mutual information during training with a binning strategy.
+
+The result was visually appealing ([\[fig:ib-mean-variation\]][9]). It clearly shows a *phase transition* during training ([\[fig:phase_transition_tishby15\]][10]).
+
+### IBT's main thesis {#sec:ibt_thesis}
+
+In Tishby's words, [IBT]{acronym-label="IBT" acronym-form="singular+short"} main thesis can be summed up as *"learning is forgetting"*[^3]. More specifically, deep learning has two distinct training phases:
+
+1.  When the [DNN]{acronym-label="DNN" acronym-form="singular+short"} rapidly (in terms of epochs) overfits to the training data;
+
+2.  When the [DNN]{acronym-label="DNN" acronym-form="singular+short"} compresses the amount of information, *forgetting* as much it can about the input, while keeping the relevant information about the target;
+
+In statistical mechanics, phase transitions relate to abrupt changes in the properties of a system at the macroscopic level, in the same way as seen in [\[fig:ib-mean-variation\]][9]. With that in mind,  @shwartz-ziv:2017 claim that the compression phase can be described by Focker-Plank diffusion equations from Physics. This was indeed later corrobored by  @chaudhari:2018SGD , but  @shwartz-ziv:2017 failed to support the claim that [DNNs]{acronym-label="DNN" acronym-form="plural+short"} can be seen as physical systems.
+
+### Criticism to IBT's main thesis {#sec:ibt_criticism}
+
+Shortly after its publication,  @shwartz-ziv:2017 [@shwartz-ziv:2017] were challenged by  @saxe:2018 [@saxe:2018], who claimed that they could not replicate the experiment and argued that the binning procedure to estimate mutual information was inexact. Due to the fact that the activation function can be an invertible transformation (deterministic mapping) of the input, by [RI]{acronym-label="RI" acronym-form="singular+full"}, the true mutual information between $I[\rvX;\rvZ_L]$ is provably infinite for continuous distributions and constant (equal to $H[\rvX]$) for discrete ones. They also point out that a user-selected binning strategy leads to arbitrary values of mutual information in the plotted results. Overall,  @saxe:2018 refute  @shwartz-ziv:2017 results.
+
+Other authors followed their reservations in different degrees:  @goldfeld:2019 [@goldfeld:2019] agree that  @shwartz-ziv:2017's $I[\rvX;\rvZ_L]$ estimates do not directly measure compression of the true mutual information.  @chelombiev:2018 [@chelombiev:2018] explore several estimation schemes and were able to measure compression but with several caveats.
+
+This relates to one of the weaknesses of [IBT]{acronym-label="IBT" acronym-form="singular+short"}: lack of rigour that even Tishby admits  [@tishby:2020DeepMath]:   If, on one hand, their spectacular claims have driven much interest to the subject, on the other it generated an equivalent dose of suspicion and scrutiny. As Carl Sagan once said, .
+
+Some [IBT]{acronym-label="IBT" acronym-form="singular+short"} papers failed to point out that the IB Principle is ill-posed for deterministic functions. Therefore, there is a missing argument of why and in which conditions we can see the function of the activations as a stochastic mapping. Bayesian interpretations may justify parameter noise, but activation noise has no such theoretical ground.
+
+In time, Tishby's conjectures and intuitions were corroborated by others findings. In special, Stefano Soatto and his research group not only observed the fitting-compression phases ([\[fig:fisher_sensitivity\]][11]) but also proved a crucial missing step: information in the activations of future data is bounded by the information in the weights during training, where stochasticity can be explained  [@achille:2018infodropout] ([\[sec:2_levels\]][12]).
+
+Besides, to prove this theoretical result, they created a variational method (equivalent to [DVIB]{acronym-label="DVIB" acronym-form="singular+short"}, [1.4.1]) for estimating mutual information using Deep Learning[^4], obtaining more accurate mutual information measurements. In another venue,  @chaudhari:2019iclr corroborated the statistical mechanics' intuition for the behaviour of SGD with experimental results [@chaudhari:2019iclr].
+
+## IB-based Deep Learning applications: training and algorithms
+
+### [DVIB]{acronym-label="DVIB" acronym-form="singular+full"} {#sec:dvib}
+
+A common criticism on [IBT]{acronym-label="IBT" acronym-form="singular+short"} was related to difficulties in calculating mutual information ([1.3.4]). [DVIB]{acronym-label="DVIB" acronym-form="singular+short"} not only describes a loss metric that takes advantage of IB properties but also defines state-of-the-art approximations of $\IXZ$ and $\IZY$ [@alemi:2016].
+
+ @tishby:2015 already envisioned using the [IB]{acronym-label="IB" acronym-form="singular+short"} to train [DNNs]{acronym-label="DNN" acronym-form="plural+short"} [@tishby:2015]. Tishby, however, wanted [IBT]{acronym-label="IBT" acronym-form="singular+short"} to be seen as IB-based analysis tool. Subsequently, he believed that IB-based applications "miss the point" that [IBT]{acronym-label="IBT" acronym-form="singular+short"} works even if you do not know anything about the [IB]{acronym-label="IB" acronym-form="singular+short"}  [@tishby:2020DeepMath].
+
+Still,  @alemi:2016 considered the idea of using the [IB]{acronym-label="IB" acronym-form="singular+short"} in training appealing as it defines a good representation in terms of the trade-off between a conciseness and predictive power. They noticed, however, that the main drawback in using it in practice was that calculating the mutual information is challenging. The proposed method solves this drawback.
+
+Curiously, the proposed method is equivalent to the variational inference presented in   [@achille:2018infodropout]. This similarity was noticed by the authors themselves that despite not citing [@achille:2018infodropout] in the first version, cited it in subsequent versions. Despite of the concurrent idea development, the organisation and clear focus made [DVIB]{acronym-label="DVIB" acronym-form="singular+short"} the prefered reference for using the IB objective to estimate information measures.
+
+[DVIB]{acronym-label="DVIB" acronym-form="singular+short"} became essential to evaluate the claims of @tishby:2017 that, during training, DNNs experience two distinct phases, fit and compression.
+
+#### Deep Variational Information Bottleneck Method
+
+Let us formulate a variational [IB]{acronym-label="IB" acronym-form="singular+short"}: $$\begin{aligned}
+            {\theta}^*     & = \underset{\theta}{\argmax} I[\rvZ;\rvY|\theta] \text{\ s.\ t.\ } I[X;Z|\theta]\leq I_c. \\
+            R_{IB}(\theta) & =\underbrace{I[\rvZ;\rvY|\theta]}_{(A)} - \underbrace{\beta I[Z;X|\theta]}_{(B)}
+    
+\end{aligned}$$ where $\theta$ is the set of parameters of the network. This [IB]{acronym-label="IB" acronym-form="singular+short"} Lagrangian formulation has two parts ($A$ and $B$). Notice that $$\begin{aligned}
+            I[\rvZ;\rvY] & = H_p[Y]-H_p[Y|Z], \nonumber \tag{A}
+    
+\end{aligned}$$ where $p(y|x)$ and $p(x)$ are unknown, which makes part $A$ intractable. Let $q(y|z)$ be the variational approximation, our decoder, which will be another [DNN]{acronym-label="DNN" acronym-form="singular+short"} with its own parameters, which is tractable. $$\begin{aligned}
+            \KL \left( p \Vert q \right) \geq 0 &\to H_p \geq H_q \\
+            \therefore
+            I[\rvZ;\rvY]    & \geq \cancelto{\text{constant}}{H_p[Y]}-H_q[Y|Z] \\
+                                & \geq -H_q[Y|Z]=\sum_{x,y,z} p(y|z)p(z|x)p(x) \log q(y|z).
+    
+\end{aligned}$$ And now part $B$: $$\begin{aligned}
+            \IZX & = \KL(p(z|x)//p(z)).\tag{B}
+    
+\end{aligned}$$ But p(z) might be difficult to calculate. So, let r(z) be a variational approximation of this marginal. Since $\KL(p//r)\geq 0$, $$\begin{aligned}
+            \IZX              & \leq \KL(p(z|x)//r(z))                                   \\
+                                                    & \leq \sum_{x,y,z} p(y|z)p(z|x)p(x) \log q(y|z)
+            \therefore          &                                                          \\
+            \IZY-\beta \IZX & \geq \sum_{x,y,z} p(y|z)p(z|x)p(x) \log q(y|z) \nonumber \\
+                                                    & -\beta \sum_{x,y,z} p(y|z)p(z|x)p(x) \log q(y|z) = L.
+    
+\end{aligned}$$ Approximating $L$ empirically: $$\begin{aligned}
+            L \approx \frac{1}{N}\sum_{1}^{N} \left[\sum p(z|x_n) \log q(y_n|z) -\beta p(z|x_n) \log \frac{p(z|x_n)}{r(z)}\right].
+    
+\end{aligned}$$ Which can be solved using the reparametrisation trick [@kingma:2015].
+
+### Information Dropout
+
+establishes links between different and seemly unrelated research topics as dropout, variational auto-encoders and optimal representations through the IB principle. Its theoretical development is not being the paper focus, is its most important contribution to [IBT]{acronym-label="IBT" acronym-form="singular+short"}. In this sense, the method that names the paper is just a way to empirically support their interesting theoretical claims ([\[ch:ib_and_rl\]][2]).
+
+Nevertheless, the technique is a generalisation of the well-known Dropout method.  @chaudhari:2018SGD theoretically suggest that noise intrinsic to the architecture (dimensionality reductions, dropout, small mini-batches, ) is better for generalisation than noise in the dataset [@chaudhari:2018SGD]. In this sense, there are research opportunities in exploring Information Dropout and other forms of controlling the information in the weights with the injection of noise. In areas like [NLP]{acronym-label="NLP" acronym-form="singular+short"}, where data-augmentation is challenging, Information Dropout may play an important role.
+
+The emergent properties of representations, the generalisation of dropout and the connection to variational autoencoders are surprising results that should be of interest to researchers in representation learning ([\[sec:vae\]][13]).
+
+### Transferability metrics
+
+To this day, transferability is measured experimentally or inferred subjectively by experts according to tasks "proximity" [@zamir:2018taskonomy]. Given an analytical transferability measure obtained directly from the data in a cost-effective way, with experimentally proved prediction ability, automatic selection of source tasks as feature extractors for target tasks (auto-DL) is a simple search in the topology of learning tasks.
+
+This illustrates the importance of building such a topology. In other words, we want to know:
+
+-   What is the complexity of a learning task?
+
+-   How far or close are two tasks?
+
+-   How difficult it is to transfer from one task to another?
+
+Intuitively, the complexity of a learning task is related to its best expected out-of-sample error.
+
+Given a fixed architecture, the amount of information in the weight measures how much "memorisation" was used to fit the model. High information in the weights suggests more *difficult* tasks. The [FIM]{acronym-label="FIM" acronym-form="singular+full"} measures the resilience of the loss due to perturbation in the weights ([\[fig:flat-minima\]][14]). If a weight accepts more noise (it can be perturbed without a significant change in the model error), it is less important, and there is no need to "memorise" it. Also, this amount of noise has a direct correspondence to generalisation ([1.5.1.0.4]). Using this intuition,  @achille:2019task2vec uses the diagonal of the [FIM]{acronym-label="FIM" acronym-form="singular+short"} as an embedding that represents the task itself. Since the [FIM]{acronym-label="FIM" acronym-form="singular+short"} can be too noisy when trained from a few examples, the diagonal of the [FIM]{acronym-label="FIM" acronym-form="singular+short"} is used as it is considered a more simple and robust representation [@achille:2019task2vec].
+
+Different choices of fixed architectures, however, produce [FIMs]{acronym-label="FIM" acronym-form="plural+short"} that are not comparable. To address this, a standard "probe" network pre-trained on *ImageNet* is used. The [FIM]{acronym-label="FIM" acronym-form="singular+short"} of the probe represents the canonical task $t_0$ from which other tasks are compared. The embedding of a new task $t_i$ is obtained by re-training only the classifier layer $p(y|z)$, which usually can be done efficiently, and then computing the [FIM]{acronym-label="FIM" acronym-form="singular+short"} for the feature extractor parameters.
+
+Transferability (or fine-tuning gain) from a task $t_a$ to a task $t_b$ is the difference in expected performance between a model trained for task $b$ from a fixed initialisation, $t_0$, and the performance of a solution to $t_a$ fine-tuned for $t_b$: $$\begin{aligned}
+    D_{\text{f-t}}~(t_a \to t_b) = \frac{\E~[\ell_{a\to b}] - \E~[\ell_b]}{\E~[\ell_b]},
+\end{aligned}$$ where expectations are taken over all training, $\ell_b$ is the final test accuracy obtained by training task b from initialisation, and $\ell_{a \to b}$ is the error when starting from a solution to task $a$ fine-tuned for task $b$. Hence, transferability depends on the similarity between two tasks and the complexity of the first. Indeed, the fact that pre-training in ImageNet has become a *de facto* standard is due to its high complexity.
+
+## IB-based Deep Learning Learning Theory
+
+In [\[sec:conclusion-ibrl\]][15], we concluded with a seemly missing step of [IBT]{acronym-label="IBT" acronym-form="singular+short"} in the context of Deep Learning: the fact that requires an information-limiting regulariser in the loss function, which is not explicitly present in many [DL]{acronym-label="DL" acronym-form="singular+short"} models that converge. In this chapter, however, we presented the work of  @chaudhari:2018SGD who showed that even if there is no explicit regulariser, the use of [SGD]{acronym-label="SGD" acronym-form="singular+short"} guarantees it is implicitly there.
+
+Another assumption of [IBT]{acronym-label="IBT" acronym-form="singular+short"} learning is that the task is a stochastic mapping between the input and output. In the context of Deep Learning, with its large datasets, this is hardly a limitation.
+
+An important theoretical discussion specific to Deep Learning that has not been addressed yet is about the role of layers. This will be the subject of [1.5.2].
+
+### A new narrative {#sec:narrative}
+
+According to @goodfellow:2016 [@goodfellow:2016], Deep Learning success is ascribed to several pleasant features for which our current understanding is largely empirical. Here, we use most crucial strength, its narrative, to give theoretical ground to some [DL]{acronym-label="DL" acronym-form="singular+short"} phenomena.
+
+##### Generalisation power despite a huge number of parameters
+
+As we have already shown in [\[sec:pac-shannon\]][16], the complexity of a task relates to the amount of information needed to describe it. In this sense, even if the network has a nominal capacity that relates to the parameters, its effective capacity is the mutual information $\IXY$ (or $I\,[\rvX;\rvY|\rvW]$). This interpretation of complexity does not invalidate the complexity-performance trade-off in [MLT]{acronym-label="MLT" acronym-form="singular+short"}.
+
+##### Generalisation despite expressiveness--overfitting
+
+For high-capacity models, generalisation has to do more with *overfitting* than *underfitting*. We have shown that the loss function that *emerges* from a definition of good representations ([\[sec:desiderata\]][17]), has an implicit overfitting term that can be neutralised ([\[sec:rethink_generalisation\]][5]).
+
+To neutralise the effect of overfitting, the loss needs a regulariser term that penalises the model for keeping information about the training dataset. Even if this term is not explicitly added to the loss function,  @chaudhari:2018SGD shows that it is implicitly there [@chaudhari:2018SGD].
+
+##### Deep Learning bias for disentangled representations
+
+This happens because the implicit regulariser term in SGD is in a form that is equivalent to the assumption that the representation has zero multi-information, no correlation between its components. This property relates to disentanglement.[^5]
+
+##### Scarcity of bad minima encountered by SGD optimisation {#flat-minima}
+
+It is a known fact that [SGD]{acronym-label="SGD" acronym-form="singular+short"} optimisation tends to find "flat minima", regions in the weight space where small perturbations in the value of the weight leads to similar small error ([\[fig:flat-minima\]][14]) [@hochreiter:1997flatminima; @mackay:1992]. @mackay:1992 already explained, via Bayesian inference, that this relates to small information in the weights (amount of information affects the curvature of the space) [@mackay:1992].
+
+This explanation is consistent with [IBT]{acronym-label="IBT" acronym-form="singular+short"} perspective. As we have already shown, the information in the weights is bounded by the Fisher information in the weights that measures the curvature of the weight space. Another interesting implication of this information interpretation is that due to the [AEP]{acronym-label="AEP" acronym-form="singular+short"} all local minima have approximately the same chance of being found in the weights typical space.[^6]
+
+##### critical-learning periods
+
+Critical-learning periods are time windows of early development during which sensory deficits can lead to permanent skill impairment. These are well-documented phenomena in humans, and other animals  [@wiesel:1982]. Surprisingly, @achille:2018critical show that [DNNs]{acronym-label="DNN" acronym-form="plural+short"}s exhibit such critical periods as well [@achille:2018critical] . This finding questions the assumption that the order in which a model experiences evidence does not affect learning.
+
+In their experiments,  @achille:2018critical used the [FIM]{acronym-label="FIM" acronym-form="singular+full"} of the weights to measure information in the network. They caused sensory deficits by blurring input images and noticed that such deficits cause the information in the weights to grow and remain higher even after they are removed. This deficit may be attributed to forcing the network to memorise the labels.
+
+The [IBT]{acronym-label="IBT" acronym-form="singular+short"} explanation for such phenomena is due to the training phase transition  [@shwartz-ziv:2017]. In the first phase, the network moves towards high-curvature regions of the loss landscape, while in the second phase, the curvature decreases, and the network eventually converges to a flat minimum.
+
+Analysing [\[fig:fisher_deficit\]][18], we can see that networks more affected by the deficit converge to relative sharper minima.
+
+During the first phase, with a sensory deficit, the network is obliged to cross regions of high curvature in the loss geometry in order to achieve a certain performance before eventually entering a flatter region of the loss surface and ending up trapped in the higher curvature region.
+
+##### The role of layers in deep learning
+
+This will be explained in a section of its own ([1.5.2])
+
+### The role of layers in deep learning {#sec:layers}
+
+Why do we need multiple layers in a neural network? This question is fundamental in Deep Learning, and still, there is no definitive answer. A feedforward network with a single layer can represent any function [@goodfellow:2016]. Also, @leshno:1993 [@leshno:1993] (as cited by  [@goodfellow:2016]) demonstrated that shallow networks with rectified linear units as activation functions have universal approximation properties. When confronted with these facts, the usual answer for the need for depth is that these results require an infeasible large layer or do not address efficiency. Another common answer is that layers provide levels of abstraction and a paramount composability property, stacking layers allow a network to represent functions of increasing complexity [@goodfellow:2016]. These answers seem correct but, at the same time, somewhat qualitative and vague.
+
+This section will try to advance the discussion by answering the need for depth in Neural Networks with an Information Bottleneck perspective. @shwartz-ziv:2017 have provided an explanation based in Physics [@shwartz-ziv:2017]. Here we will not use such correspondence.
+
+#### The IBT perspective and its weakness {#sec:achille_proof_critique}
+
+We have already established that a DNN optimised with SGD solves an [IB]{acronym-label="IB" acronym-form="singular+short"} problem. In this view, the body of the network is an encoder that compresses the input $\rvX$ into a representation $\rvZ$. In the IBT perspective, training a DNN is finding the encoder that minimises $\IZX$, while keeping $\IZY$: $$\begin{aligned}
+    Q(\rvZ|\rvX) := \underset{p(z|x)}\argmin ~\IZX \\
+    \text{s.t.} \quad \IZY \geq I_Y
+\end{aligned}$$
+
+::: corollary
+Assume a Markov chain of layers: $$\begin{aligned}
+        \rvX \to \rvZ_1 \to \rvZ_2,
+    
+\end{aligned}$$ and that there is a bottleneck between $\rvZ_1$ and $\rvZ_2$ (for example, if $dim(\rvZ_1)>dim(\rvZ_2)$ or noise has been added between to the channel $\rvZ_1 \to \rvZ_2$ via dropout[^7]). Then, if $\rvZ_2$ is sufficient, it is more invariant to nuisances than $\rvZ_1$ (see [\[sec:invariant_if_minimal\]][19]).
+:::
+
+::: corollary
+[]{#cor:stacking label="cor:stacking"} Assume a Markov chain of layers: $$\begin{aligned}
+        \rvX \to \rvZ_1 \to \rvZ_2 \to \cdots \to \rvZ_L,
+    
+\end{aligned}$$[]{#cor:stacking_layers label="cor:stacking_layers"} and that $\rvZ_L$ is sufficient of $\rvX$ w.r.t. $\rvY$. Then, by [DPI]{acronym-label="DPI" acronym-form="singular+short"}: $$\begin{aligned}
+        I[\rvZ_L;\rvX] \leq I[\rvZ_i;\rvX], \forall i \in \{1 \cdots L-1\},
+    
+\end{aligned}$$ therefore $\rvZ_L$ is more insensitive to nuisances than all preceding layers and generalises better.
+:::
+
+In other words,  @achille:2017emergence argue that **stacking layers improve generalisation** [@achille:2017emergence] is a direct consequence of [DPI]{acronym-label="DPI" acronym-form="singular+short"}.
+
+A possible weakness of this argument is that it only shows that in the multi-layered scenario, the last layer is more compressed and invariant to nuisances than the earlier layers. It does not contradict that a single-layered network could achieve the same level of compressibility of the input as the last layer in the multi-layered scenario. To illustrate our argument, imagine two networks, $A$ and $B$, where $A$ has 3 layers that reduce the dimensionality to a certain size $\rs$, and $B$ has 4 layers where the last reduces the dimensionality to the same size $\rs$. The aforementioned corollary nothing has to say about comparing $A$ and $B$, $B$ did not stack a layer on $A$.
+
+Now, if $C$ is a network that stacks a layer on $A$, the last layer of $C$ has a lower dimension than $\rs$ and therefore noise was added, then you can compare $A$ and $C$ with [\[cor:stacking\]][20]. In this case, $C$ has with certainty more noise than $A$, but that is only a consequence of the final amount of noise in the channel represented by $C$ an not on how this noise was added. Their argument reduces to the realisation that stacking layers is a guaranteed way of adding noise to the network and, therefore, of channel capacity reduction. The explanation nothing has to say to the difference on how the noise is added, if $B$ has any advantage over $A$ by the fact that it has an additional layer in the middle, inserting layers, without changing the last layer dimensionality. In other words, we still have the question: Does **inserting layers** improve generalisation?[^8]
+
+Besides, according to  @achille:2017emergence, the above corollary does not simply imply that the more layers, the merrier, as there is the assumption that one has successfully trained the network ($\rvZ_L$ is sufficient). For  @achille:2017emergence, a successfully trained network becomes increasingly difficult as the network grows. A higher complexity seems straightforward because stacking layers increases the number of computations per batch.
+
+#### Proposed hypothesis {#sec:proposed_hypothesis}
+
+We will here lay out a new hypothesis and provide its intuition without a formal proof[^9].
+
+By pure logic, it is evident that the complexity of an algorithm that searches for the best possible hypothesis will depend on the size of the hypothesis space. Stacking layers, therefore, increases the complexity of the algorithm as it certainly increases the hypothesis space size, $|\HH_Q|$. Counter-intuitively, however, we argue that . In other words, despite increasing the number of all possible functions generatable by the algorithm, stacking layers decreases the number of probable functions generatable by the algorithm.
+
+::: hypothesis
+In the IBT perspective, a neural network is a Markov chain where each layer acts as a random variable. The algorithm can be seen as a stochastic mapping $Q$, a lossy encoder-decoder ($Q = Q(Z_L|X) \circ Q(\hat{Y}|Z_L)$). The cardinality of hypothesis space of this algorithm is $|\HH_Q|$, but only a subset $\HH^{\delta}_{Q} \subset \HH_Q$ contains the *typical* and most probable hypotheses. Stacking layers is a guaranteed way of adding noise to the channel/lossy encoder. Noise reduces the capacity of this channel and changes the algorithm. The cardinality of the new hypothesis space is exponentially greater than the original, $|\HH_{Q'}|=|\HH_{Q}|^{sz_{L+1}}$, in the number of bits added in the weights ($sz_{L+1}$). The cardinality of the new *typical* hypothesis space, however, is exponentially smaller than the original, $|\tQprime| = \frac{|\tQ|}{2^{\eta_{Z_{L+1}}}}$, in the number of bits of noise added in the channel. Therefore, the new algorithm generates a smaller number of probable mappings and the chance of finding a good solution in the same number of steps increases.
+:::
+
+**This hypothesis lacks formality and validation by peer review.** Anyway, here we explain its intuition.
+
+Let $Q$ represent a neural network in the IBT perspective in a supervised image classification task, $\YY=\{0,1\}$ and $\XX=2^{sx}$, where $sx$ represent the size in bits of the input images, therefore $\XX$ is finite:
+
+$$\begin{aligned}
+    Q&: \XX \to \YY\\
+    Q&=Q(Z_L | X) \circ Q(Y|Z_L)
+\end{aligned}$$
+
+The cardinality of the hypothesis space $\HH_Q$ of $Q$ is: $$\begin{aligned}
+    |\HH_Q|=|\YY|^{|\HH_{Q(Z_L|X)}|} = 2^{sw},
+\end{aligned}$$ where ${sw}$ represent the size in bits of the set $W$ of weights of the network and $|\HH_{Q(Z_L|X)}|$ represents $Q(Z_L|X)$ space cardinality, the number of possible mappings $X \to Z_L$.
+
+However, not all $|\HH_Q|$ possible $Q$ mappings are probable. Futhermore, there is a subset $\HH^{\delta}_{Q} \subset \HH_Q$ that is *typical*[^10] according to the [AEP]{acronym-label="AEP" acronym-form="singular+short"} [@cover:2006 th. 7.6.1]: $$\begin{aligned}
+    Pr({\tQ})&=1-\delta, ~\delta \to 0\\
+    Pr(h_i \in \tQ) &\approx 2^{-n\IXY}, \forall i
+\end{aligned}$$ A neural network evaluates a sequence of one input at a time, so $n=1$. The cardinality of the *typical* hypothesis space is: $$\begin{aligned}
+    |\tQ| &= \frac{1}{Pr(h_i \in \tQ)} = 2^{I_Q[X;Y]}
+\end{aligned}$$
+
+Now, let $Q'$ be a network with a stacked $Z_{L+1}$ layer.
+
+The cardinality of the hypothesis space of $Q'$ is $|\HH_{Q'}| = 2^{sw+sz_{L+1}}$, therefore: $$\begin{aligned}
+    |\HH_{Q'}|=|\HH_{Q}|^{sz_{L+1}},\ie
+\end{aligned}$$ the cardinality of the hypothesis space increases exponentially in the number of added bits in the weights of the network.
+
+Let us see what happens with the cardinality of the typical hypothesis space. $$\begin{aligned}
+    |\tQprime| &=  \frac{1}{Pr(h_i \in \tQprime)} = 2^{I_{Q'}[X;Y]}
+\end{aligned}$$
+
+As $Q'$ adds a layer, it adds noise, therefore, it reduces the channel capacity: $$\begin{aligned}
+    I_{Q'}[X;Y] &< I_Q[X;Y],\\
+    Pr(h_i \in \tQprime) &> {Pr(h_i \in \tQ)},\\
+    |\tQprime| &< |\tQ|.
+\end{aligned}$$ Not only $|\tQprime| < |\tQ|$, but it can be shown that it is also exponentially smaller. Using the rational of [\[noisy_channel_theorem\]][21], using $Z_L$ as input and $Z_{L+1}$ as output, $|\tQprime|$ is the number of non-confusable inputs in the $Z_L \to Z_{L+1}$ mapping, therefore: $$\begin{aligned}
+    |\tQprime|&= \frac{2^{H[Z_L]}}{2^{H[Z_{L+1}|Z_L]}}
+    = \frac{2^{I_Q[X;Y]}}{2^{\eta_{Z_{L+1}}}}\\
+    &= \frac{|\tQ|}{2^{\eta_{Z_{L+1}}}},
+\end{aligned}$$ where $\eta_{Z_{L+1}}$ is the number of bits of noise added in the $Z_{L+1}$ layer. Therefore, the typical hypothesis space reduces exponentially on the number of bits of noise added.
+
+During training, an [SGD]{acronym-label="SGD" acronym-form="singular+short"} algorithm searches a good mapping $q \in \HH_Q$ in a certain number of steps. Not all possible mappings are equally probable. The [AEP]{acronym-label="AEP" acronym-form="singular+short"} property is a direct consequence of the weak law of large numbers that states that there is a small subset $\tQ \subset \HH_Q$ that represent the mappings that are most probable of happen. The solutions found by the SGD at each of its step are most likely mappings from this typical hypothesis space and all mappings of this subset have approximately the same chance of being found. By stacking layers, we change the hypothesis space to $\HH_{Q'}$. The cardinality of the typical hypothesis space of $\HH_{Q'}$, $|\tQprime|$ is exponentially smaller than the cardinality of the original hypothesis space. Therefore, there is a smaller number of probable mappings and the chance of finding a good solution in the same number of steps increases.
+
+## Concluding Remarks
+
+This chapter presented the [IBT]{acronym-label="IBT" acronym-form="singular+short"} for Deep Learning, showing that it was initially envisioned as an analysis tool to comprehend what happens during training. We also explained why it was received with criticism.
+
+Most of the questions in regards to the lack of rigour were already previously addressed in [\[ch:ib_and_rl\]][2]. In this chapter, we closed the last missing step by showing that even in the absence of an explicit regulariser in the loss function, it is implicitly added by [SGD]{acronym-label="SGD" acronym-form="singular+short"} ([1.1.2]). The acknowledgement of two distinct phases during training may lead to the development of phase-specific training strategies.
+
+Moreover, we demonstrated the power of [IBT]{acronym-label="IBT" acronym-form="singular+short"} narrative by giving coherent explanations for several Deep Learning phenomena. For that we did not increase our list of assumptions.
+
+### Assumptions
+
+1.  [MLT]{acronym-label="MLT" acronym-form="singular+short"} assumptions:
+
+    1.  **$\DD=\PXY$ is unknown at the training stage**.
+
+    2.  **$\DD=\PXY$ is fixed:** the ordering of examples in the sample is irrelevant.
+
+    3.  $\rvX$ is is i.i.d. sampled.
+
+2.  Information is what changes belief.
+
+3.  [IBT]{acronym-label="IBT" acronym-form="singular+short"} for Representation Learning assumptions:
+
+    i.  **$\DD=\PXY=P(\rvY|\rvX)P(\rvX)$**, where $P(\rvY|\rvX)$ is a stochastic mapping.
+
+    ii. The random variables $\rvX$, $\rvY$ and $\rvW$ are **discrete**;
+
+    iii. $\rvY \to \rvX \to \rvW$ form a Markov-chain during training;
+
+    iv. $\sA_{\rvX}$, $\sA_{\rvY}$ and $\sA_{\rvW}$ are **finite sets**;
+
+[^1]: By the time of their paper, there was no known algorithm to calculate the mutual information for discrete $\rvX$ and $\rvY$ with large state spaces or non-Gaussian continuous joint distribution. Eventually,   and   independently invented such algorithm using the variational formulation of the IB Lagrangian ([1.4.1]).
+
+[^2]: A kind of *test-time augmentation*, a common practice in ML that injects noise to a test input, by generating transformed versions of it with slightly different $\hat{\ry}_i$ in different runs of the model for the same $\rx_i$., and combines the predictions of these versions.
+
+[^3]: An observation that was made longer before by  @chaitin:2006 in  .
+
+[^4]: Deep Learning helping to understand deep learning.
+
+[^5]: In [IBT]{acronym-label="IBT" acronym-form="singular+short"}, disentanglement is defined as this property.
+
+[^6]: We use this property to show that layers help to find local minima, [1.5.2].
+
+[^7]: Dimensionality reduction can be seen as a form of noise.
+
+[^8]: We will leave this discussion for future work.
+
+[^9]: We will try to provide such proof in future work.
+
+[^10]: The *typical* set of Q is the joint typical set of Q(X,Y).
+
+  [1]: #ch:ib {reference-type="ref" reference="ch:ib"}
+  [2]: #ch:ib_and_rl {reference-type="ref" reference="ch:ib_and_rl"}
+  [3]: #sec:resolution {reference-type="ref" reference="sec:resolution"}
+  [1.5.2]: #sec:layers {reference-type="ref" reference="sec:layers"}
+  [4]: #th:specialib {reference-type="ref" reference="th:specialib"}
+  [5]: #sec:rethink_generalisation {reference-type="ref" reference="sec:rethink_generalisation"}
+  [6]: #ch:literature {reference-type="ref" reference="ch:literature"}
+  [7]: #blackbox {reference-type="ref" reference="blackbox"}
+  [8]: #sec:information-plane {reference-type="ref" reference="sec:information-plane"}
+  [9]: #fig:ib-mean-variation {reference-type="ref" reference="fig:ib-mean-variation"}
+  [10]: #fig:phase_transition_tishby15 {reference-type="ref" reference="fig:phase_transition_tishby15"}
+  [11]: #fig:fisher_sensitivity {reference-type="ref" reference="fig:fisher_sensitivity"}
+  [12]: #sec:2_levels {reference-type="ref" reference="sec:2_levels"}
+  [1.4.1]: #sec:dvib {reference-type="ref" reference="sec:dvib"}
+  [1.3.4]: #sec:ibt_criticism {reference-type="ref" reference="sec:ibt_criticism"}
+  [13]: #sec:vae {reference-type="ref" reference="sec:vae"}
+  [14]: #fig:flat-minima {reference-type="ref" reference="fig:flat-minima"}
+  [1.5.1.0.4]: #flat-minima {reference-type="ref" reference="flat-minima"}
+  [15]: #sec:conclusion-ibrl {reference-type="ref" reference="sec:conclusion-ibrl"}
+  [16]: #sec:pac-shannon {reference-type="ref" reference="sec:pac-shannon"}
+  [17]: #sec:desiderata {reference-type="ref" reference="sec:desiderata"}
+  [18]: #fig:fisher_deficit {reference-type="ref" reference="fig:fisher_deficit"}
+  [19]: #sec:invariant_if_minimal {reference-type="ref" reference="sec:invariant_if_minimal"}
+  [20]: #cor:stacking {reference-type="ref" reference="cor:stacking"}
+  [21]: #noisy_channel_theorem {reference-type="ref" reference="noisy_channel_theorem"}
+  [1.1.2]: #sec:SGD_in_IBT {reference-type="ref" reference="sec:SGD_in_IBT"}

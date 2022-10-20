@@ -1,4 +1,6 @@
+
 ::: {.content-hidden unless-format="html"}
+
 # Welcome {.unnumbered .unlisted}
 
 This is a Tufte-Quarto book.

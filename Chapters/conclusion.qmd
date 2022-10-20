@@ -1,0 +1,77 @@
+# Conclusion {#ch:conclusion}
+
+Our goal was to investigate to what extent the emergent [IBT]{acronym-label="IBT" acronym-form="singular+full"} can help understand generalisation and other Deep Learning Phenomena. In this chapter, we summarise our findings.
+
+## Generalisation in IBT
+
+Foremost, we presented information in the weights as a measure of complexity, a measure with no apparent paradox between generalisation and the number of parameters ([\[ch:intermezzo\]][1]). This measure of complexity is model-independent; it is a measure of task complexity. As the task, in our context, is defined by the unknown distribution of the data $\PXY$, information/complexity is only a measure of the compressibility of the input data, a measure of its underlying structural pattern or its randomness. This perspective beautifully relates to the [KC]{acronym-label="KC" acronym-form="singular+full"} of algorithmic information theory.
+
+[\[sec:rethink_generalisation\]][2] revealed the overfitting term in the cross-entropy loss decomposition. The cross-entropy loss emerged *naturally* from a wish-list for representations. We shed light to @achille:2017emergence insight of neutralising the overfitting term, leading to a loss function in the IB-Lagrangian form [@achille:2017emergence]. This insight is the linchpin of [IBT]{acronym-label="IBT" acronym-form="singular+short"}'s viewpoint on generalisation.
+
+The last *missing step* was filled in [\[ch:ib_and_dl\]][3], where we acknowledged  @chaudhari:2019iclr demonstration that even if a deep learning model omits such regulariser term in its loss function, [SGD]{acronym-label="SGD" acronym-form="singular+short"} implicitly *adds* the regulariser term  [@chaudhari:2018SGD; @chaudhari:2019iclr].
+
+Another original consequence of the Weights-IB is that each value of the [IB]{acronym-label="IB" acronym-form="singular+short"} parameter $\beta$ corresponds to a maximum ($\epsilon, \delta$) tuple of the PAC tolerance and confidence margins.
+
+## Answers to Research Questions
+
+## Strengths, Weaknesses, Threats and Opportunities
+
+This section answers .
+
+### Strengths
+
+-   [IBT]{acronym-label="IBT" acronym-form="singular+short"} is capable of connecting seemly unrelated phenomena ([\[sec:narrative\]][4]) and practices ([\[sec:conclusion-ibrl\]][5]) in a coherent narrative.
+
+-   the usage of information measures during training "opens the black-box" of [DNNs]{acronym-label="DNN" acronym-form="plural+short"} [@shwartz-ziv:2017], allowing us to identify two distinct phases in training.
+
+-   instead of depending on an user-defined model class, [IBT]{acronym-label="IBT" acronym-form="singular+short"} depends only on the unknown data distribution, which is the task itself.
+
+-   the [IB]{acronym-label="IB" acronym-form="singular+short"} Principle shows that a user-defined loss define what is relevant in the optimisation. Instead, [IBT]{acronym-label="IBT" acronym-form="singular+short"} relies on the relevance variable (the target), defined by the task itself.
+
+### Weaknesses
+
+-   The [IB]{acronym-label="IB" acronym-form="singular+short"} Principle assumes discrete random variables in finite spaces. However, @rissanen:1986 and @hinton:1993 have already demonstrated that this is hardly a problem.
+
+-   if a [DNN]{acronym-label="DNN" acronym-form="singular+short"} is considered an invertible deterministic function  [@jacobsen:2018], the information in the activations is constant for discrete random variables (and infinite for continuous random variables). This observation seems to contradict [IBT]{acronym-label="IBT" acronym-form="singular+short"}. We have shown ([\[ch:it_epistemology\]][6]), however, that the network can be an invertible function as long as we consider the weights as our random variable and the information in the weights will bound the information in the activations ([\[ch:ib_and_rl\]][7]). Still, the stochastic mapping assumption during training is an overlooked consideration.
+
+-   Another overlooked consideration is the Markovian assumption. [IBT]{acronym-label="IBT" acronym-form="singular+short"} lacks a rigorous assessment of this assumption during training to show when it happens and why it is sufficient.
+
+-   [IBT]{acronym-label="IBT" acronym-form="singular+short"} was presented without clear objectives: was it an analysis tool or a general theory? Also, it did not initially explain the relation between the information in the weights, for which there is a Bayesian ground, and the information in the activations, for which there is no such ground. The same lack of rigour can be seen in the overlooking of important assumptions (the Markovian assumption, for example).
+
+### Threats
+
+-   : [IBT]{acronym-label="IBT" acronym-form="singular+short"} claims drove much attention. The lack of rigour, unfortunately, turned a natural suspicion into discredit. In Tishby's opinion, "\[the critiques\] are throwing the baby with the bathwater." However, the critiques were hardly unjustified. In time, a corpus of literature is corroborating with [IBT]{acronym-label="IBT" acronym-form="singular+short"}'s perspective and building its rigour. It is difficult to change the first impression, in any case.
+
+-   : [IBT]{acronym-label="IBT" acronym-form="singular+short"} literature is still very fragmented.
+
+### Opportunities
+
+-   In the PAC formulation, there is a margin of tolerance $\epsilon$ and a confidence measure $\delta$. The [IB]{acronym-label="IB" acronym-form="singular+short"} $\beta$ unifies those into a unique ($\epsilon, \delta$) limit. With that in mind, it is possible to create a PAC formulation that depends uniquely on $\beta$.
+
+-   The realisation of the fact that there are two distinct phases in training, where the macroscopic statistics abruptly change ([\[fig:ib-mean-variation\]][8]) may lead to the use of different optimisation strategies for each phase of the training.
+
+-   If in [IBT]{acronym-label="IBT" acronym-form="singular+short"} complexity depends uniquely on the compressibility of the input and the desired performance-generalisation level ($\beta$), it is possible to analyse the complexity of datasets and build a topology of learning tasks (as in  [@achille:2019task2vec]) where there is a theoretical prediction of task similarities. There is also an opportunity to relate this theoretical result to empirical findings like  [@zamir:2018taskonomy].
+
+-   We saw that information theory does not require i.i.d. sampling ([\[ch:information\]][9]). We are not aware of any theoretical development in [MLT]{acronym-label="MLT" acronym-form="singular+short"} that exploits this property.
+
+-   The area of Statistical Mechanics has been developed for more than a century. With the connection of machine learning and information theory, there is much to gain in exploiting findings in Statistical Mechanics in the learning realm (as did  @chaudhari:2019iclr [@chaudhari:2018SGD; @chaudhari:2019iclr]).
+
+## Concluding Remarks
+
+This dissertation was a "Greek endeavour" ([\[sec:greeks\]][10]): it tried to "connect the dots" and give ordinance to [IBT]{acronym-label="IBT" acronym-form="singular+short"} Babylonian enterprise.
+
+We found that [IBT]{acronym-label="IBT" acronym-form="singular+short"} neither invalidates nor contradicts [MLT]{acronym-label="MLT" acronym-form="singular+short"}, but rather conciliates [MLT]{acronym-label="MLT" acronym-form="singular+short"} with Deep Learning Phenomena. [IBT]{acronym-label="IBT" acronym-form="singular+short"} main weakness is its lack of rigour, a gap that is being filled with time. Interestingly, this weakness can be ascribed to a lack of assumptions definition, a lack of choice. The same kind of choice for which [MLT]{acronym-label="MLT" acronym-form="singular+short"} is in instances criticised for ([\[sec:mlt_criticism\]][11]).
+
+The present dissertation revealed that [IBT]{acronym-label="IBT" acronym-form="singular+short"}, far from being rigorous and complete, is an emerging theory with a compelling narrative and many open opportunities for research.
+
+  [1]: #ch:intermezzo {reference-type="ref" reference="ch:intermezzo"}
+  [2]: #sec:rethink_generalisation {reference-type="ref" reference="sec:rethink_generalisation"}
+  [3]: #ch:ib_and_dl {reference-type="ref" reference="ch:ib_and_dl"}
+  [4]: #sec:narrative {reference-type="ref" reference="sec:narrative"}
+  [5]: #sec:conclusion-ibrl {reference-type="ref" reference="sec:conclusion-ibrl"}
+  [6]: #ch:it_epistemology {reference-type="ref" reference="ch:it_epistemology"}
+  [7]: #ch:ib_and_rl {reference-type="ref" reference="ch:ib_and_rl"}
+  [8]: #fig:ib-mean-variation {reference-type="ref" reference="fig:ib-mean-variation"}
+  [9]: #ch:information {reference-type="ref" reference="ch:information"}
+  [10]: #sec:greeks {reference-type="ref" reference="sec:greeks"}
+  [11]: #sec:mlt_criticism {reference-type="ref" reference="sec:mlt_criticism"}
