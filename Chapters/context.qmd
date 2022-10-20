@@ -1,13 +1,14 @@
 # Introduction {#ch:introduction}
 
 In his acceptance speech for the Test-of-Time award in NeurIPS 2017,[^1] Ali Rahimi[^2] started a controversy by frankly declaring [@rahimi:2017 12'10"]. His concerns on the lack of theoretical understanding of machine learning for critical decision-making are rightful:
+
 > |
     ‘We are building systems that govern healthcare and mediate our civic dialogue. We would influence elections. I would like to live in a society whose systems are built on top of verifiable, rigorous, thorough knowledge and not on alchemy.’
 
-The next day, Yann LeCun[^3] responded:
+The next day, Yann LeCun[^3] responded: 
+
 > |
     ‘Criticising an entire com- munity (. . .) for practising “alchemy”, simply because our current theoretical tools have not caught up with our practice is dangerous.’
-
 
 Both researchers, at least, agree upon one thing: the practice of machine learning has outpaced its theoretical development. That is certainly a research opportunity.
 
@@ -167,11 +168,11 @@ Furthermore, they both share more or less the same "genealogy" of assumptions. [
 
 [^12]: [ITL]{acronym-label="ITL" acronym-form="singular+short"} makes the opposite path we are taking, bringing concepts of machine learning to information theory problems.
 
-  [1]: #fig:feynman {reference-type="ref" reference="fig:feynman"}
+  <!-- [1]: #fig:feynman {reference-type="ref" reference="fig:feynman"}
   [2]: #fig:machine_learning_2x {reference-type="ref" reference="fig:machine_learning_2x"}
   [3]: #ch:literature {reference-type="ref" reference="ch:literature"}
   [4]: #sec:achille_proof_critique {reference-type="ref" reference="sec:achille_proof_critique"}
   [5]: #sec:proposed_hypothesis {reference-type="ref" reference="sec:proposed_hypothesis"}
   [6]: #pt:background {reference-type="ref" reference="pt:background"}
   [7]: #pt:emergence_of_theory {reference-type="ref" reference="pt:emergence_of_theory"}
-  [8]: #pt:intermezzo {reference-type="ref" reference="pt:intermezzo"}
+  [8]: #pt:intermezzo {reference-type="ref" reference="pt:intermezzo"} -->
