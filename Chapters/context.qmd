@@ -42,9 +42,32 @@ Understanding the epistemic contrast between mathematics and science will help u
 
 To illustrate, take the ancient human desire of flying. There have always been stories of men strapping wings to themselves and attempting to fly by jumping from a tower and flapping those wings like birds [see @farrington2016]. While concepts like lift, stability, and control were poorly understood, most human flight attempts ended in severe injury or even death. It did not matter how much evidence, how many hours of seeing different animals flying, those ludicrous brave men experienced; the *meaning* they took from what they saw was wrong, and their predictions incorrect.
 
-<!-- ![A way of flying](/Images/goya.jpg){.column-body #fig-goya} -->
 
-<!-- ![Richard Feynman, Nobel laureate physicist.](/Images/Feynman.pdf){.column-margin #fig-feynman} -->
+![A way of flying](/Images/goya.jpg){.column-body}
+
+<!-- Tufte-book.cls breaks when processing the line bellow:
+![A way of flying](/Images/goya.jpg){.column-body #fig-goya}
+
+which becomes:
+
+\begin{figure}
+
+{\centering \includegraphics{Images/goya.jpg}
+
+}
+
+\caption{\label{fig-goya}A way of flying}
+
+\end{figure}
+
+====
+
+Tufte-book can't handle label inside caption.
+ -->
+
+[^3]: Director of Facebook AI Research.
+
+<
 
 They did not die in vain[^4]; Science advances when scientists are wrong. Theories must be falsifiable, and scientists cheer for their failure. When it fails, there is room for new approaches. Only when we understood the observations in animal flight from the aerodynamics perspective, we learned to fly better than any other animal before. Science works by a "natural selection" of ideas, where only the fittest ones survive until a better one is born. Chaitin also points out that an idea has "fertility" to the extent to which it "illuminates us, inspires us with other ideas, and suggests unsuspected connections and new viewpoints" [@chaitin2006 p. 9]. 
 
@@ -156,7 +179,7 @@ We found out that [IBT]{acronym-label="IBT" acronym-form="singular+short"} does 
 
 Furthermore, they both share more or less the same "genealogy" of assumptions. [IBT]{acronym-label="IBT" acronym-form="singular+short"} can be seen as particular case of [MLT]{acronym-label="MLT" acronym-form="singular+short"}. Nevertheless, [IBT]{acronym-label="IBT" acronym-form="singular+short"} allows us to better understand the training process and provide a different narrative that helps us comprehend Deep Learning phenomena in a more general way.
 
-[^3]: Deep Learning pioneer and 2018 Turing award winner. <https://www.facebook.com/yann.lecun/posts/10154938130592143>
+[^3]: Deep Learning pioneer and 2018 Turing award winner. <https://bit.ly/3CQNwTU>
 
 [^4]: Those "researchers" deserved, at least, a Darwin Award of Science. The Darwin Award is satirical honours that recognise individuals who have unwillingly contributed to human evolution by selecting themselves out of the gene pool.
 
