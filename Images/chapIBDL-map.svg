@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg7304"
+   width="379.17734"
+   height="1015.0253"
+   viewBox="0 0 379.17734 1015.0253"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs7308">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath7350">
+      <path
+         d="M 0,761.269 H 284.383 V 0 H 0 Z"
+         id="path7348" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath7450">
+      <path
+         d="M 0,761.269 H 284.383 V 0 H 0 Z"
+         id="path7448" />
+    </clipPath>
+  </defs>
+  <g
+     id="g7310"
+     transform="matrix(1.3333333,0,0,-1.3333333,0,1015.0253)">
+    <text
+       xml:space="preserve"
+       transform="matrix(1,0,0,-1,172.1162,364.8818)"
+       style="font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:16px;font-family:'Minion Pro Cond Disp';-inkscape-font-specification:MinionPro-CnDisp;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="text7314"><tspan
+         x="0 4.0320001 11.056 14.72 20.927999 25.774401 36.543999 42.1264 46.1744 49.582401 55.790401 62.830399 65.390404 78.7024 84.398399 90.6064 95.7584"
+         y="0"
+         id="tspan7312">Information Teory</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(1,0,0,-1,199.8896,447.7178)"
+       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:Kalam;-inkscape-font-specification:Kalam-Regular;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="text7318"><tspan
+         x="0"
+         y="0"
+         id="tspan7316">2</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(1,0,0,-1,210.3477,453.7119)"
+       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.494px;font-family:Kalam;-inkscape-font-specification:Kalam-Regular;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="text7322"><tspan
+         x="0 5.5933018"
+         y="0"
+         id="tspan7320">nd</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(1,0,0,-1,228.3952,447.7178)"
+       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:Kalam;-inkscape-font-specification:Kalam-Regular;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="text7326"><tspan
+         x="0 9.8280001 18.27"
+         y="0"
+         id="tspan7324">Law</tspan></text>
+    <path
+       d="m 266.386,437.588 h -74.067 v 33.427 h 74.067 z"
+       style="fill:none;stroke:#231f20;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       id="path7328" />
+    <text
+       xml:space="preserve"
+       transform="matrix(1,0,0,-1,178.9082,397.9004)"
+       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:Kalam;-inkscape-font-specification:Kalam-Regular;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="text7332"><tspan
+         x="0"
+         y="0"
+         id="tspan7330">1</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(1,0,0,-1,184.5601,403.8945)"
+       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.494px;font-family:Kalam;-inkscape-font-specification:Kalam-Regular;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="text7336"><tspan
+         x="0 4.4704442"
+         y="0"
+         id="tspan7334">st</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(1,0,0,-1,200.3098,397.9004)"
+       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:Kalam;-inkscape-font-specification:Kalam-Regular;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="text7340"><tspan
+         x="0 9.8280001 18.27"
+         y="0"
+         id="tspan7338">Law</tspan></text>
+    <path
+       d="m 241.852,387.771 h -74.066 v 33.426 h 74.066 z"
+       style="fill:none;stroke:#231f20;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       id="path7342" />
+    <g
+       id="g7344">
+      <g
+         id="g7346"
+         clip-path="url(#clipPath7350)">
+        <path
+           d="M 149.561,357.041 H 0.125 v 126.96 h 149.436 z"
+           style="fill:none;stroke:#231f20;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+           id="path7352" />
+      </g>
+    </g>
+    <text
+       xml:space="preserve"
+       transform="matrix(1,0,0,-1,29.1318,400.8145)"
+       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.4094px;font-family:Kalam;-inkscape-font-specification:Kalam-Regular;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="text7356"><tspan
+         x="0 9.7753916 19.62442"
+         y="0"
+         id="tspan7354">STL</tspan></text>
+    <path
+       d="M 65.924,387.98 H 21.295 v 33.008 h 44.629 z"
+       style="fill:none;stroke:#231f20;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       id="path7358" />
+    <path
+       d="M 117.072,434.956 H 21.296 v 33.426 h 95.776 z"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#231f20;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       id="path7360" />
+    <text
+       xml:space="preserve"
+       transform="matrix(1,0,0,-1,27.2437,448.083)"
+       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:Kalam;-inkscape-font-specification:Kalam-Regular;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="text7364"><tspan
+         x="0 9.7740002 20.718 31.5 39.762001 51.228001 59.669998 68.112 76.211998"
+         y="0"
+         id="tspan7362">PAC-Bayes</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(1,0,0,-1,79.0083,400.8145)"
+       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.4094px;font-family:Kalam;-inkscape-font-specification:Kalam-Regular;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="text7368"><tspan
+         x="0 9.9963045 21.189219"
+         y="0"
+         id="tspan7366">PAC</tspan></text>
+    <path
+       d="M 117.072,387.98 H 72.443 v 33.008 h 44.629 z"
+       style="fill:none;stroke:#231f20;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       id="path7370" />
+    <text
+       xml:space="preserve"
+       transform="matrix(1,0,0,-1,7.0874,364.8818)"
+       style="font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:16px;font-family:'Minion Pro Cond Disp';-inkscape-font-specification:MinionPro-CnDisp;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="text7374"><tspan
+         x="0 11.312 17.040001 22.271999 29.040001 32.431999 39.486401 45.006401 47.566399 54.608002 60.350399 66.014397 70.862396 77.886398 81.278397 88.176003 94.158401 96.718399 110.0304 115.7264 121.9344 127.0864"
+         y="0"
+         id="tspan7372">Machine Learning Teory</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(1,0,0,-0.99509639,181.7153,500.4067)"
+       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.0887px;font-family:Kalam;-inkscape-font-specification:Kalam-Regular;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="text7378"><tspan
+         x="0 5.6074972 17.129999 25.432713 39.831318 47.971233 54.971558 64.667099 72.861282"
+         y="0"
+         id="tspan7376">IB-method</tspan></text>
+    <path
+       d="M 277.534,487.49 H 167.786 v 33.007 h 109.748 z"
+       style="fill:none;stroke:#231f20;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       id="path7380" />
+    <path
+       d="M 95.9,631.421 H 283.801 V 761.144 H 95.9 Z"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path7382" />
+    <path
+       d="m 283.801,631.421 h -187.9 v 129.724 h 187.9 z"
+       style="fill:none;stroke:#231f20;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       id="path7384" />
+    <text
+       xml:space="preserve"
+       transform="matrix(1,0,0,-0.99509295,110.7959,744.1187)"
+       style="font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:16.0789px;font-family:'Minion Pro Cond Disp';-inkscape-font-specification:MinionPro-CnDisp;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="text7388"><tspan
+         x="0 4.0518827 11.11052 14.792588 21.0312 25.903109 36.724209 42.335743 46.402096 49.826904 56.067123 63.141842 65.714462 73.625282 79.735268 83.5942 87.694321 90.861862 96.521637 103.61243 109.33492 114.59271 121.05643 123.62905 137.0067 142.73079 148.96941 154.1452"
+         y="0"
+         id="tspan7386">Information Bottleneck Teory</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(1,0,0,-0.99509639,151.543,659.5508)"
+       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.0887px;font-family:Kalam;-inkscape-font-specification:Kalam-Regular;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="text7392"><tspan
+         x="0 5.6074972 17.129999 24.383568 32.867168 42.508446 51.534706 58.788277 69.352074"
+         y="0"
+         id="tspan7390">IB and RL</tspan></text>
+    <path
+       d="M 246.033,646.634 H 136.284 v 33.007 h 109.749 z"
+       style="fill:none;stroke:#231f20;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       id="path7394" />
+    <text
+       xml:space="preserve"
+       transform="matrix(1,0,0,-0.99509639,150.9917,702.9717)"
+       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.0887px;font-family:Kalam;-inkscape-font-specification:Kalam-Regular;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="text7398"><tspan
+         x="0 5.6074972 17.129999 24.383568 32.867168 42.508446 51.534706 58.788277 70.45549"
+         y="0"
+         id="tspan7396">IB and DL</tspan></text>
+    <path
+       d="M 246.033,690.055 H 136.284 v 33.007 h 109.749 z"
+       style="fill:none;stroke:#231f20;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       id="path7400" />
+    <path
+       d="m 1.137,268.215 h 283.12 v 78.639 H 1.137 Z"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path7402" />
+    <path
+       d="M 284.257,268.215 H 1.137 v 78.64 h 283.12 z"
+       style="fill:none;stroke:#231f20;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       id="path7404" />
+    <text
+       xml:space="preserve"
+       transform="matrix(1,0,0,-1,7.0874,276.6426)"
+       style="font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:16px;font-family:'Minion Pro Cond Disp';-inkscape-font-specification:MinionPro-CnDisp;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="text7408"><tspan
+         x="0 8.592 13.552 17.5984 20.992001 27.903999 33.344002 36.8144 42.622398 45.774399 48.3344 52.366402 59.262402 63.150398 68.750397 71.982399 75.116798 78.540802 84.446404 90.0784 97.132797 102.4928"
+         y="0"
+         id="tspan7406">Artifcial Intelligence</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(1,0,0,-1,139.6553,315.4014)"
+       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:Kalam;-inkscape-font-specification:Kalam-Regular;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="text7412"><tspan
+         x="0 10.782 18.936001 28.530001 38.124001 46.223999 54.234001 61.200001 65.484001 73.638 83.232002 87.515999 95.183998"
+         y="0"
+         id="tspan7410">Connectionism</tspan></text>
+    <path
+       d="M 266.386,302.484 H 125.562 v 33.008 h 140.824 z"
+       style="fill:none;stroke:#231f20;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       id="path7414" />
+    <text
+       xml:space="preserve"
+       transform="matrix(1,0,0,-1,26.7056,315.4014)"
+       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:Kalam;-inkscape-font-specification:Kalam-Regular;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="text7418"><tspan
+         x="0 9.5579996 18 32.327999 41.778 49.931999 54.341999 58.625999 66.293999"
+         y="0"
+         id="tspan7416">Symbolism</tspan></text>
+    <path
+       d="M 117.072,302.484 H 19.654 v 33.008 h 97.418 z"
+       style="fill:none;stroke:#231f20;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       id="path7420" />
+    <path
+       d="m 1.137,176.849 h 283.12 v 81.727 H 1.137 Z"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path7422" />
+    <path
+       d="M 284.257,176.849 H 1.137 v 81.728 h 283.12 z"
+       style="fill:none;stroke:#231f20;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       id="path7424" />
+    <text
+       xml:space="preserve"
+       transform="matrix(1,0,0,-1,7.0874,188.2754)"
+       style="font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:16px;font-family:'Minion Pro Cond Disp';-inkscape-font-specification:MinionPro-CnDisp;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="text7428"><tspan
+         x="0 7.2480001 12.912 19.808001 25.968 32.784 38.543999 44.448002"
+         y="0"
+         id="tspan7426">Language</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(1,0,0,-1,32.0771,225.3281)"
+       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:Kalam;-inkscape-font-specification:Kalam-Regular;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="text7432"><tspan
+         x="0 9.8280001 17.982 26.532 30.816"
+         y="0"
+         id="tspan7430">Logic</tspan></text>
+    <path
+       d="M 85.212,212.412 H 17.768 v 33.007 h 67.444 z"
+       style="fill:none;stroke:#231f20;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       id="path7434" />
+    <text
+       xml:space="preserve"
+       transform="matrix(1,0,0,-1,112.5415,225.3281)"
+       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:Kalam;-inkscape-font-specification:Kalam-Regular;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="text7438"><tspan
+         x="0 11.466 19.908001 28.35 36.450001 44.118 48.402 56.844002 66.438004 73.655998 79.236 88.830002 95.598 103.698 109.656 117.756 127.35 135.36"
+         y="0"
+         id="tspan7436">Bayesian Inference</tspan></text>
+    <path
+       d="M 266.386,212.412 H 102.157 v 33.007 h 164.229 z"
+       style="fill:none;stroke:#231f20;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       id="path7440" />
+    <path
+       d="m 1.137,0.125 h 283.12 V 167.07 H 1.137 Z"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path7442" />
+    <g
+       id="g7444">
+      <g
+         id="g7446"
+         clip-path="url(#clipPath7450)">
+        <path
+           d="M 284.257,0.125 H 1.137 V 167.07 h 283.12 z"
+           style="fill:none;stroke:#231f20;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+           id="path7452" />
+      </g>
+    </g>
+    <text
+       xml:space="preserve"
+       transform="matrix(1,0,0,-1,7.1987,11.7471)"
+       style="font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:16px;font-family:'Minion Pro Cond Disp';-inkscape-font-specification:MinionPro-CnDisp;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="text7456"><tspan
+         x="0 6.9439998 13.504 16.799999 21.52 25.408001 31.040001 41.824001 48.063999 51.216 57.599998 64.047997"
+         y="0"
+         id="tspan7454">Epistemology</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(1,0,0,-1,107.959,28.7412)"
+       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:Kalam;-inkscape-font-specification:Kalam-Regular;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="text7460"><tspan
+         x="0 5.5799999 15.174 22.139999 30.24 34.650002 39.060001 43.344002 51.894001 59.993999 69.587997 77.598"
+         y="0"
+         id="tspan7458">Intelligence</tspan></text>
+    <path
+       d="M 205.412,15.825 H 96.202 v 33.007 h 109.21 z"
+       style="fill:none;stroke:#231f20;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       id="path7462" />
+    <path
+       d="M 265.96,61.307 H 19.627 v 50.344 H 265.96 Z"
+       style="fill:none;stroke:#231f20;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       id="path7464" />
+    <text
+       xml:space="preserve"
+       transform="matrix(1,0,0,-1,26.6919,92.7881)"
+       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Kalam;-inkscape-font-specification:Kalam-Regular;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="text7470"><tspan
+         x="0 7.0079999 12.636 17.280001 20.136 25.572001 31.968 37.596001 40.535999 43.391998 48.504002"
+         y="0"
+         id="tspan7466">Rationalist</tspan><tspan
+         x="15.216 21.6 24.455999 29.856001"
+         y="17.4"
+         id="tspan7468">View</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(1,0,0,-1,99.6626,82.8931)"
+       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:Kalam;-inkscape-font-specification:Kalam-Regular;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="text7474"><tspan
+         x="0 10.638 20.232 28.386 40.5 44.91 53.009998 61.992001 70.542"
+         y="0"
+         id="tspan7472">Knowledge</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(1,0,0,-1,205.6074,92.7891)"
+       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Kalam;-inkscape-font-specification:Kalam-Regular;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="text7480"><tspan
+         x="0 6.3720002 11.712 17.112 22.848 27.492001 30.348 35.688 41.316002"
+         y="0"
+         id="tspan7476">Sceptical</tspan><tspan
+         x="10.764 17.148001 20.004 25.403999"
+         y="17.4"
+         id="tspan7478">View</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(1,0,0,-1,33.7202,137.4678)"
+       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:Kalam;-inkscape-font-specification:Kalam-Regular;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="text7484"><tspan
+         x="0 14.202 22.643999 29.610001"
+         y="0"
+         id="tspan7482">Math</tspan></text>
+    <path
+       d="M 87.072,124.551 H 19.628 v 33.007 h 67.444 z"
+       style="fill:none;stroke:#231f20;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       id="path7486" />
+    <text
+       xml:space="preserve"
+       transform="matrix(1,0,0,-1,199.8042,137.4673)"
+       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:Kalam;-inkscape-font-specification:Kalam-Regular;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="text7490"><tspan
+         x="0 9.5579996 17.568001 21.851999 29.952 39.546001 47.556"
+         y="0"
+         id="tspan7488">Science</tspan></text>
+    <path
+       d="m 266.497,124.551 h -77.729 v 33.007 h 77.729 z"
+       style="fill:none;stroke:#231f20;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       id="path7492" />
+    <g
+       id="g7494"
+       transform="translate(283.8011,620.7724)">
+      <path
+         d="m 0,0 v -75.501 h -133.47 v -49.273 H -282.63 V 0 Z"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="path7496" />
+    </g>
+    <g
+       id="g7498"
+       transform="translate(283.8011,620.7724)">
+      <path
+         d="m 0,0 v -75.501 h -133.47 v -49.273 H -282.63 V 0 Z"
+         style="fill:none;stroke:#231f20;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+         id="path7500" />
+    </g>
+    <text
+       xml:space="preserve"
+       transform="matrix(1,0,0,-1,10.6489,603.6943)"
+       style="font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:16px;font-family:'Minion Pro Cond Disp';-inkscape-font-specification:MinionPro-CnDisp;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="text7504"><tspan
+         x="0 4.0320001 11.056 14.72 20.927999 25.775999 36.543999 42.127998 46.175999 49.584 55.792 62.832001 65.391998 78.704002 84.400002 90.608002 95.120003 100.656 104.7024 108.1104 113.5648 119.3728 122.5248 125.0848 136.6848 143.80479 146.36481 159.6768 165.3712 171.57919 176.7312"
+         y="0"
+         id="tspan7502">Information Teoretical ML Teory</tspan></text>
+    <path
+       d="M 284.257,357.041 H 159.851 v 176.042 h 124.406 z"
+       style="fill:none;stroke:#231f20;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       id="path7506" />
+    <text
+       xml:space="preserve"
+       transform="matrix(1,0,0,-1,58.2871,520.7061)"
+       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.4094px;font-family:Kalam;-inkscape-font-specification:Kalam-Regular;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="text7510"><tspan
+         x="0 14.525017 26.39908"
+         y="0"
+         id="tspan7508">MDL</tspan></text>
+    <path
+       d="M 98.467,507.871 H 53.838 v 33.007 h 44.629 z"
+       style="fill:none;stroke:#231f20;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       id="path7512" />
+    <path
+       d="M 135.425,549.301 H 16.879 v 33.427 h 118.546 z"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#231f20;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       id="path7514" />
+    <text
+       xml:space="preserve"
+       transform="matrix(1,0,0,-1,22.5947,562.4277)"
+       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:Kalam;-inkscape-font-specification:Kalam-Regular;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="text7518"><tspan
+         x="0 9.7740002 20.718 31.5 39.762001 49.32 58.967999 67.410004 77.003998 86.598 94.751999"
+         y="0"
+         id="tspan7516">PAC-Shannon</tspan></text>
+  </g>
+</svg>

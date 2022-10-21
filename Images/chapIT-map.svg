@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg8204"
+   width="379.03201"
+   height="526.65997"
+   viewBox="0 0 379.03201 526.65997"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs8208">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath8220">
+      <path
+         d="M 0,394.995 H 284.274 V 0 H 0 Z"
+         id="path8218" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath8266">
+      <path
+         d="M 0,394.995 H 284.274 V 0 H 0 Z"
+         id="path8264" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath8288">
+      <path
+         d="M 0,394.995 H 284.274 V 0 H 0 Z"
+         id="path8286" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath8330">
+      <path
+         d="M 0,394.995 H 284.274 V 0 H 0 Z"
+         id="path8328" />
+    </clipPath>
+  </defs>
+  <g
+     id="g8210"
+     transform="matrix(1.3333333,0,0,-1.3333333,0,526.66)">
+    <path
+       d="m 0.125,0.125 h 283.12 V 167.07 H 0.125 Z"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="path8212" />
+    <g
+       id="g8214">
+      <g
+         id="g8216"
+         clip-path="url(#clipPath8220)">
+        <path
+           d="M 283.245,0.125 H 0.125 V 167.07 h 283.12 z"
+           style="fill:none;stroke:#231f20;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+           id="path8222" />
+      </g>
+    </g>
+    <text
+       xml:space="preserve"
+       transform="matrix(1,0,0,-1,6.187,11.7471)"
+       style="font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:16px;font-family:'Minion Pro Cond Disp';-inkscape-font-specification:MinionPro-CnDisp;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="text8226"><tspan
+         x="0 6.9439998 13.504 16.799999 21.52 25.408001 31.040001 41.824001 48.063999 51.216 57.599998 64.047997"
+         y="0"
+         id="tspan8224">Epistemology</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(1,0,0,-1,106.9468,28.7412)"
+       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:Kalam;-inkscape-font-specification:Kalam-Regular;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="text8230"><tspan
+         x="0 5.5799999 15.174 22.139999 30.24 34.650002 39.060001 43.344002 51.894001 59.993999 69.587997 77.598"
+         y="0"
+         id="tspan8228">Intelligence</tspan></text>
+    <path
+       d="M 204.4,15.825 H 95.19 V 48.832 H 204.4 Z"
+       style="fill:none;stroke:#231f20;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       id="path8232" />
+    <path
+       d="M 264.948,61.307 H 18.615 v 50.344 h 246.333 z"
+       style="fill:none;stroke:#231f20;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       id="path8234" />
+    <text
+       xml:space="preserve"
+       transform="matrix(1,0,0,-1,98.6509,82.8931)"
+       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:Kalam;-inkscape-font-specification:Kalam-Regular;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="text8238"><tspan
+         x="0 10.638 20.232 28.386 40.5 44.91 53.009998 61.992001 70.542"
+         y="0"
+         id="tspan8236">Knowledge</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(1,0,0,-1,204.5957,92.7891)"
+       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Kalam;-inkscape-font-specification:Kalam-Regular;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="text8244"><tspan
+         x="0 6.3720002 11.712 17.112 22.848 27.492001 30.348 35.688 41.316002"
+         y="0"
+         id="tspan8240">Sceptical</tspan><tspan
+         x="10.764 17.148001 20.004 25.403999"
+         y="17.4"
+         id="tspan8242">View</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(1,0,0,-1,198.7925,137.4673)"
+       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:Kalam;-inkscape-font-specification:Kalam-Regular;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="text8248"><tspan
+         x="0 9.5579996 17.568001 21.851999 29.952 39.546001 47.556"
+         y="0"
+         id="tspan8246">Science</tspan></text>
+    <path
+       d="m 265.485,124.551 h -77.729 v 33.007 h 77.729 z"
+       style="fill:none;stroke:#231f20;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       id="path8250" />
+    <g
+       id="g8252"
+       transform="translate(225.315,105.5142)">
+      <path
+         d="M 0,0 0.291,17.414 Z"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="path8254" />
+    </g>
+    <g
+       id="g8256"
+       transform="translate(225.3153,105.5141)">
+      <path
+         d="M 0,0 0.19,11.38"
+         style="fill:none;stroke:#231f20;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+         id="path8258" />
+    </g>
+    <g
+       id="g8260">
+      <g
+         id="g8262"
+         clip-path="url(#clipPath8266)">
+        <g
+           id="g8268"
+           transform="translate(225.6058,122.9282)">
+          <path
+             d="m 0,0 c 1.006,-2.856 2.745,-6.409 4.613,-8.625 l -4.727,1.799 -4.782,-1.641 C -2.956,-6.314 -1.1,-2.821 0,0"
+             style="fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path8270" />
+        </g>
+        <path
+           d="M 284.149,176.419 H 1.028 v 81.729 h 283.121 z"
+           style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#231f20;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+           id="path8272" />
+      </g>
+    </g>
+    <text
+       xml:space="preserve"
+       transform="matrix(1,0,0,-1,6.979,187.8467)"
+       style="font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:16px;font-family:'Minion Pro Cond Disp';-inkscape-font-specification:MinionPro-CnDisp;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="text8276"><tspan
+         x="0 7.2480001 12.912 19.808001 25.968 32.784 38.543999 44.448002"
+         y="0"
+         id="tspan8274">Language</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(1,0,0,-1,112.4331,224.8984)"
+       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:Kalam;-inkscape-font-specification:Kalam-Regular;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="text8280"><tspan
+         x="0 11.466 19.908001 28.35 36.450001 44.118 48.402 56.844002 66.438004 73.655998 79.236 88.830002 95.598 103.698 109.656 117.756 127.35 135.36"
+         y="0"
+         id="tspan8278">Bayesian Inference</tspan></text>
+    <g
+       id="g8282">
+      <g
+         id="g8284"
+         clip-path="url(#clipPath8288)">
+        <path
+           d="M 266.277,211.982 H 102.048 v 33.008 h 164.229 z"
+           style="fill:none;stroke:#231f20;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+           id="path8290" />
+        <g
+           id="g8292"
+           transform="translate(225.0028,156.7798)">
+          <path
+             d="M 0,0 0.112,54.178"
+             style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path8294" />
+        </g>
+        <g
+           id="g8296"
+           transform="translate(225.0028,156.7798)">
+          <path
+             d="M 0,0 0.1,48.143"
+             style="fill:none;stroke:#231f20;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path8298" />
+        </g>
+        <g
+           id="g8300"
+           transform="translate(225.1151,210.9575)">
+          <path
+             d="m 0,0 c 1.048,-2.843 2.838,-6.369 4.738,-8.558 l -4.752,1.731 -4.758,-1.711 C -2.864,-6.357 -1.059,-2.838 0,0"
+             style="fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path8302" />
+        </g>
+        <path
+           d="M 283.868,267.909 H 3.192 V 394.87 h 280.676 z"
+           style="fill:none;stroke:#231f20;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+           id="path8304" />
+        <path
+           d="M 191.871,329.323 H 18.784 v 33.427 h 173.087 z"
+           style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#231f20;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+           id="path8306" />
+      </g>
+    </g>
+    <text
+       xml:space="preserve"
+       transform="matrix(1,0,0,-1,33.5566,339.4521)"
+       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:Kalam;-inkscape-font-specification:Kalam-Regular;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="text8310"><tspan
+         x="0 9.5579996 19.205999 27.648001 37.242001 46.835999 54.990002 64.584 69.732002 77.400002 84.617996"
+         y="0"
+         id="tspan8308">Shannon’s 2</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(1,0,0,-1,128.6309,345.4463)"
+       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.494px;font-family:Kalam;-inkscape-font-specification:Kalam-Regular;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="text8314"><tspan
+         x="0 5.5933018"
+         y="0"
+         id="tspan8312">nd</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(1,0,0,-1,146.6784,339.4521)"
+       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:Kalam;-inkscape-font-specification:Kalam-Regular;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="text8318"><tspan
+         x="0 9.8280001 18.27"
+         y="0"
+         id="tspan8316">Law</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(1,0,0,-1,9.7749,375.75)"
+       style="font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:16px;font-family:'Minion Pro Cond Disp';-inkscape-font-specification:MinionPro-CnDisp;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="text8322"><tspan
+         x="0 4.0320001 11.056 14.72 20.927999 25.775999 36.5424 42.1264 46.1744 49.582401 55.790401 62.830399 65.390404 78.7024 84.396797 90.604797 95.756798"
+         y="0"
+         id="tspan8320">Information Teory</tspan></text>
+    <g
+       id="g8324">
+      <g
+         id="g8326"
+         clip-path="url(#clipPath8330)">
+        <g
+           id="g8332"
+           transform="translate(226.0697,245.5713)">
+          <path
+             d="m 0,0 -0.281,50.43 -27.471,0.309"
+             style="fill:none;stroke:#231f20;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path8334" />
+        </g>
+        <g
+           id="g8336"
+           transform="translate(192.2826,296.3774)">
+          <path
+             d="M 0,0 C 2.852,1.022 6.395,2.78 8.6,4.66 L 6.827,-0.077 8.493,-4.851 C 6.331,-2.922 2.828,-1.084 0,0"
+             style="fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path8338" />
+        </g>
+        <g
+           id="g8340"
+           transform="translate(225.8499,296.2461)">
+          <path
+             d="m 0,0 -0.279,50.43 -27.254,0.308"
+             style="fill:none;stroke:#231f20;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path8342" />
+        </g>
+        <g
+           id="g8344"
+           transform="translate(192.2826,347.0522)">
+          <path
+             d="M 0,0 C 2.852,1.021 6.395,2.779 8.601,4.659 L 6.827,-0.077 8.493,-4.851 C 6.331,-2.922 2.828,-1.084 0,0"
+             style="fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path8346" />
+        </g>
+        <path
+           d="M 191.297,283.335 H 18.21 v 33.427 h 173.087 z"
+           style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#231f20;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+           id="path8348" />
+      </g>
+    </g>
+    <text
+       xml:space="preserve"
+       transform="matrix(1,0,0,-1,36.5347,293.4639)"
+       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:Kalam;-inkscape-font-specification:Kalam-Regular;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="text8352"><tspan
+         x="0 9.5579996 19.205999 27.648001 37.242001 46.835999 54.990002 64.584 69.732002 77.400002 84.617996"
+         y="0"
+         id="tspan8350">Shannon’s 1</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(1,0,0,-1,126.8032,299.458)"
+       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.494px;font-family:Kalam;-inkscape-font-specification:Kalam-Regular;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="text8356"><tspan
+         x="0 4.4704442"
+         y="0"
+         id="tspan8354">st</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(1,0,0,-1,142.5525,293.4639)"
+       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:Kalam;-inkscape-font-specification:Kalam-Regular;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="text8360"><tspan
+         x="0 9.8280001 18.27"
+         y="0"
+         id="tspan8358">Law</tspan></text>
+  </g>
+</svg>

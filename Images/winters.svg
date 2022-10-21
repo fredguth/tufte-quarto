@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg69935"
+   width="1049.3333"
+   height="322.66666"
+   viewBox="0 0 1049.3333 322.66666"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs69939">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath69951">
+      <path
+         d="m 27.5,126.5 h 687"
+         clip-rule="evenodd"
+         id="path69949" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath69987">
+      <path
+         d="m 206.5,170.5 -6.3166,-14.3213 -3.8284,4.6213 -88.2171,-73.07013 -0.7701,-0.63789 -1.2758,1.54026 0.7701,0.63789 88.2179,73.06987 -3.827,4.6205 z"
+         id="path69985" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath69997">
+      <path
+         d="m 351.0565,87.68495 -15.2241,3.63672 3.857,4.5974 -87.7504,73.62993 -0.766,0.6428 1.2855,1.5321 0.7661,-0.6428 87.7503,-73.63075 3.8565,4.59595 z"
+         id="path69995" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath70007">
+      <path
+         d="m 641.0565,87.68495 -15.2241,3.63672 3.857,4.5974 -87.7504,73.62993 -0.766,0.6428 1.2855,1.5321 0.7661,-0.6428 87.7503,-73.63075 3.8565,4.59595 z"
+         id="path70005" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath70017">
+      <path
+         d="m 496.5,170.5 -6.3166,-14.3213 -3.8284,4.6213 -88.2171,-73.07013 -0.7701,-0.63789 -1.2758,1.54026 0.7701,0.63789 88.2179,73.06987 -3.827,4.6205 z"
+         id="path70015" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath70027">
+      <path
+         d="m 786.5,170.5 -6.3166,-14.3213 -3.8284,4.6213 -88.2171,-73.07013 -0.7701,-0.63789 -1.2758,1.54026 0.7701,0.63789 88.2179,73.06987 -3.827,4.6205 z"
+         id="path70025" />
+    </clipPath>
+  </defs>
+  <g
+     id="g69941"
+     transform="matrix(1.3333333,0,0,-1.3333333,0,322.66667)">
+    <g
+       id="g69943" />
+    <g
+       id="g69945">
+      <g
+         id="g69947"
+         clip-path="url(#clipPath69951)">
+        <path
+           d="m 22.5,131.5 h 697 v -10 h -697 z"
+           style="fill:#2a2929;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path69953" />
+      </g>
+    </g>
+    <g
+       id="g69955">
+      <g
+         id="g69957"
+         transform="matrix(1,0,0,-1,27,127)">
+        <path
+           d="m 0.5,0.5 h 687"
+           style="fill:none;stroke:#212020;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+           id="path69959" />
+      </g>
+      <g
+         id="g69961"
+         transform="matrix(1,0,0,-1,89.5,138.5)">
+        <path
+           d="m 0.5,0.5 v 23"
+           style="fill:none;stroke:#212020;stroke-width:3;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+           id="path69963" />
+      </g>
+      <g
+         id="g69965"
+         transform="matrix(1,0,0,-1,232,139)">
+        <path
+           d="m 0.5,0.5 v 23"
+           style="fill:none;stroke:#212020;stroke-width:3;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+           id="path69967" />
+      </g>
+      <g
+         id="g69969"
+         transform="matrix(1,0,0,-1,375,139)">
+        <path
+           d="m 0.5,0.5 v 23"
+           style="fill:none;stroke:#212020;stroke-width:3;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+           id="path69971" />
+      </g>
+      <g
+         id="g69973"
+         transform="matrix(1,0,0,-1,518,139)">
+        <path
+           d="m 0.5,0.5 v 23"
+           style="fill:none;stroke:#212020;stroke-width:3;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+           id="path69975" />
+      </g>
+      <g
+         id="g69977"
+         transform="matrix(1,0,0,-1,661,138.5)">
+        <path
+           d="m 0.5,0.5 v 23"
+           style="fill:none;stroke:#212020;stroke-width:3;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+           id="path69979" />
+      </g>
+    </g>
+    <g
+       id="g69981">
+      <g
+         id="g69983"
+         clip-path="url(#clipPath69987)">
+        <path
+           d="M 101.092,175.5 H 211.5 V 82.09198 H 101.092 Z"
+           style="fill:#423f3f;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path69989" />
+      </g>
+    </g>
+    <g
+       id="g69991">
+      <g
+         id="g69993"
+         clip-path="url(#clipPath69997)">
+        <path
+           d="M 337.0089,192.2723 356.8746,83.6662 264.991,66.85938 245.1254,175.4655 Z"
+           style="fill:#423f3f;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path69999" />
+      </g>
+    </g>
+    <g
+       id="g70001">
+      <g
+         id="g70003"
+         clip-path="url(#clipPath70007)">
+        <path
+           d="M 627.0089,192.2723 646.8746,83.6662 554.991,66.85938 535.1254,175.4655 Z"
+           style="fill:#423f3f;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path70009" />
+      </g>
+    </g>
+    <g
+       id="g70011">
+      <g
+         id="g70013"
+         clip-path="url(#clipPath70017)">
+        <path
+           d="M 391.092,175.5 H 501.5 V 82.09198 H 391.092 Z"
+           style="fill:#423f3f;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path70019" />
+      </g>
+    </g>
+    <g
+       id="g70021">
+      <g
+         id="g70023"
+         clip-path="url(#clipPath70027)">
+        <path
+           d="M 681.092,175.5 H 791.5 V 82.09198 H 681.092 Z"
+           style="fill:#423f3f;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path70029" />
+      </g>
+    </g>
+    <g
+       id="g70031">
+      <g
+         id="g70033"
+         transform="matrix(1,0,0,-1,13,74)">
+        <text
+           xml:space="preserve"
+           transform="translate(0,17)"
+           style="font-variant:normal;font-weight:bold;font-size:24px;font-family:'DIN Condensed';-inkscape-font-specification:DINCondensed-Bold;writing-mode:lr-tb;fill:#3d3b3b;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text70037"><tspan
+             x="0 8.9280005 17.856001 26.784 35.712002 40.175999 44.639999 54.408001 65.064003 75.720001 80.183998 84.648003 93.984001 102.288 111.168 120.504 125.4 134.28"
+             y="0"
+             id="tspan70035">1943: ANN invented</tspan></text>
+      </g>
+      <g
+         id="g70039"
+         transform="matrix(1,0,0,-1,290,79)">
+        <text
+           xml:space="preserve"
+           transform="translate(0,17)"
+           style="font-variant:normal;font-weight:bold;font-size:24px;font-family:'DIN Condensed';-inkscape-font-specification:DINCondensed-Bold;writing-mode:lr-tb;fill:#3d3b3b;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text70043"><tspan
+             x="0 8.9280005 17.856001 26.784 35.712002 40.175999 44.639999 54.863998 63.743999 72.335999 81.671997 91.008003 97.536003 106.416 115.752 124.632 133.968 142.84801 147.744 152.20799 161.088"
+             y="0"
+             id="tspan70041">1986: Backpropagation</tspan></text>
+      </g>
+      <g
+         id="g70045"
+         transform="matrix(1,0,0,-1,594,79)">
+        <text
+           xml:space="preserve"
+           transform="translate(0,17)"
+           style="font-variant:normal;font-weight:bold;font-size:24px;font-family:'DIN Condensed';-inkscape-font-specification:DINCondensed-Bold;writing-mode:lr-tb;fill:#3d3b3b;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text70049"><tspan
+             x="0 8.9280005 17.856001 26.784 35.712002 40.175999 44.639999 54.863998 63.743999 72.624001 81.959999 86.424004 95.304001 104.184 113.064 119.736 129.07201 133.536 142.87199"
+             y="0"
+             id="tspan70047">2009: Deep Learning</tspan></text>
+      </g>
+      <g
+         id="g70051"
+         transform="matrix(1,0,0,-1,476,209)">
+        <text
+           xml:space="preserve"
+           transform="translate(0,17)"
+           style="font-variant:normal;font-weight:bold;font-size:24px;font-family:'DIN Condensed';-inkscape-font-specification:DINCondensed-Bold;writing-mode:lr-tb;fill:#3d3b3b;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text70055"><tspan
+             x="0 8.9280005 17.856001 26.784 35.712002 40.175999 44.639999 54.383999 64.152 77.496002"
+             y="0"
+             id="tspan70053">1995: SVMs</tspan></text>
+      </g>
+      <g
+         id="g70057"
+         transform="matrix(1,0,0,-1,151,209)">
+        <text
+           xml:space="preserve"
+           transform="translate(0,17)"
+           style="font-variant:normal;font-weight:bold;font-size:24px;font-family:'DIN Condensed';-inkscape-font-specification:DINCondensed-Bold;writing-mode:lr-tb;fill:#3d3b3b;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text70061"><tspan
+             x="0 8.9280005 17.856001 26.784 35.712002 40.175999 44.639999 54.408001 65.064003 75.720001 80.183998 89.519997 93.984001 102.432 111.312 117.984 126.864 136.2 140.664 145.56 154.44"
+             y="0"
+             id="tspan70059">1970: ANN discredited</tspan></text>
+      </g>
+      <g
+         id="g70063"
+         transform="matrix(1,0,0,-1,-1,41)">
+        <text
+           xml:space="preserve"
+           transform="translate(0,16)"
+           style="font-variant:normal;font-weight:bold;font-size:24px;font-family:TektonPro;-inkscape-font-specification:TektonPro-Bold;writing-mode:lr-tb;fill:#3d3b3b;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text70067"><tspan
+             x="0 18.816 29.952 43.175999 54.528 59.688 64.848 76.487999 87.624001 99.047997 103.416 118.248 122.616 135.144"
+             y="0"
+             id="tspan70065">McCulloch &amp; Pi</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="translate(140.304,16)"
+           style="font-variant:normal;font-weight:bold;font-size:24px;font-family:TektonPro;-inkscape-font-specification:TektonPro-Bold;writing-mode:lr-tb;fill:#3d3b3b;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text70071"><tspan
+             x="0"
+             y="0"
+             id="tspan70069">t</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="translate(159.264,16)"
+           style="font-variant:normal;font-weight:bold;font-size:24px;font-family:TektonPro;-inkscape-font-specification:TektonPro-Bold;writing-mode:lr-tb;fill:#3d3b3b;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text70075"><tspan
+             x="0"
+             y="0"
+             id="tspan70073">s</tspan></text>
+      </g>
+      <g
+         id="g70077"
+         transform="matrix(1,0,0,-1,157,242)">
+        <text
+           xml:space="preserve"
+           transform="translate(0,16)"
+           style="font-variant:normal;font-weight:bold;font-size:24px;font-family:TektonPro;-inkscape-font-specification:TektonPro-Bold;writing-mode:lr-tb;fill:#3d3b3b;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text70081"><tspan
+             x="0 18.816 23.976 35.352001 47.400002 57.959999 69.264 73.632004 88.463997 92.832001 104.04 115.752 127.536 138.76801 147.98399"
+             y="0"
+             id="tspan70079">Minsky &amp; Papert</tspan></text>
+      </g>
+      <g
+         id="g70083"
+         transform="matrix(1,0,0,-1,286,41)">
+        <text
+           xml:space="preserve"
+           transform="translate(0.48,16)"
+           style="font-variant:normal;font-weight:bold;font-size:24px;font-family:TektonPro;-inkscape-font-specification:TektonPro-Bold;writing-mode:lr-tb;fill:#3d3b3b;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text70087"><tspan
+             x="0 14.616 25.968 43.655998 54.888 60.048 71.472 83.183998 92.400002 103.68 108.888 113.256 128.28 133.44 144.81599 155.856 167.664"
+             y="0"
+             id="tspan70085">Rumelhart, Hinton</tspan></text>
+      </g>
+      <g
+         id="g70089"
+         transform="matrix(1,0,0,-1,286,41)">
+        <text
+           xml:space="preserve"
+           transform="translate(39.948,40)"
+           style="font-variant:normal;font-weight:bold;font-size:24px;font-family:TektonPro;-inkscape-font-specification:TektonPro-Bold;writing-mode:lr-tb;fill:#3d3b3b;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text70093"><tspan
+             x="0 14.832 19.200001 37.944 43.104 48.264 53.424 58.584 70.295998 88.056"
+             y="0"
+             id="tspan70091">&amp; Williams</tspan></text>
+      </g>
+      <g
+         id="g70095"
+         transform="matrix(1,0,0,-1,629,41)">
+        <text
+           xml:space="preserve"
+           transform="translate(0.108,16)"
+           style="font-variant:normal;font-weight:bold;font-size:24px;font-family:TektonPro;-inkscape-font-specification:TektonPro-Bold;writing-mode:lr-tb;fill:#3d3b3b;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text70099"><tspan
+             x="0 15.024 20.184 31.559999 42.599998 54.408001"
+             y="0"
+             id="tspan70097">Hinton</tspan></text>
+      </g>
+      <g
+         id="g70101"
+         transform="matrix(1,0,0,-1,488,242)">
+        <text
+           xml:space="preserve"
+           transform="translate(0.204,16)"
+           style="font-variant:normal;font-weight:bold;font-size:24px;font-family:TektonPro;-inkscape-font-specification:TektonPro-Bold;writing-mode:lr-tb;fill:#3d3b3b;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text70105"><tspan
+             x="0 11.832 23.544001 35.495998 46.872002 52.032001"
+             y="0"
+             id="tspan70103">Vapnik</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

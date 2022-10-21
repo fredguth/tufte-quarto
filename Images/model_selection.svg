@@ -1,0 +1,967 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg62039"
+   width="439.99213"
+   height="143.54893"
+   viewBox="0 0 439.99213 143.54893"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs62043">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath62055">
+      <path
+         d="M 0,0 H 612 V 792 H 0 Z"
+         id="path62053" />
+    </clipPath>
+  </defs>
+  <g
+     id="g62045"
+     transform="matrix(1.3333333,0,0,-1.3333333,-133.70587,607.59013)">
+    <g
+       id="g62047" />
+    <g
+       id="g62049">
+      <g
+         id="g62051"
+         clip-path="url(#clipPath62055)">
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,445.2,689.714)"
+           style="font-variant:normal;font-weight:normal;font-size:9.9626px;font-family:'Minion Pro';-inkscape-font-specification:MinionPro-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62059"><tspan
+             x="0"
+             y="0"
+             id="tspan62057">�</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,114.839,439.584)"
+           style="font-variant:normal;font-weight:normal;font-size:9.9626px;font-family:'Minion Pro';-inkscape-font-specification:MinionPro-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62063"><tspan
+             x="0 3.1481817 49.265057 54.654823 58.93874 62.634865 66.918785 75.0383 79.272408 82.251228 86.485329 90.121681 96.039467 101.8377 104.35824 109.52882 113.68323 215.46115 224.26808 226.90817"
+             y="0"
+             id="tspan62061">IdParametersBlockMis</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,345.38353,439.584)"
+           style="font-variant:normal;font-weight:normal;font-size:9.9626px;font-family:'Minion Pro';-inkscape-font-specification:MinionPro-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62067"><tspan
+             x="0"
+             y="0"
+             id="tspan62065">�</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,350.59397,439.584)"
+           style="font-variant:normal;font-weight:normal;font-size:9.9626px;font-family:'Minion Pro';-inkscape-font-specification:MinionPro-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62071"><tspan
+             x="0 5.3001032 11.098336 13.618875 18.789463 22.943869"
+             y="0"
+             id="tspan62069">tBlock</tspan></text>
+        <g
+           id="g62073"
+           transform="translate(108.862,423.843)">
+          <path
+             d="M 0,0 H 36.913"
+             style="fill:none;stroke:#000000;stroke-width:0.398;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path62075" />
+        </g>
+        <g
+           id="g62077"
+           transform="translate(158.129,423.843)">
+          <path
+             d="M 0,0 H 153.843"
+             style="fill:none;stroke:#000000;stroke-width:0.398;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path62079" />
+        </g>
+        <g
+           id="g62081"
+           transform="translate(324.325,423.843)">
+          <path
+             d="M 0,0 H 96"
+             style="fill:none;stroke:#000000;stroke-width:0.398;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path62083" />
+        </g>
+        <g
+           id="g62085"
+           transform="translate(109.061,412.087)">
+          <path
+             d="M 0,0 V 11.955"
+             style="fill:none;stroke:#000000;stroke-width:0.398;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path62087" />
+        </g>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,115.437,415.674)"
+           style="font-variant:normal;font-size:9.9626px;font-family:'Minion Pro';-inkscape-font-specification:MinionPro-It;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62091"><tspan
+             x="0"
+             y="0"
+             id="tspan62089">L</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,120.936,415.674)"
+           style="font-variant:normal;font-weight:normal;font-size:9.9626px;font-family:MnSymbol10;-inkscape-font-specification:MnSymbol10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62095"><tspan
+             x="0"
+             y="0"
+             id="tspan62093">(</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,125.662,415.674)"
+           style="font-variant:normal;font-size:9.9626px;font-family:'Minion Pro';-inkscape-font-specification:MinionPro-It;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62099"><tspan
+             x="0"
+             y="0"
+             id="tspan62097">h</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,131.092,414.18)"
+           style="font-variant:normal;font-weight:normal;font-size:6.9738px;font-family:'Minion Pro';-inkscape-font-specification:MinionPro-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62103"><tspan
+             x="0"
+             y="0"
+             id="tspan62101">�</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,134.086,415.674)"
+           style="font-variant:normal;font-weight:normal;font-size:9.9626px;font-family:MnSymbol10;-inkscape-font-specification:MnSymbol10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62107"><tspan
+             x="0"
+             y="0"
+             id="tspan62105">)</tspan></text>
+        <g
+           id="g62109"
+           transform="translate(145.576,412.087)">
+          <path
+             d="M 0,0 V 11.955"
+             style="fill:none;stroke:#000000;stroke-width:0.398;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path62111" />
+        </g>
+        <g
+           id="g62113"
+           transform="translate(157.929,412.087)">
+          <path
+             d="M 0,0 V 11.955"
+             style="fill:none;stroke:#000000;stroke-width:0.398;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path62115" />
+        </g>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,164.306,415.674)"
+           style="font-variant:normal;font-size:9.9626px;font-family:'Minion Pro';-inkscape-font-specification:MinionPro-It;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62119"><tspan
+             x="0"
+             y="0"
+             id="tspan62117">L</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,169.805,415.674)"
+           style="font-variant:normal;font-weight:normal;font-size:9.9626px;font-family:MnSymbol10;-inkscape-font-specification:MnSymbol10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62123"><tspan
+             x="0"
+             y="0"
+             id="tspan62121">(</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,174.132,415.674)"
+           style="font-variant:normal;font-size:9.9626px;font-family:'Minion Pro';-inkscape-font-specification:MinionPro-It;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62127"><tspan
+             x="0"
+             y="0"
+             id="tspan62125">w</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,181.305,419.484)"
+           style="font-variant:normal;font-weight:normal;font-size:6.9738px;font-family:MnSymbol7;-inkscape-font-specification:MnSymbol7;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62131"><tspan
+             x="0"
+             y="0"
+             id="tspan62129">∗</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,181.146,413.211)"
+           style="font-variant:normal;font-weight:normal;font-size:6.9738px;font-family:'Minion Pro';-inkscape-font-specification:MinionPro-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62135"><tspan
+             x="0"
+             y="0"
+             id="tspan62133">�</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,186.092,415.674)"
+           style="font-variant:normal;font-weight:normal;font-size:9.9626px;font-family:MnSymbol10;-inkscape-font-specification:MnSymbol10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62139"><tspan
+             x="0"
+             y="0"
+             id="tspan62137">�</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,188.604,415.674)"
+           style="font-variant:normal;font-size:9.9626px;font-family:'Minion Pro';-inkscape-font-specification:MinionPro-It;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62143"><tspan
+             x="0"
+             y="0"
+             id="tspan62141">h</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,194.034,414.18)"
+           style="font-variant:normal;font-weight:normal;font-size:6.9738px;font-family:'Minion Pro';-inkscape-font-specification:MinionPro-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62147"><tspan
+             x="0"
+             y="0"
+             id="tspan62145">�</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,197.028,415.674)"
+           style="font-variant:normal;font-weight:normal;font-size:9.9626px;font-family:MnSymbol10;-inkscape-font-specification:MnSymbol10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62151"><tspan
+             x="0"
+             y="0"
+             id="tspan62149">)</tspan></text>
+        <g
+           id="g62153"
+           transform="translate(311.772,412.087)">
+          <path
+             d="M 0,0 V 11.955"
+             style="fill:none;stroke:#000000;stroke-width:0.398;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path62155" />
+        </g>
+        <g
+           id="g62157"
+           transform="translate(324.126,412.087)">
+          <path
+             d="M 0,0 V 11.955"
+             style="fill:none;stroke:#000000;stroke-width:0.398;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path62159" />
+        </g>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,330.502,415.674)"
+           style="font-variant:normal;font-size:9.9626px;font-family:'Minion Pro';-inkscape-font-specification:MinionPro-It;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62163"><tspan
+             x="0"
+             y="0"
+             id="tspan62161">L</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,336.002,415.674)"
+           style="font-variant:normal;font-weight:normal;font-size:9.9626px;font-family:MnSymbol10;-inkscape-font-specification:MnSymbol10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62167"><tspan
+             x="0"
+             y="0"
+             id="tspan62165">(</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,340.727,415.674)"
+           style="font-variant:normal;font-size:9.9626px;font-family:'Minion Pro';-inkscape-font-specification:MinionPro-It;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62171"><tspan
+             x="0"
+             y="0"
+             id="tspan62169">D</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,349.555,415.674)"
+           style="font-variant:normal;font-weight:normal;font-size:9.9626px;font-family:MnSymbol10;-inkscape-font-specification:MnSymbol10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62175"><tspan
+             x="0"
+             y="0"
+             id="tspan62173">�</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,353.144,415.674)"
+           style="font-variant:normal;font-size:9.9626px;font-family:'Minion Pro';-inkscape-font-specification:MinionPro-It;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62179"><tspan
+             x="0"
+             y="0"
+             id="tspan62177">w</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,360.318,419.484)"
+           style="font-variant:normal;font-weight:normal;font-size:6.9738px;font-family:MnSymbol7;-inkscape-font-specification:MnSymbol7;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62183"><tspan
+             x="0"
+             y="0"
+             id="tspan62181">∗</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,360.158,413.211)"
+           style="font-variant:normal;font-weight:normal;font-size:6.9738px;font-family:'Minion Pro';-inkscape-font-specification:MinionPro-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62187"><tspan
+             x="0"
+             y="0"
+             id="tspan62185">�</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,365.303,415.674)"
+           style="font-variant:normal;font-weight:normal;font-size:9.9626px;font-family:'Minion Pro';-inkscape-font-specification:MinionPro-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62191"><tspan
+             x="0"
+             y="0"
+             id="tspan62189">,</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,369.548,415.674)"
+           style="font-variant:normal;font-size:9.9626px;font-family:'Minion Pro';-inkscape-font-specification:MinionPro-It;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62195"><tspan
+             x="0"
+             y="0"
+             id="tspan62193">h</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,374.978,414.18)"
+           style="font-variant:normal;font-weight:normal;font-size:6.9738px;font-family:'Minion Pro';-inkscape-font-specification:MinionPro-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62199"><tspan
+             x="0"
+             y="0"
+             id="tspan62197">�</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,377.973,415.674)"
+           style="font-variant:normal;font-weight:normal;font-size:9.9626px;font-family:MnSymbol10;-inkscape-font-specification:MnSymbol10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62203"><tspan
+             x="0"
+             y="0"
+             id="tspan62201">)</tspan></text>
+        <g
+           id="g62205"
+           transform="translate(420.126,412.087)">
+          <path
+             d="M 0,0 V 11.955"
+             style="fill:none;stroke:#000000;stroke-width:0.398;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path62207" />
+        </g>
+        <g
+           id="g62209"
+           transform="translate(108.862,411.888)">
+          <path
+             d="M 0,0 H 36.913"
+             style="fill:none;stroke:#000000;stroke-width:0.398;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path62211" />
+        </g>
+        <g
+           id="g62213"
+           transform="translate(158.129,411.888)">
+          <path
+             d="M 0,0 H 153.843"
+             style="fill:none;stroke:#000000;stroke-width:0.398;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path62215" />
+        </g>
+        <g
+           id="g62217"
+           transform="translate(324.325,411.888)">
+          <path
+             d="M 0,0 H 96"
+             style="fill:none;stroke:#000000;stroke-width:0.398;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path62219" />
+        </g>
+        <g
+           id="g62221"
+           transform="translate(108.862,399.933)">
+          <path
+             d="M 0,0 H 36.913"
+             style="fill:none;stroke:#000000;stroke-width:0.398;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path62223" />
+        </g>
+        <g
+           id="g62225"
+           transform="translate(158.129,399.933)">
+          <path
+             d="M 0,0 H 105.225"
+             style="fill:none;stroke:#000000;stroke-width:0.398;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path62227" />
+        </g>
+        <g
+           id="g62229"
+           transform="translate(275.708,399.933)">
+          <path
+             d="M 0,0 H 120.707"
+             style="fill:none;stroke:#000000;stroke-width:0.398;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path62231" />
+        </g>
+        <g
+           id="g62233"
+           transform="translate(109.061,388.177)">
+          <path
+             d="M 0,0 V 11.955"
+             style="fill:none;stroke:#000000;stroke-width:0.398;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path62235" />
+        </g>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,115.437,391.763)"
+           style="font-variant:normal;font-size:9.9626px;font-family:'Minion Pro';-inkscape-font-specification:MinionPro-It;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62239"><tspan
+             x="0"
+             y="0"
+             id="tspan62237">L</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,120.936,391.763)"
+           style="font-variant:normal;font-weight:normal;font-size:9.9626px;font-family:MnSymbol10;-inkscape-font-specification:MnSymbol10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62243"><tspan
+             x="0"
+             y="0"
+             id="tspan62241">(</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,125.662,391.763)"
+           style="font-variant:normal;font-size:9.9626px;font-family:'Minion Pro';-inkscape-font-specification:MinionPro-It;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62247"><tspan
+             x="0"
+             y="0"
+             id="tspan62245">h</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,131.092,390.269)"
+           style="font-variant:normal;font-weight:normal;font-size:6.9738px;font-family:'Minion Pro';-inkscape-font-specification:MinionPro-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62251"><tspan
+             x="0"
+             y="0"
+             id="tspan62249">�</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,134.972,391.763)"
+           style="font-variant:normal;font-weight:normal;font-size:9.9626px;font-family:MnSymbol10;-inkscape-font-specification:MnSymbol10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62255"><tspan
+             x="0"
+             y="0"
+             id="tspan62253">)</tspan></text>
+        <g
+           id="g62257"
+           transform="translate(145.576,388.177)">
+          <path
+             d="M 0,0 V 11.955"
+             style="fill:none;stroke:#000000;stroke-width:0.398;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path62259" />
+        </g>
+        <g
+           id="g62261"
+           transform="translate(157.929,388.177)">
+          <path
+             d="M 0,0 V 11.955"
+             style="fill:none;stroke:#000000;stroke-width:0.398;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path62263" />
+        </g>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,164.306,391.763)"
+           style="font-variant:normal;font-size:9.9626px;font-family:'Minion Pro';-inkscape-font-specification:MinionPro-It;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62267"><tspan
+             x="0"
+             y="0"
+             id="tspan62265">L</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,169.805,391.763)"
+           style="font-variant:normal;font-weight:normal;font-size:9.9626px;font-family:MnSymbol10;-inkscape-font-specification:MnSymbol10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62271"><tspan
+             x="0"
+             y="0"
+             id="tspan62269">(</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,174.132,391.763)"
+           style="font-variant:normal;font-size:9.9626px;font-family:'Minion Pro';-inkscape-font-specification:MinionPro-It;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62275"><tspan
+             x="0"
+             y="0"
+             id="tspan62273">w</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,181.305,395.574)"
+           style="font-variant:normal;font-weight:normal;font-size:6.9738px;font-family:MnSymbol7;-inkscape-font-specification:MnSymbol7;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62279"><tspan
+             x="0"
+             y="0"
+             id="tspan62277">∗</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,181.146,389.301)"
+           style="font-variant:normal;font-weight:normal;font-size:6.9738px;font-family:'Minion Pro';-inkscape-font-specification:MinionPro-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62283"><tspan
+             x="0"
+             y="0"
+             id="tspan62281">�</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,186.092,391.763)"
+           style="font-variant:normal;font-weight:normal;font-size:9.9626px;font-family:MnSymbol10;-inkscape-font-specification:MnSymbol10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62287"><tspan
+             x="0"
+             y="0"
+             id="tspan62285">�</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,188.604,391.763)"
+           style="font-variant:normal;font-size:9.9626px;font-family:'Minion Pro';-inkscape-font-specification:MinionPro-It;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62291"><tspan
+             x="0"
+             y="0"
+             id="tspan62289">h</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,194.034,390.269)"
+           style="font-variant:normal;font-weight:normal;font-size:6.9738px;font-family:'Minion Pro';-inkscape-font-specification:MinionPro-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62295"><tspan
+             x="0"
+             y="0"
+             id="tspan62293">�</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,197.914,391.763)"
+           style="font-variant:normal;font-weight:normal;font-size:9.9626px;font-family:MnSymbol10;-inkscape-font-specification:MnSymbol10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62299"><tspan
+             x="0"
+             y="0"
+             id="tspan62297">)</tspan></text>
+        <g
+           id="g62301"
+           transform="translate(263.155,388.177)">
+          <path
+             d="M 0,0 V 11.955"
+             style="fill:none;stroke:#000000;stroke-width:0.398;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path62303" />
+        </g>
+        <g
+           id="g62305"
+           transform="translate(275.508,388.177)">
+          <path
+             d="M 0,0 V 11.955"
+             style="fill:none;stroke:#000000;stroke-width:0.398;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path62307" />
+        </g>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,281.884,391.763)"
+           style="font-variant:normal;font-size:9.9626px;font-family:'Minion Pro';-inkscape-font-specification:MinionPro-It;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62311"><tspan
+             x="0"
+             y="0"
+             id="tspan62309">L</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,287.384,391.763)"
+           style="font-variant:normal;font-weight:normal;font-size:9.9626px;font-family:MnSymbol10;-inkscape-font-specification:MnSymbol10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62315"><tspan
+             x="0"
+             y="0"
+             id="tspan62313">(</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,292.109,391.763)"
+           style="font-variant:normal;font-size:9.9626px;font-family:'Minion Pro';-inkscape-font-specification:MinionPro-It;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62319"><tspan
+             x="0"
+             y="0"
+             id="tspan62317">D</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,300.937,391.763)"
+           style="font-variant:normal;font-weight:normal;font-size:9.9626px;font-family:MnSymbol10;-inkscape-font-specification:MnSymbol10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62323"><tspan
+             x="0"
+             y="0"
+             id="tspan62321">�</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,304.527,391.763)"
+           style="font-variant:normal;font-size:9.9626px;font-family:'Minion Pro';-inkscape-font-specification:MinionPro-It;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62327"><tspan
+             x="0"
+             y="0"
+             id="tspan62325">w</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,311.7,395.574)"
+           style="font-variant:normal;font-weight:normal;font-size:6.9738px;font-family:MnSymbol7;-inkscape-font-specification:MnSymbol7;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62331"><tspan
+             x="0"
+             y="0"
+             id="tspan62329">∗</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,311.541,389.301)"
+           style="font-variant:normal;font-weight:normal;font-size:6.9738px;font-family:'Minion Pro';-inkscape-font-specification:MinionPro-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62335"><tspan
+             x="0"
+             y="0"
+             id="tspan62333">�</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,316.686,391.763)"
+           style="font-variant:normal;font-weight:normal;font-size:9.9626px;font-family:'Minion Pro';-inkscape-font-specification:MinionPro-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62339"><tspan
+             x="0"
+             y="0"
+             id="tspan62337">,</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,320.931,391.763)"
+           style="font-variant:normal;font-size:9.9626px;font-family:'Minion Pro';-inkscape-font-specification:MinionPro-It;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62343"><tspan
+             x="0"
+             y="0"
+             id="tspan62341">h</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,326.361,390.269)"
+           style="font-variant:normal;font-weight:normal;font-size:6.9738px;font-family:'Minion Pro';-inkscape-font-specification:MinionPro-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62347"><tspan
+             x="0"
+             y="0"
+             id="tspan62345">�</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,330.241,391.763)"
+           style="font-variant:normal;font-weight:normal;font-size:9.9626px;font-family:MnSymbol10;-inkscape-font-specification:MnSymbol10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62351"><tspan
+             x="0"
+             y="0"
+             id="tspan62349">)</tspan></text>
+        <g
+           id="g62353"
+           transform="translate(396.216,388.177)">
+          <path
+             d="M 0,0 V 11.955"
+             style="fill:none;stroke:#000000;stroke-width:0.398;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path62355" />
+        </g>
+        <g
+           id="g62357"
+           transform="translate(108.862,387.978)">
+          <path
+             d="M 0,0 H 36.913"
+             style="fill:none;stroke:#000000;stroke-width:0.398;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path62359" />
+        </g>
+        <g
+           id="g62361"
+           transform="translate(158.129,387.978)">
+          <path
+             d="M 0,0 H 105.225"
+             style="fill:none;stroke:#000000;stroke-width:0.398;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path62363" />
+        </g>
+        <g
+           id="g62365"
+           transform="translate(275.708,387.978)">
+          <path
+             d="M 0,0 H 120.707"
+             style="fill:none;stroke:#000000;stroke-width:0.398;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path62367" />
+        </g>
+        <g
+           id="g62369"
+           transform="translate(108.862,376.022)">
+          <path
+             d="M 0,0 H 36.913"
+             style="fill:none;stroke:#000000;stroke-width:0.398;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path62371" />
+        </g>
+        <g
+           id="g62373"
+           transform="translate(158.129,376.022)">
+          <path
+             d="M 0,0 H 129.534"
+             style="fill:none;stroke:#000000;stroke-width:0.398;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path62375" />
+        </g>
+        <g
+           id="g62377"
+           transform="translate(300.016,376.022)">
+          <path
+             d="M 0,0 H 84.443"
+             style="fill:none;stroke:#000000;stroke-width:0.398;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path62379" />
+        </g>
+        <g
+           id="g62381"
+           transform="translate(109.061,364.267)">
+          <path
+             d="M 0,0 V 11.955"
+             style="fill:none;stroke:#000000;stroke-width:0.398;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path62383" />
+        </g>
+        <path
+           d="m 109.26,364.267 h 36.116 v 11.955 H 109.26 Z"
+           style="fill:#ffffc7;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path62385" />
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,115.437,367.853)"
+           style="font-variant:normal;font-size:9.9626px;font-family:'Minion Pro';-inkscape-font-specification:MinionPro-It;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62389"><tspan
+             x="0"
+             y="0"
+             id="tspan62387">L</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,120.936,367.853)"
+           style="font-variant:normal;font-weight:normal;font-size:9.9626px;font-family:MnSymbol10;-inkscape-font-specification:MnSymbol10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62393"><tspan
+             x="0"
+             y="0"
+             id="tspan62391">(</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,125.662,367.853)"
+           style="font-variant:normal;font-size:9.9626px;font-family:'Minion Pro';-inkscape-font-specification:MinionPro-It;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62397"><tspan
+             x="0"
+             y="0"
+             id="tspan62395">h</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,131.092,366.359)"
+           style="font-variant:normal;font-weight:normal;font-size:6.9738px;font-family:'Minion Pro';-inkscape-font-specification:MinionPro-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62401"><tspan
+             x="0"
+             y="0"
+             id="tspan62399">�</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,134.882,367.853)"
+           style="font-variant:normal;font-weight:normal;font-size:9.9626px;font-family:MnSymbol10;-inkscape-font-specification:MnSymbol10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62405"><tspan
+             x="0"
+             y="0"
+             id="tspan62403">)</tspan></text>
+        <g
+           id="g62407"
+           transform="translate(145.576,364.267)">
+          <path
+             d="M 0,0 V 11.955"
+             style="fill:none;stroke:#000000;stroke-width:0.398;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path62409" />
+        </g>
+        <g
+           id="g62411"
+           transform="translate(157.929,364.267)">
+          <path
+             d="M 0,0 V 11.955"
+             style="fill:none;stroke:#000000;stroke-width:0.398;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path62413" />
+        </g>
+        <path
+           d="m 158.129,364.267 h 129.136 v 11.955 H 158.129 Z"
+           style="fill:#ffffc7;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path62415" />
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,164.306,367.853)"
+           style="font-variant:normal;font-size:9.9626px;font-family:'Minion Pro';-inkscape-font-specification:MinionPro-It;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62419"><tspan
+             x="0"
+             y="0"
+             id="tspan62417">L</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,169.805,367.853)"
+           style="font-variant:normal;font-weight:normal;font-size:9.9626px;font-family:MnSymbol10;-inkscape-font-specification:MnSymbol10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62423"><tspan
+             x="0"
+             y="0"
+             id="tspan62421">(</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,174.132,367.853)"
+           style="font-variant:normal;font-size:9.9626px;font-family:'Minion Pro';-inkscape-font-specification:MinionPro-It;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62427"><tspan
+             x="0"
+             y="0"
+             id="tspan62425">w</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,181.305,371.663)"
+           style="font-variant:normal;font-weight:normal;font-size:6.9738px;font-family:MnSymbol7;-inkscape-font-specification:MnSymbol7;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62431"><tspan
+             x="0"
+             y="0"
+             id="tspan62429">∗</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,181.146,365.391)"
+           style="font-variant:normal;font-weight:normal;font-size:6.9738px;font-family:'Minion Pro';-inkscape-font-specification:MinionPro-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62435"><tspan
+             x="0"
+             y="0"
+             id="tspan62433">�</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,186.092,367.853)"
+           style="font-variant:normal;font-weight:normal;font-size:9.9626px;font-family:MnSymbol10;-inkscape-font-specification:MnSymbol10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62439"><tspan
+             x="0"
+             y="0"
+             id="tspan62437">�</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,188.604,367.853)"
+           style="font-variant:normal;font-size:9.9626px;font-family:'Minion Pro';-inkscape-font-specification:MinionPro-It;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62443"><tspan
+             x="0"
+             y="0"
+             id="tspan62441">h</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,194.034,366.359)"
+           style="font-variant:normal;font-weight:normal;font-size:6.9738px;font-family:'Minion Pro';-inkscape-font-specification:MinionPro-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62447"><tspan
+             x="0"
+             y="0"
+             id="tspan62445">�</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,197.823,367.853)"
+           style="font-variant:normal;font-weight:normal;font-size:9.9626px;font-family:MnSymbol10;-inkscape-font-specification:MnSymbol10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62451"><tspan
+             x="0"
+             y="0"
+             id="tspan62449">)</tspan></text>
+        <g
+           id="g62453"
+           transform="translate(287.464,364.267)">
+          <path
+             d="M 0,0 V 11.955"
+             style="fill:none;stroke:#000000;stroke-width:0.398;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path62455" />
+        </g>
+        <g
+           id="g62457"
+           transform="translate(299.817,364.267)">
+          <path
+             d="M 0,0 V 11.955"
+             style="fill:none;stroke:#000000;stroke-width:0.398;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path62459" />
+        </g>
+        <path
+           d="m 300.016,364.267 h 84.045 v 11.955 h -84.045 z"
+           style="fill:#ffffc7;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path62461" />
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,306.193,367.853)"
+           style="font-variant:normal;font-size:9.9626px;font-family:'Minion Pro';-inkscape-font-specification:MinionPro-It;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62465"><tspan
+             x="0"
+             y="0"
+             id="tspan62463">L</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,311.693,367.853)"
+           style="font-variant:normal;font-weight:normal;font-size:9.9626px;font-family:MnSymbol10;-inkscape-font-specification:MnSymbol10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62469"><tspan
+             x="0"
+             y="0"
+             id="tspan62467">(</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,316.418,367.853)"
+           style="font-variant:normal;font-size:9.9626px;font-family:'Minion Pro';-inkscape-font-specification:MinionPro-It;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62473"><tspan
+             x="0"
+             y="0"
+             id="tspan62471">D</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,325.246,367.853)"
+           style="font-variant:normal;font-weight:normal;font-size:9.9626px;font-family:MnSymbol10;-inkscape-font-specification:MnSymbol10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62477"><tspan
+             x="0"
+             y="0"
+             id="tspan62475">�</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,328.836,367.853)"
+           style="font-variant:normal;font-size:9.9626px;font-family:'Minion Pro';-inkscape-font-specification:MinionPro-It;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62481"><tspan
+             x="0"
+             y="0"
+             id="tspan62479">w</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,336.009,371.663)"
+           style="font-variant:normal;font-weight:normal;font-size:6.9738px;font-family:MnSymbol7;-inkscape-font-specification:MnSymbol7;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62485"><tspan
+             x="0"
+             y="0"
+             id="tspan62483">∗</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,335.849,365.391)"
+           style="font-variant:normal;font-weight:normal;font-size:6.9738px;font-family:'Minion Pro';-inkscape-font-specification:MinionPro-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62489"><tspan
+             x="0"
+             y="0"
+             id="tspan62487">�</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,340.995,367.853)"
+           style="font-variant:normal;font-weight:normal;font-size:9.9626px;font-family:'Minion Pro';-inkscape-font-specification:MinionPro-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62493"><tspan
+             x="0"
+             y="0"
+             id="tspan62491">,</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,345.24,367.853)"
+           style="font-variant:normal;font-size:9.9626px;font-family:'Minion Pro';-inkscape-font-specification:MinionPro-It;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62497"><tspan
+             x="0"
+             y="0"
+             id="tspan62495">h</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,350.669,366.359)"
+           style="font-variant:normal;font-weight:normal;font-size:6.9738px;font-family:'Minion Pro';-inkscape-font-specification:MinionPro-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62501"><tspan
+             x="0"
+             y="0"
+             id="tspan62499">�</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,354.459,367.853)"
+           style="font-variant:normal;font-weight:normal;font-size:9.9626px;font-family:MnSymbol10;-inkscape-font-specification:MnSymbol10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text62505"><tspan
+             x="0"
+             y="0"
+             id="tspan62503">)</tspan></text>
+        <g
+           id="g62507"
+           transform="translate(384.26,364.267)">
+          <path
+             d="M 0,0 V 11.955"
+             style="fill:none;stroke:#000000;stroke-width:0.398;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path62509" />
+        </g>
+        <g
+           id="g62511"
+           transform="translate(108.862,364.067)">
+          <path
+             d="M 0,0 H 36.913"
+             style="fill:none;stroke:#000000;stroke-width:0.398;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path62513" />
+        </g>
+        <g
+           id="g62515"
+           transform="translate(158.129,364.067)">
+          <path
+             d="M 0,0 H 129.534"
+             style="fill:none;stroke:#000000;stroke-width:0.398;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path62517" />
+        </g>
+        <g
+           id="g62519"
+           transform="translate(300.016,364.067)">
+          <path
+             d="M 0,0 H 84.443"
+             style="fill:none;stroke:#000000;stroke-width:0.398;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path62521" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
