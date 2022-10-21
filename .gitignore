@@ -2,6 +2,7 @@
 /.quarto/
 *.tex
 *.cls
+*.toc
 *.bst
 *.pdf
 *.log
