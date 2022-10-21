@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.215">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>The emergence of
+an Information Bottleneck Theory
+of Deep Learning
+- 2&nbsp; Artificial Intelligence</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../Back/quarto-questions.html" rel="next">
+<link href="../Chapters/context.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="../site_libs/quarto-contrib/quarto-project/tufte/styles.css">
+</head>
+
+<body class="nav-sidebar floating slimcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-title">Artificial Intelligence</span></h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">The emergence of<br>
+an Information Bottleneck Theory<br>
+of Deep Learning<br>
+</a> 
+    </div>
+      </div>
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">Welcome</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Chapters/context.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introduction</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">Background</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Chapters/ai.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Artificial Intelligence</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">Tufte-Quarto</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Back/quarto-questions.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Questions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Back/todo.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">To-dos</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#artificial-intelligence" id="toc-artificial-intelligence" class="nav-link active" data-scroll-target="#artificial-intelligence">What is Artificial Intelligence?</a>
+  <ul class="collapse">
+  <li><a href="#what-is-intelligence" id="toc-what-is-intelligence" class="nav-link" data-scroll-target="#what-is-intelligence">What is intelligence?</a></li>
+  <li><a href="#intelligent-agents" id="toc-intelligent-agents" class="nav-link" data-scroll-target="#intelligent-agents">Intelligent Agents</a></li>
+  <li><a href="#a-strange-inversion-of-reasoning" id="toc-a-strange-inversion-of-reasoning" class="nav-link" data-scroll-target="#a-strange-inversion-of-reasoning">A strange inversion of reasoning</a></li>
+  </ul></li>
+  <li><a href="#dreaming-of-robots" id="toc-dreaming-of-robots" class="nav-link" data-scroll-target="#dreaming-of-robots">Dreaming of robots</a>
+  <ul class="collapse">
+  <li><a href="#from-mythology-to-logic" id="toc-from-mythology-to-logic" class="nav-link" data-scroll-target="#from-mythology-to-logic">From mythology to Logic</a></li>
+  <li><a href="#sec:rationalism" id="toc-sec:rationalism" class="nav-link" data-scroll-target="#sec\:rationalism">Rationalism: The Cartesian view of Nature</a></li>
+  <li><a href="#sec:empiricism" id="toc-sec:empiricism" class="nav-link" data-scroll-target="#sec\:empiricism">Empiricism: The sceptical view of Nature</a></li>
+  <li><a href="#the-birth-of-ai-as-a-research-field" id="toc-the-birth-of-ai-as-a-research-field" class="nav-link" data-scroll-target="#the-birth-of-ai-as-a-research-field">The birth of AI as a research field</a></li>
+  </ul></li>
+  <li><a href="#building-intelligent-agents" id="toc-building-intelligent-agents" class="nav-link" data-scroll-target="#building-intelligent-agents">Building Intelligent Agents</a>
+  <ul class="collapse">
+  <li><a href="#sec-anatomy_ia" id="toc-sec-anatomy_ia" class="nav-link" data-scroll-target="#sec-anatomy_ia">Anatomy of intelligent agents</a></li>
+  <li><a href="#symbolism" id="toc-symbolism" class="nav-link" data-scroll-target="#symbolism">Symbolism</a></li>
+  <li><a href="#connectionism-a-different-approach" id="toc-connectionism-a-different-approach" class="nav-link" data-scroll-target="#connectionism-a-different-approach">Connectionism: a different approach</a></li>
+  <li><a href="#machine-learning" id="toc-machine-learning" class="nav-link" data-scroll-target="#machine-learning">Machine Learning</a></li>
+  <li><a href="#types-of-learning" id="toc-types-of-learning" class="nav-link" data-scroll-target="#types-of-learning">Types of learning</a></li>
+  <li><a href="#deep-learning" id="toc-deep-learning" class="nav-link" data-scroll-target="#deep-learning">Deep Learning</a></li>
+  </ul></li>
+  <li><a href="#concluding-remarks" id="toc-concluding-remarks" class="nav-link" data-scroll-target="#concluding-remarks">Concluding Remarks</a>
+  <ul class="collapse">
+  <li><a href="#assumptions" id="toc-assumptions" class="nav-link" data-scroll-target="#assumptions">Assumptions</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content page-columns page-full column-body" id="quarto-document-content">
+
+<header id="title-block-header">
+<h1 class="title display-7"><span class="chapter-title">Artificial Intelligence</span></h1>
+
+</header>
+
+<p>This chapter defines artificial intelligence, presents the epistemological differences of intelligent agents in history, and discusses their consequences to machine learning theory.</p>
+<section id="artificial-intelligence" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="artificial-intelligence">What is Artificial Intelligence?</h2>
+<div id="def-ai" class="definition theorem definition">
+<p><span class="theorem-title"><strong>Definition 2.1 </strong></span><strong>AI</strong> is the branch of Computer Science that studies general principles of intelligent agents and how to construct them&nbsp;<span class="citation" data-cites="russell2010">(<a href="#ref-russell2010" role="doc-biblioref">Russell, Norvig, and Davis 2010</a>)</span>.</p>
+</div>
+<p>This definition uses the terms <em>intelligence</em> and <em>intelligent agents</em>, so let us start from them.</p>
+<section id="what-is-intelligence" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="what-is-intelligence">What is intelligence?</h3>
+<div class="page-columns page-full"><p>Despite a long history of research, there is still no consensual definition of intelligence.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> Whatever it is, though, humans are particularly proud of it. We even call our species <em>homo sapiens</em>, as intelligence was an intrinsic human characteristic.</p><div class="no-row-height column-margin column-container"><li id="fn1"><p><sup>1</sup>&nbsp;For a list with 70 definitions of intelligence, see&nbsp;<span class="citation" data-cites="legg2007">Legg and Hutter (<a href="#ref-legg2007" role="doc-biblioref">2007</a>)</span>.</p></li></div></div>
+<p>In this dissertation:</p>
+<div id="def-intelligence" class="definition theorem definition">
+<p><span class="theorem-title"><strong>Definition 2.2 </strong></span><strong>Intelligence</strong> is the ability to predict a course of action to achieve success in specific goals.</p>
+</div>
+</section>
+<section id="intelligent-agents" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="intelligent-agents">Intelligent Agents</h3>
+<div class="page-columns page-full"><p>Under our generous definition, intelligence is not limited to humans. It applies to any agent<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>: animal or machine. For example, a bacteria can perceive its environment through chemical signals, process them, and then produce chemicals to signal other bacteria. An air-conditioning can observe temperature changes, know its state, and adapt its functioning, turning off if it is cold or on if it is hot — <em>intelligence exempts understanding</em>. The air-conditioning does not comprehend what it is doing. The same way a calculator does not know arithmetics.</p><div class="no-row-height column-margin column-container"><li id="fn2"><p><sup>2</sup>&nbsp;An agent is anything that perceives its environment and acts on it.</p></li></div></div>
+</section>
+<section id="a-strange-inversion-of-reasoning" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="a-strange-inversion-of-reasoning">A strange inversion of reasoning</h3>
+<div class="page-columns page-full"><p>This competence without comprehension is what the philosopher Daniel Dennett calls <em>Turing’s strange inversion of reasoning</em><a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a><span id="turing_strange_inversion" label="turing_strange_inversion"></span>. The idea of a <em>strange inversion</em> comes from one of Darwin’s 19<sup>th</sup>-century critics <span class="citation" data-cites="mackenzie1868">Dennett (<a href="#ref-dennett2009" role="doc-biblioref">2009</a>)</span>:</p><div class="no-row-height column-margin column-container"><li id="fn3"><p><sup>3</sup>&nbsp;In his work, Turing discusses if computers can “think”, meaning to examine if they can perform indistinguishably from the way thinkers do.</p></li></div></div>
+<blockquote class="blockquote">
+<p>‘In the theory with which we have to deal, Absolute Ignorance is the artificer; so that we may enunciate as the fundamental principle of the whole system, that, <strong>in order to make a perfect and beautiful machine, it is not requisite to know how to make it</strong>. This proposition will be found, on careful examination, to express, in condensed form, the essential purport of the [Evolution] Theory, and to express in a few words all Mr Darwin’s meaning; who, by <strong>a strange inversion of reasoning</strong>, seems to think Absolute Ignorance fully qualified to take the place of Absolute Wisdom in all of the achievements of creative skill.’ — Robert MacKenzie<br>
+</p>
+</blockquote>
+<p>Counterintuitively to &nbsp;<span class="citation" data-cites="mackenzie1868">MacKenzie (<a href="#ref-mackenzie1868" role="doc-biblioref">1868</a>)</span> and many others to this date, intelligence can emerge from absolute ignorance. Turing’s strange inversion of reasoning comes from the realisation that his automata can perform calculations by symbol manipulation, proving that it is possible to build agents that behave intelligently, even if they are entirely ignorant of the meaning of what they are doing&nbsp;<span class="citation" data-cites="turing2007">(<a href="#ref-turing2007" role="doc-biblioref">Turing 2007</a>)</span>.</p>
+</section>
+</section>
+<section id="dreaming-of-robots" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="dreaming-of-robots">Dreaming of robots</h2>
+<section id="from-mythology-to-logic" class="level3">
+<h3 class="anchored" data-anchor-id="from-mythology-to-logic">From mythology to Logic</h3>
+<p>The idea of creating an intelligent agent is perhaps as old as humans. There are accounts of artificial intelligence in almost any ancient mythology: Greek, Etruscan, Egyptian, Hindu, Chinese&nbsp;<span class="citation" data-cites="mayor2018">(<a href="#ref-mayor2018" role="doc-biblioref">Mayor 2018</a>)</span>. For example, in Greek mythology, the story of the bronze automaton of Talos built by Hephaestus, the god of invention and blacksmithing, first mentioned around 700 BC.</p>
+<p>This interest may explain why, since ancient times, philosophers have looked for <em>mechanical</em> methods of reasoning. Chinese, Indian and Greek philosophers all developed formal deduction in the first millennium BC.In particular, Aristotelian syllogism, <em>laws of thought</em>, provided patterns for argument structures to yield irrefutable conclusions, given correct premises. These ancient developments were the beginning of the field we now call <em>Logic</em>.</p>
+</section>
+<section id="sec:rationalism" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="sec:rationalism">Rationalism: The Cartesian view of Nature</h3>
+<div class="page-columns page-full">
+
+<div class="no-row-height column-margin column-container"><div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../Images/ars_magna_disc.svg" class="img-fluid figure-img"></p>
+</figure>
+</div></div><p>Example of Lull’s Ars Magna’s paper discs.</p>
+</div>
+<p>In the 13<sup>th</sup> century, the Catalan philosopher Ramon Lull wanted to produce all statements the human mind can think. For this task, he developed <em>logic paper machines</em>, discs of paper filled with esoteric coloured diagrams that connected symbols representing statements. Unfortunately, according to&nbsp;<span class="citation" data-cites="gardner1959">Gardner (<a href="#ref-gardner1959" role="doc-biblioref">1959</a>)</span>, in a modern reassessment of his work, <em>“it is impossible, perhaps, to avoid a strong sense of anticlimax”</em>. With megalomaniac self-esteem that suggests psychosis, his delusional sense of importance is more characteristic of cult founders. On the bright side, his ideas and books exerted some magic appeal that helped them be rapidly disseminated through all Europe.</p>
+<p>Lull’s work greatly influenced Leibniz and Descartes, who, in the 17<sup>th</sup>century, believed that all rational thought could be mechanised. This belief was the basis of <strong>rationalism</strong>, the epistemic view of the <em>Enlightenment</em> that regarded reason as the sole source of knowledge. In other words, they believed that reality has a logical structure and that certain truths are <em>self-evident</em>, and all truths can be derived from them.</p>
+<p>There was considerable interest in developing artificial languages during this period. Nowadays, they are called formal languages.</p>
+<blockquote class="blockquote">
+<p>‘If controversies were to arise, there would be no more need for disputation between two philosophers than between two accountants. For it would suffice to take their pencils in their hands, to sit down to their slates, and to say to each other: <em>Let us calculate.</em>’</p>
+<p>— Gottfried Leibniz</p>
+</blockquote>
+<p>The rationalist view of the world has had an enduring impact on society until today. In the 19<sup>th</sup>century, George Boole and others developed a precise notation for statements about all kinds of objects in Nature and their relations. Before them, Logic was philosophical rather than mathematical. The name of Boole’s masterpiece, <em>“The Laws of Thought”</em>, is an excellent indicator of his Cartesian worldview.</p>
+<p>At the beginning of the 20<sup>th</sup> century, some of the most famous mathematicians, David Hilbert, Bertrand Russel, Alfred Whitehead, were still interested in formalism: they wanted mathematics to be formulated on a solid and complete logical foundation. In particular, Hilbert’s <em>Entscheidungs Problem</em> (decision problem) asked if there were limits to mechanical Logic proofs&nbsp;<span class="citation" data-cites="chaitin2006">(<a href="#ref-chaitin2006" role="doc-biblioref">Chaitin 2006</a>)</span>.</p>
+<p>Kurt Gödel’s incompleteness theorem (1931) proved that any language expressive enough to describe arithmetics of the natural numbers is either incomplete or inconsistent. This theorem imposes a limit on logic systems. There will always be truths that will not be provable from within such languages: there are “true” statements that are undecidable.</p>
+<p>Alan Turing brought a new perspective to the <em>Entscheidungs Problem</em>: a function on natural numbers that an algorithm in a formal language cannot represent cannot be computable&nbsp;<span class="citation" data-cites="chaitin2006">(<a href="#ref-chaitin2006" role="doc-biblioref">Chaitin 2006</a>)</span>. Gödel’s limit appears in this context as functions that are not computable, &nbsp;no algorithm can decide whether another algorithm will stop or not (the halting problem). To prove that, Turing developed a whole new general theory of computation: what is computable and how to compute it, laying out a blueprint to build computers, and making possible Artificial Intelligence research as we know it. An area in which Turing himself was very much invested.</p>
+</section>
+<section id="sec:empiricism" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="sec:empiricism">Empiricism: The sceptical view of Nature</h3>
+
+<div class="no-row-height column-margin column-container"><div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../Images/hume.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">David Hume, Scottish Enlighten- ment philosopher, historian, economist, librarian and essayist.</figcaption><p></p>
+</figure>
+</div></div><div class="page-columns page-full"><p>The response to <strong>rationalism</strong> was <strong>empiricism</strong>, the epistemological view that knowledge comes from sensory experience, our perceptions of the world. Locke explains this with the peripatetic axiom<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>: <em>“there is nothing in the intellect that was not previously in the senses”</em>&nbsp;<span class="citation" data-cites="williams2020">(<a href="#ref-williams2020" role="doc-biblioref">Uzgalis 2020</a>)</span>. Bacon, Locke and Hume were great exponents of this movement, which established the grounds of the scientific method.</p><div class="no-row-height column-margin column-container"><li id="fn4"><p><sup>4</sup>&nbsp;This citation is the principle from the Peripatetic school of Greek philosophy and is found in Thomas Aquinas’ work cited by Locke.</p></li></div></div>
+<p>David Hume, in particular, presented in the 18<sup>th</sup> century a radical empiricist view: reason only does not lead to knowledge. In&nbsp;<span class="citation" data-cites="hume2009">(<a href="#ref-hume2009" role="doc-biblioref">Hume 2009</a>)</span>, Hume distinguishes <em>relations of ideas</em>, propositions that derive from deduction and <em>matters of facts</em>, which rely on the connection of cause and effect through experience (induction). Hume’s critiques, known as <em>the Problem of Induction</em>, added a new slant on the debate of the emerging scientific method.</p>
+<p>From Hume’s own words:</p>
+<blockquote class="blockquote">
+<p>‘The bread, which I formerly eat, nourished me; that is, a body of such sensible qualities was, at that time, endued with such secret powers: but does it follow, that other bread must also nourish me at another time, and that like sensible qualities must always be attended with like secret powers? The consequence seems nowise necessary.’</p>
+<p>— David Hume</p>
+</blockquote>
+<div class="page-columns page-full"><p>There is no logic to deduce that the future will resemble the past. Still, we expect uniformity in Nature. As we see more examples of something happening, it is <em>wise</em> to expect that it will happen in the future just as it did in the past. There is, however, no <em>rationality</em><a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> in this expectation.</p><div class="no-row-height column-margin column-container"><li id="fn5"><p><sup>5</sup>&nbsp;In the philosophical sense.</p></li></div></div>
+<p>Hume explains that we see conjunction repeatedly, “bread” and “nourish”, and we expect <em>uniformity in Nature</em>; we hope that “nourish” will always follow “eating bread”; When we fulfil this expectancy, we misinterpret it as causation. In other words, we <em>project</em> causation into phenomena. Hume explained that this connection does not exist in Nature. We do not “see causation”; we create it.</p>
+<p>This projection is <em>Hume’s strange inversion of reasoning</em>&nbsp;<span class="citation" data-cites="huebner2017">(<a href="#ref-huebner2017" role="doc-biblioref">Huebner 2017</a>)</span>: We do not like sugar because it is sweet; sweetness exists because we like (or need) it. There is no sweetness in honey.<span id="honey" label="honey"></span> We wire our brain so that glucose triggers a labelled desire we call sweetness. As we will see later, sweetness is <em>information</em>. This insight shows the pattern matching nature of humans. Musicians have relied on this for centuries. Music is a sequence of sounds in which we expect a pattern. The expectancy is the tension we feel while the chords progress. When the progression finally <em>resolves</em>, forming a pattern, we release the tension. We feel pattern matching in our core. It is very human, it can be beneficial and wise, but it is, <em>stricto sensu</em>, <em>irrational</em>.</p>
+<p>The epistemology of the sceptical view of Nature is science: to weigh one’s beliefs to the evidence. Knowledge is not absolute truth but justified belief. It is a Babylonian epistemology.</p>
+<div class="page-columns page-full"><p>In rationalism, Logic connects knowledge and good actions. In empiricism, the connection between knowledge and justifiable actions is determined by probability. More specifically, Bayes’ theorem. As Jaynes puts it, probability theory is the “Logic of Science”&nbsp;. <a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a></p><div class="no-row-height column-margin column-container"><li id="fn6"><p><sup>6</sup>&nbsp;The Bayes’ theorem is attributed to the Reverend Thomas Bayes after the posthumous publication of his work. By the publication time, it was an already known theorem, derived by Laplace.</p></li></div></div>
+</section>
+<section id="the-birth-of-ai-as-a-research-field" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="the-birth-of-ai-as-a-research-field">The birth of AI as a research field</h3>
+<p>In 1943, McCulloch and Pitts, a neurophysiologist and a logician, demonstrated that neuron-like electronic units could be wired together, act and interact by physiologically plausible principles and perform complex logical calculations&nbsp;<span class="citation" data-cites="russell2010">(<a href="#ref-russell2010" role="doc-biblioref">Russell, Norvig, and Davis 2010</a>)</span>. Moreover, they showed that any computable function could be computed by some network of connected neurons&nbsp;<span class="citation" data-cites="mcculloch1943">(<a href="#ref-mcculloch1943" role="doc-biblioref">McCulloch and Pitts 1943</a>)</span>. Their work marks the birth of <span data-acronym-label="ANN" data-acronym-form="plural+full">ANNs</span>, even before the field of AI had this name. It was also the birth of <strong>Connectionism</strong>, using artificial neural networks, loosely inspired by biology, to explain mental phenomena and imitate intelligence.</p>
+
+<div class="no-row-height column-margin column-container"><div id="fig-claude-shannon" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="../Images/shannon.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;2.1: Claude Shannon, father of “information theory”.</figcaption><p></p>
+</figure>
+</div></div><p>Their work inspired John von Neumann’s demonstration of how to create a universal Turing machine out of electronic components, which lead to the advent of computers and programming languages. Ironically, these advents hastened the ascent of the formal logicist approach called <strong>Symbolism</strong>, disregarding Connectionism.</p>
+<p>In 1956, John McCarthy, Claude Shannon (who invented Information Theory, <a href="#fig-claude-shannon">Figure&nbsp;<span>2.1</span></a>), Marvin Minsky and Nathaniel Rochester organised a 2-month summer workshop in Dartmouth College to bring researchers of different fields concerned with <em>“thinking machines”</em> (cybernetics, information theory, automata theory). The workshop attendees became a community of researchers and chose the term <em>“artificial intelligence”</em> for the field.</p>
+<div id="blind-men" class="column-body-outset">
+<p><br> <br></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../Images/elephant.svg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">The Blind Men and the Elephant.</figcaption><p></p>
+</figure>
+</div>
+</div>
+<blockquote class="blockquote">
+<p>It was six men of Indostan<br>
+To learning much inclined,<br>
+Who went to see the Elephant<br>
+(Though all of them were blind),<br>
+That each by observation<br>
+Might satisfy his mind<br>
+<br>
+—John Godfrey Saxe,<br>
+<em>The Blind Men and the Elephant</em></p>
+</blockquote>
+<div style="page-break-after: always;"></div>
+</section>
+</section>
+<section id="building-intelligent-agents" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="building-intelligent-agents">Building Intelligent Agents</h2>
+<section id="sec-anatomy_ia" class="level3">
+<h3 class="anchored" data-anchor-id="sec-anatomy_ia">Anatomy of intelligent agents</h3>
+<!-- ::: {.column-body .content-hidden unless-format="pdf" #fig-anatomy width=60%}
+
+![](/Images/anatomy.pdf)
+
+Anatomy of an Intelligent Agent. Inspired by art in @russell2010.
+
+:::
+
+::: {.column-body .content-hidden unless-format="html" #fig-anatomy width=60%}
+
+![](/Images/anatomy.svg)
+
+Anatomy of an Intelligent Agent. Inspired by art in @russell2010.
+
+::: -->
+<p>Like the blind men in the parable, an intelligent agent shall model her understanding of Nature from limited sensory data.</p>
+<p>Thus, an agent perceives her environment with sensors, treat sensory data as facts and use these facts to possibly update her model of Nature, use the model to decide her actions, and acts via her actuators. In a way, agents continually communicate with Nature in a perception/action conversation <span class="quarto-unresolved-ref">?fig-anatomy</span>.</p>
+<p>The expected result of this conversation is a change in the agent’s <span data-acronym-label="KB" data-acronym-form="singular+full">KB</span>, therefore in her model and, more importantly, her future decisions. The model is an abstraction of how the agent “thinks” the world is (her “mental picture” of the environment). Therefore, it should be consistent with it: if something is true in Nature, it is equally valid, <em>mutatis mutandis</em>, in the model. A Model should also be as simple as possible so that the agent can make decisions that maximise a chosen performance measure, but not simpler. As the agent knows more about Nature, less it gets surprised by it.</p>
+<p>This rudimentary anatomy is flexible enough to entail different epistemic views, like the rationalist (mathematical) and the empiricist (scientific); different approaches to how to implement the knowledge base (it can be learned, therefore updatable, or it can be set in stone from an expert prior knowledge); and also from how to implement it (a robot or software).</p>
+<p>Noteworthy, though, is that the model that transforms input data into decisions should be the target of our focus.</p>
+</section>
+<section id="symbolism" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="symbolism">Symbolism</h3>
+<p>Symbolism is the pinnacle of rationalism. In the words of Thomas Hobbes, one of the forerunners of rationalism, <em>“thinking is the manipulation of symbols and reasoning is computation”.</em> Symbolism is the approach to building intelligent agents that does just that. It attempts to represent knowledge with a formal language and explicitly connects the knowledge with actions. It is <em>competence from comprehension</em>. In other words, it is <em>programmed</em>.</p>
+<p>Even though McCulloch and Pitts work on artificial neural networks predates Von Neumann’s computers, Symbolism dominated <span data-acronym-label="AI" data-acronym-form="singular+short">AI</span> until the <span class="math inline">\(1980\)</span>s. It was so ubiquitous that symbolic <span data-acronym-label="AI" data-acronym-form="singular+short">AI</span> is even called “good old fashioned AI”&nbsp;<span class="citation" data-cites="russell2010">(<a href="#ref-russell2010" role="doc-biblioref">Russell, Norvig, and Davis 2010</a>)</span>.</p>
+<p>The symbolic approach can be traced back to Nichomachean Ethics&nbsp;<span class="citation" data-cites="aristotle2000">(<a href="#ref-aristotle2000" role="doc-biblioref">Aristotle 2000</a>)</span>:</p>
+<blockquote class="blockquote">
+<p>‘We deliberate not about ends but means. For a doctor does not deliberate whether he shall heal, nor an orator whether he shall persuade, nor a statesman whether he shall produce law and order, nor does anyone else deliberate about his end. They assume the end and consider how and by what means it is to be attained; and if it seems to be produced by several means, they consider by which it is most easily and best produced, while if it is achieved by one only they consider how it will be achieved by this and by what means this will be achieved, till they come to the first cause, which in the order of discovery is last.’</p>
+<p>— Aristotle&nbsp;</p>
+</blockquote>
+<p>This perspective is so entrenched that&nbsp;<span class="citation" data-cites="russell2010">Russell, Norvig, and Davis (<a href="#ref-russell2010" role="doc-biblioref">2010, 7</a>)</span> still says: <em>“(<span class="math inline">\(\ldots\)</span>) Only by understanding how actions can be justified can we understand how to build an agent whose actions are justifiable”</em>; even though, in the same book, they cover machine learning (which we will address later in this chapter) without noticing it is proof that there are other ways to build intelligent agents. Moreover, it is also a negation of competence without comprehension. It seems that even for AI researchers, the strange inversion of reasoning is uncomfortable ([[ch:introduction]][3]).</p>
+<p>All humans, even those in prisons and under mental health care, think their actions are justifiable. Is that not an indication that we rationalise our actions <em>ex post facto</em>? We humans tend to think our rational assessments lead to actions, but it is also likely possible that we act and then rationalise afterwards to justify what we have done, fullheartedly believing that the rationalisation came first.</p>
+<p><strong>Claude Shannon’s Theseus</strong></p>
+<div class="page-columns page-full"><p>After writing what is probably the most important master’s dissertation of the 20<sup>th</sup> century and “inventing” <span data-acronym-label="IT" data-acronym-form="singular+long">IT</span>, what made possible the Information Age we live in today, Claude Shannon enjoyed the freedom to pursue any interest to which his curious mind led him&nbsp;<span class="citation" data-cites="soni2017">(<a href="#ref-soni2017" role="doc-biblioref">Soni and Goodman 2017</a>)</span>. In the <span class="math inline">\(1950\)</span>s, his interest shifted to building artificial intelligence. He was not a typical academic, in any case. A lifelong tinkerer, he liked to “think” with his hand as much as with his mind. Besides developing an algorithm to play chess (when he even did not have a computer to run it), one of his most outstanding achievements in AI was Theseus, a robotic maze-solving mouse.<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a></p><div class="no-row-height column-margin column-container"><li id="fn7"><p><sup>7</sup>&nbsp;Many AI students will recognise in Theseus the inspiration to Russel and Norvig’s Wumpus World.</p></li></div></div>
+<p>To be more accurate, Theseus was just a bar magnet covered with a sculpted wooden mouse with copper whiskers; the maze was the “brain” that solved itself&nbsp;<span class="citation" data-cites="klein2018">(<a href="#ref-klein2018" role="doc-biblioref">Klein 2018</a>)</span>.</p>
+<blockquote class="blockquote">
+<p>‘Under the maze, an electromagnet mounted on a motor-­powered carriage can move north, south, east, and west; as it moves, so does Theseus. Each time its copper whiskers touch one of the metal walls and complete the electric circuit, two things happen. First, the corresponding relay circuit’s switch flips from “on” to “off,” recording that space as having a wall on that side. Then Theseus rotates <span class="math inline">\(90^{\circ}\)</span> clockwise and moves forward. In this way, it systematically moves through the maze until it reaches the target, recording the exits and walls for each square it passes through.’</p>
+<p>— Martin Klein</p>
+</blockquote>
+<p><strong>Symbolic AI problems</strong></p>
+<p>Several symbolic AI projects sought to hard-code knowledge about domains in formal languages, but it has always been a costly, slow process that could not scale.</p>
+<div class="page-columns page-full"><p>Anyhow, by <span class="math inline">\(1965\)</span>, there were already programs that could solve any solvable problem described in logical notation&nbsp;<span class="citation" data-cites="russell2010">(<a href="#ref-russell2010" role="doc-biblioref">Russell, Norvig, and Davis 2010, 4</a>)</span>. However, hubris and lack of philosophical perspective made computer scientists believe that “intelligence was a problem about to be solved<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a>.”</p><div class="no-row-height column-margin column-container"><li id="fn8"><p><sup>8</sup>&nbsp;Marvin Minsky, head of the artificial intelligence laboratory at MIT (<span class="math inline">\(1967\)</span>)</p></li></div></div>
+<div class="page-columns page-full"><p>Those inflated expectations lead to disillusionment and funding cuts<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a>&nbsp;<span class="citation" data-cites="russell2010">(<a href="#ref-russell2010" role="doc-biblioref">Russell, Norvig, and Davis 2010</a>)</span>. They failed to estimate the inherent difficulty in slating informal knowledge in formal terms: the world has many shades of grey. Besides, complexity theory had yet to be developed: they did not count on the exponential explosion of their problems.</p><div class="no-row-height column-margin column-container"><li id="fn9"><p><sup>9</sup>&nbsp;Sometimes called <em>winters</em>.</p></li></div></div>
+</section>
+<section id="connectionism-a-different-approach" class="level3">
+<h3 class="anchored" data-anchor-id="connectionism-a-different-approach">Connectionism: a different approach</h3>
+<p>The fundamental idea in Connectionism is that <em>intelligent behaviour emerges from a large number of simple computational units when networked together</em>&nbsp;<span class="citation" data-cites="goodfellow2016">(<a href="#ref-goodfellow2016" role="doc-biblioref">Goodfellow, Bengio, and Courville 2016</a>)</span>.</p>
+<p>It was pioneered by McCulloch and Pitts in 1943&nbsp;<span class="citation" data-cites="mcculloch1943">(<a href="#ref-mcculloch1943" role="doc-biblioref">McCulloch and Pitts 1943</a>)</span>. One of Connectionism’s first wave developments was Frank Rosenblatt’s Perceptron, an algorithm for learning binary classifiers, or more specifically threshold functions:</p>
+<p><span class="math display">\[
+\begin{aligned}          
+     y=
+     \begin{cases}
+         1 \text{ if } \mW\vx + \vb &gt; 0\\
+         0 \text{ otherwise }
+     \end{cases}
+\end{aligned}
+\]</span></p>
+<p>where <span class="math inline">\(\mW\)</span> is the vector of weights, <span class="math inline">\(\vx\)</span> is the input vector, <span class="math inline">\(\vb\)</span> is a bias, and <span class="math inline">\(\vy\)</span> is the classification. In neural networks, a perceptron is an artificial neuron using a step function as the activation function.</p>
+<div class="sidecaption">
+<p>Biomimicry of termite technique achieves superior energy efficiency in buildings.</p>
+</div>
+<p>See [[fig:termite_cathedral]][4], termites self-cooling mounds keep the temperature inside at exactly <span class="math inline">\(31^{\circ} C\)</span>, ideal for their fungus-farming; while the temperatures outside range from 2 to <span class="math inline">\(40^{\circ} C\)</span> throughout the day. Such building techniques inspired architect Mike Pearce to design a shopping mall that uses a tenth of the energy used by a conventional building of the same size.</p>
+<p>From where does termites intelligence come?</p>
+<blockquote class="blockquote">
+<p>‘Individual termites react rather than think, but at a group level, they exhibit a kind of cognition and awareness of their surroundings. Similarly, in the brain, individual neurons do not think, but thinking arises in their connections.’</p>
+<p>— Radhika Nagpal, Harvard University&nbsp;<span class="citation" data-cites="margonelli2016">(<a href="#ref-margonelli2016" role="doc-biblioref">Margonelli 2016</a>)</span>.</p>
+</blockquote>
+<p>Such collective intelligence happens in groups of just a couple of million termites. There are around 80 to 90 billion neurons in the human brain, each less capable than a termite, but collectively they show incomparable intelligence capabilities.</p>
+<p>[A brief history of connectionism. Adapted from &nbsp;.]</p>
+<p>In contrast with the symbolic approach, in neural networks, the knowledge is not explicit in symbols but implicit in the strength of the connections between the neurons. Besides, it is a very general and flexible approach since these connections can be updated algorithmically: they are algorithms that <em>learn</em>: the connectionist approach is an example of what we now call Machine Learning.</p>
+</section>
+<section id="machine-learning" class="level3">
+<h3 class="anchored" data-anchor-id="machine-learning">Machine Learning</h3>
+<p>Look at [[fig:lulu]][5]. Is this a picture of a cat? How to write a program to do such a simple classification task (cat/no cat)? One could develop clever ways to use <em>features</em> from the input picture and process them to guess. Though, it is not an easy program to design. Worse, even if one manages to program such a task, how much would it worth to accomplish a related <em>task</em>, to recognise a dog, for example? For long, this was the problem of researchers in many areas of interest of AI:<span data-acronym-label="CV" data-acronym-form="singular+full">CV</span>, <span data-acronym-label="NLP" data-acronym-form="singular+full">NLP</span>, Speech Recognition <span data-acronym-label="SR" data-acronym-form="singular+short">SR</span>; much mental effort was put, with inferior results, in problems that we humans solve with apparent ease.</p>
+<p>The solution is an entirely different approach for building artificial intelligence: instead of making the program do the <em>task</em>, build the program that outputs the program that does the <em>task</em>. In other words, learning algorithms use “training data” to infer the transformations to the input that generates the desired output.</p>
+</section>
+<section id="types-of-learning" class="level3">
+<h3 class="anchored" data-anchor-id="types-of-learning">Types of learning</h3>
+<p>Machine Learning can happen in different scenarios, which differ in the availability of training data, how training data is received, and how the test data is used to evaluate the learning. Here, we describe the most typical of them&nbsp;<span class="citation" data-cites="mohri2012">(<a href="#ref-mohri2012" role="doc-biblioref">Mohri, Rostamizadeh, and Talwalkar 2012</a>)</span>:</p>
+<ul>
+<li><p><strong>Supervised learning:</strong> The most successful scenario. The learner receives a set of labelled examples as training data and makes predictions for unseen data.</p></li>
+<li><p><strong>Unsupervised learning:</strong> The learner receives unlabelled training data and makes predictions for unseen instances.</p></li>
+<li><p><strong>Semi-supervised learning:</strong> The learner receives a training sample consisting of labelled and unlabelled data and makes predictions for unseen examples. Semi-supervised learning is usual in settings where unlabelled data is easily accessible, but labelling is too costly.</p></li>
+<li><p><strong>Reinforcement learning:</strong> The learner actively interacts with the environment and receives an immediate reward for her actions. The training and testing phases are intermixed.</p></li>
+</ul>
+</section>
+<section id="deep-learning" class="level3">
+<h3 class="anchored" data-anchor-id="deep-learning">Deep Learning</h3>
+<p>The 2010s have been an AI Renaissance not only in academia but also in the industry. Such successes are mostly due to <span data-acronym-label="DL" data-acronym-form="singular+full">DL</span>, in particular, supervised deep learning with vast amounts of data trained in <span data-acronym-label="GPU" data-acronym-form="plural+full">GPUs</span>. It was the decade of <span data-acronym-label="DL" data-acronym-form="singular+short">DL</span>.</p>
+<blockquote class="blockquote">
+<p>‘Deep learning algorithms seek to exploit the unknown structure in the input distribution to discover good representations, often at multiple levels, with higher-level learned features defined in terms of lower-level features.’</p>
+<p>— Joshua Bengio&nbsp;<span class="citation" data-cites="bengio2012">(<a href="#ref-bengio2012" role="doc-biblioref">Bengio 2012</a>)</span>*</p>
+</blockquote>
+<p>The name is explained by &nbsp;<span class="citation" data-cites="goodfellow2016">Goodfellow, Bengio, and Courville (<a href="#ref-goodfellow2016" role="doc-biblioref">2016</a>)</span>: “<em>A graph showing the concepts being built on top of each other is a deep graph. Therefore the name, deep learning</em>”&nbsp;<span class="citation" data-cites="goodfellow2016">(<a href="#ref-goodfellow2016" role="doc-biblioref">Goodfellow, Bengio, and Courville 2016</a>)</span>. Although it is a direct descendant of the connectionist movement, it goes beyond the neuroscientific perspective in its modern form. It is more a general principle of learning multiple levels of compositions.</p>
+<p>The quintessential example of a deep learning model is the deep feedforward network or <span data-acronym-label="MLP" data-acronym-form="singular+full">MLP</span>&nbsp;<span class="citation" data-cites="russell2010">(<a href="#ref-russell2010" role="doc-biblioref">Russell, Norvig, and Davis 2010</a>)</span>.</p>
+<div id="def-MLP" class="theorem definition">
+<p><span class="theorem-title"><strong>Definition 2.3 </strong></span>Let,</p>
+<ul>
+<li><p><span class="math inline">\({\vx}\)</span> be the input vector <span class="math inline">\(\{\vx_1, \ldots, \vx_m\}\)</span></p></li>
+<li><p><span class="math inline">\(k\)</span> be the layer index, such that <span class="math inline">\(k \in [1,l]\)</span>,</p></li>
+<li><p><span class="math inline">\(\mW^{(k)}_{i,j}\)</span>be the matrix of weights in the <span class="math inline">\(k\)</span>-th layer, where <span class="math inline">\(i \in [0,d_{k-1}], j \in [1, d_k] \text{ and }\mW^{(k)}_{0,:}\)</span> are the biases</p></li>
+<li><p><span class="math inline">\(\sigma\)</span> be a nonlinear function,</p></li>
+</ul>
+<p>a <strong><span data-acronym-label="MLP" data-acronym-form="plural+full">MLPs</span></strong> is a neural network where the input is defined by:</p>
+<p><span class="math display">\[
+\begin{aligned}          
+    h^{(0)}= 1\frown \vx
+\end{aligned}
+\]</span></p>
+<p>a hidden layer is defined by:</p>
+<p><span class="math display">\[
+\begin{aligned}          
+        h^{(k)}&amp;=\sigma^{(k)}(\mW^{(k)~\top} h^{(k-1)}).
+\end{aligned}
+\]</span></p>
+<p>The output is defined by: <span class="math display">\[
+\begin{aligned}          
+  \hat{y}&amp;=h^{(l)}.
+\end{aligned}
+\]</span></p>
+</div>
+<p>Deep Learning is usually associated with <span data-acronym-label="DNN" data-acronym-form="plural+full">DNNs</span>, but the network architecture is only one of its components:</p>
+<ol type="1">
+<li><p>DNN architecture</p></li>
+<li><p><span data-acronym-label="SGD" data-acronym-form="singular+full">SGD</span> — the optimiser</p></li>
+<li><p>Dataset</p></li>
+<li><p>Loss function</p></li>
+</ol>
+<p>The architecture is not the sole component essential to current Deep Learning success. The <span data-acronym-label="SGD" data-acronym-form="singular+short">SGD</span> plays a crucial role, and so does the usage of large datasets.</p>
+<p>A known problem, though, is that DNNs are prone to overfitting ([[sec:bias-variance]][6]). &nbsp;<span class="citation" data-cites="zhang2016">Zhang et al. (<a href="#ref-zhang2016" role="doc-biblioref">2016</a>)</span> show state-of-the-art convolutional deep neural networks can easily fit a random labelling of training data&nbsp;<span class="citation" data-cites="zhang2016">(<a href="#ref-zhang2016" role="doc-biblioref">Zhang et al. 2016</a>)</span>.</p>
+</section>
+</section>
+<section id="concluding-remarks" class="level2">
+<h2 class="anchored" data-anchor-id="concluding-remarks">Concluding Remarks</h2>
+<p>This chapter derived the need for a <em>language</em> from the definitions of <em>intelligence</em> and <em>intelligent agents</em>. An intelligent agent needs <em>language</em> to store her knowledge (what she has learned) and with that to communicate/share this knowledge with its future self and with other agents.</p>
+<p>We claim (without proving) that a language can be derived from a definition of knowledge: an epistemic choice. We claim that mathematics and science can be seen as languages that differ in consequence of different views on what knowledge is and gave historical background on two epistemic views, Rationalism and Empiricism (<span class="quarto-unresolved-ref">?sec-rationalism</span>,<span class="quarto-unresolved-ref">?sec-empiricism</span>).</p>
+<p>We gave historical background on <span data-acronym-label="AI" data-acronym-form="singular+full">AI</span> and showed that different epistemic views relate to <span data-acronym-label="AI" data-acronym-form="singular+short">AI</span> movements: Symbolism and Connectionism. We gave some background on basic <span data-acronym-label="AI" data-acronym-form="singular+short">AI</span> concepts: intelligent agents, machine learning, types of learning, neural networks and deep learning, showing that <span data-acronym-label="DL" data-acronym-form="singular+short">DL</span> relates to Connectionism and, hence, to science and an empiricist epistemology. Previously (<span class="quarto-unresolved-ref">?sec-bringing_science</span>), we have discussed that Computer Science generally relates to the rationalist epistemology. We hope this can help us better understand our research community.</p>
+<section id="assumptions" class="level3">
+<h3 class="anchored" data-anchor-id="assumptions">Assumptions</h3>
+<ol type="1">
+<li><p>A definition of intelligence <a href="#def-intelligence">Definition&nbsp;<span>2.2</span></a></p></li>
+<li><p>An epistemic choice on the definition of Knowledge <span class="quarto-unresolved-ref">?sec-rationalism</span></p></li>
+</ol>
+<div class="border-bottom">
+<blockquote class="blockquote">
+
+</blockquote>
+</div>
+<p><br></p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-aristotle2000" class="csl-entry" role="doc-biblioentry">
+Aristotle. 2000. <em>Aristotle: Nicomachean Ethics</em>. Cambridge Texts in the History of Philosophy. Cambridge University Press. <a href="https://doi.org/10.1017/CBO9780511802058">https://doi.org/10.1017/CBO9780511802058</a>.
+</div>
+<div id="ref-bengio2012" class="csl-entry" role="doc-biblioentry">
+Bengio, Yoshua. 2012. <span>“Deep Learning of Representations for Unsupervised and Transfer Learning.”</span> In <em>Proceedings of ICML Workshop on Unsupervised and Transfer Learning</em>, 17–36.
+</div>
+<div id="ref-chaitin2006" class="csl-entry" role="doc-biblioentry">
+Chaitin, Gregory. 2006. <em>Meta Math! The Quest for Omega</em>. Vintage Books.
+</div>
+<div id="ref-dennett2009" class="csl-entry" role="doc-biblioentry">
+Dennett, Daniel. 2009. <span>“Darwin<span>’</span>s <span>“</span>Strange Inversion of Reasoning<span>”</span>.”</span> In <em>Proceedings of the National Academy of Sciences</em>, 106:10061–65. Supplement 1. National Academy of Sciences. <a href="https://doi.org/10.1073/pnas.0904433106">https://doi.org/10.1073/pnas.0904433106</a>.
+</div>
+<div id="ref-gardner1959" class="csl-entry" role="doc-biblioentry">
+Gardner, Martin. 1959. <em>Logic Machines and Diagrams</em>. McGraw-Hill Book Company.
+</div>
+<div id="ref-goodfellow2016" class="csl-entry" role="doc-biblioentry">
+Goodfellow, Ian J., Yoshua Bengio, and Aaron C. Courville. 2016. <em>Deep Learning</em>. Adaptive Computation and Machine Learning. <span>MIT</span> Press.
+</div>
+<div id="ref-huebner2017" class="csl-entry" role="doc-biblioentry">
+Huebner, Bryce. 2017. <em>The Philosophy of Daniel Dennett</em>. Oxford University Press.
+</div>
+<div id="ref-hume2009" class="csl-entry" role="doc-biblioentry">
+Hume, David. 2009. <em>Tratado Da Natureza Humana</em>. Editora UNESP.
+</div>
+<div id="ref-klein2018" class="csl-entry" role="doc-biblioentry">
+Klein, Daniel. 2018. <span>“Mighty Mouse.”</span> Technology Review. <a href="https://www.technologyreview.com/s/612529/mighty-mouse/">https://www.technologyreview.com/s/612529/mighty-mouse/</a>.
+</div>
+<div id="ref-legg2007" class="csl-entry" role="doc-biblioentry">
+Legg, Shane, and Marcus Hutter. 2007. <span>“A Collection of Definitions of Intelligence.”</span> <a href="https://arxiv.org/abs/0706.3639">https://arxiv.org/abs/0706.3639</a>.
+</div>
+<div id="ref-mackenzie1868" class="csl-entry" role="doc-biblioentry">
+MacKenzie, Robert Beverley. 1868. <em>The Darwinian Theory of the Transmutation of Species Examined</em>. J. Nisbet.
+</div>
+<div id="ref-margonelli2016" class="csl-entry" role="doc-biblioentry">
+Margonelli, Lisa. 2016. <span>“Collective Mind in the Mound: How Do Termites Build Their Huge Structures?”</span> <a href="https://www.nationalgeographic.com/news/2014/8/140731-termites-mounds-insects-entomology-science/">https://www.nationalgeographic.com/news/2014/8/140731-termites-mounds-insects-entomology-science/</a>.
+</div>
+<div id="ref-mayor2018" class="csl-entry" role="doc-biblioentry">
+Mayor, Adrienne. 2018. <em>Gods and Robots: Myths, Machines, and Ancient Dreams of Technology</em>. Princeton University Press.
+</div>
+<div id="ref-mcculloch1943" class="csl-entry" role="doc-biblioentry">
+McCulloch, Warren S., and Walter Pitts. 1943. <span>“A Logical Calculus of the Ideas Immanent in Nervous Activity.”</span> <em>The Bulletin of Mathematical Biophysics</em> 5 (4): 115–33.
+</div>
+<div id="ref-mohri2012" class="csl-entry" role="doc-biblioentry">
+Mohri, Mehryar, Afshin Rostamizadeh, and Ameet Talwalkar. 2012. <em>Foundations of Machine Learning</em>. The MIT Press.
+</div>
+<div id="ref-russell2010" class="csl-entry" role="doc-biblioentry">
+Russell, Stuart J., Peter Norvig, and Ernest Davis. 2010. <em>Artificial Intelligence: A Modern Approach</em>. 3rd ed. Prentice <span><span>Hall</span> </span> Series in Artificial Intelligence. Prentice Hall.
+</div>
+<div id="ref-soni2017" class="csl-entry" role="doc-biblioentry">
+Soni, Jimmy, and Rob Goodman. 2017. <em>A Mind at Play: How Claude Shannon Invented the Information Age</em>. Simon; Schuster.
+</div>
+<div id="ref-turing2007" class="csl-entry" role="doc-biblioentry">
+Turing, Alan M. 2007. <span>“Computing Machinery and Intelligence.”</span> In <em>Parsing the Turing Test</em>, 23–65. Springer Netherlands. <a href="https://doi.org/10.1007/978-1-4020-6710-5_3">https://doi.org/10.1007/978-1-4020-6710-5_3</a>.
+</div>
+<div id="ref-williams2020" class="csl-entry" role="doc-biblioentry">
+Uzgalis, William. 2020. <span>“John Locke.”</span> In <em>The Stanford Encyclopedia of Philosophy</em>, edited by Edward N. Zalta, Spring 2020. <a href="https://plato.stanford.edu/archives/spr2020/entries/locke/" class="uri">https://plato.stanford.edu/archives/spr2020/entries/locke/</a>; Metaphysics Research Lab, Stanford University. <a href="https://plato.stanford.edu/archives/spr2020/entries/locke/">https://plato.stanford.edu/archives/spr2020/entries/locke/</a>.
+</div>
+<div id="ref-zhang2016" class="csl-entry" role="doc-biblioentry">
+Zhang, Chiyuan, Samy Bengio, Moritz Hardt, Benjamin Recht, and Oriol Vinyals. 2016. <span>“Understanding Deep Learning Requires Rethinking Generalization.”</span> <a href="https://arxiv.org/abs/1611.03530">https://arxiv.org/abs/1611.03530</a>.
+</div>
+</div>
+</section>
+</section>
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation column-body">
+  <div class="nav-page nav-page-previous">
+      <a href="../Chapters/context.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Introduction</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../Back/quarto-questions.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-title">Questions</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>
