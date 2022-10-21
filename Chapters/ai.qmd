@@ -5,12 +5,10 @@
 
 This chapter defines artificial intelligence, presents the epistemological differences of intelligent agents in history, and discusses their consequences to machine learning theory.
 
-## What Artificial Intelligence is? {#artificial-intelligence}
+## What is Artificial Intelligence? {#artificial-intelligence}
 
 ::: {.definition #def-ai}
-
 **AI** is the branch of Computer Science that studies general principles of intelligent agents and how to construct them [@russell2010].
-
 :::
 
 This definition uses the terms *intelligence* and *intelligent agents*, so let us start from them.
@@ -65,7 +63,7 @@ Example of Lull's Ars Magna's paper discs.
 
 :::
 
-In the 13^th^ century, the Catalan philosopher Ramon Lull wanted to produce all statements the human mind can think. For this task, he developed *logic paper machines*, discs of paper filled with esoteric coloured diagrams that connected symbols representing statements. Unfortunately, according to @gardner1959, in a modern reassessment of his work, *"it is impossible, perhaps, to avoid a strong sense of anticlimax"* [@gardner1959]. With megalomaniac self-esteem that suggests psychosis, his delusional sense of importance is more characteristic of cult founders. On the bright side, his ideas and books exerted some magic appeal that helped them be rapidly disseminated through all Europe [@gardner1959].
+In the 13^th^ century, the Catalan philosopher Ramon Lull wanted to produce all statements the human mind can think. For this task, he developed *logic paper machines*, discs of paper filled with esoteric coloured diagrams that connected symbols representing statements. Unfortunately, according to @gardner1959, in a modern reassessment of his work, *"it is impossible, perhaps, to avoid a strong sense of anticlimax"*. With megalomaniac self-esteem that suggests psychosis, his delusional sense of importance is more characteristic of cult founders. On the bright side, his ideas and books exerted some magic appeal that helped them be rapidly disseminated through all Europe.
 
 Lull's work greatly influenced Leibniz and Descartes, who, in the 17^th^century, believed that all rational thought could be mechanised. This belief was the basis of **rationalism**, the epistemic view of the *Enlightenment* that regarded reason as the sole source of knowledge. In other words, they believed that reality has a logical structure and that certain truths are *self-evident*, and all truths can be derived from them.
 
@@ -123,9 +121,8 @@ Claude Shannon, father of “information theory”.
 Their work inspired John von Neumann's demonstration of how to create a universal Turing machine out of electronic components, which lead to the advent of computers and programming languages. Ironically, these advents hastened the ascent of the formal logicist approach called **Symbolism**, disregarding Connectionism.
 
 In 1956, John McCarthy, Claude Shannon (who invented Information Theory, @fig-claude-shannon), Marvin Minsky and Nathaniel Rochester organised a 2-month summer workshop in Dartmouth College to bring researchers of different fields concerned with *"thinking machines"* (cybernetics, information theory, automata theory). The workshop attendees became a community of researchers and chose the term *"artificial intelligence"* for the field.
-{{< pagebreak >}}
 
-<!-- ::: {.content-hidden unless-format="html" .column-body-outset #fig-elephant #blind-men}
+::: {.content-hidden unless-format="html" .column-body-outset #fig-elephant #blind-men}
 </BR>
 </BR>
 
@@ -137,7 +134,7 @@ In 1956, John McCarthy, Claude Shannon (who invented Information Theory, @fig-cl
  
 ![The Blind Men and the Elephant.](/Images/elephant.pdf)
 
-::: -->
+:::
 
 > It was six men of Indostan\
 > To learning much inclined,\
@@ -145,11 +142,11 @@ In 1956, John McCarthy, Claude Shannon (who invented Information Theory, @fig-cl
 > (Though all of them were blind),\
 > That each by observation\
 > Might satisfy his mind\
-> 
+> \
 > ---John Godfrey Saxe,\
-> The Blind Men and the Elephant
+> \smaller{The Blind Men and the Elephant}
 
-{{< pagebreak >}}
+{{< pagebreak >}} 
 
 ## Building Intelligent Agents
 
@@ -221,16 +218,18 @@ Those inflated expectations lead to disillusionment and funding cuts[^29] [@rus
 The fundamental idea in Connectionism is that *intelligent behaviour emerges from a large number of simple computational units when networked together* [@goodfellow2016].
 
 It was pioneered by McCulloch and Pitts in 1943 [@mcculloch1943]. One of Connectionism's first wave developments was Frank Rosenblatt's Perceptron, an algorithm for learning binary classifiers, or more specifically threshold functions: 
-$$\begin{aligned}
-        % \vb
-%     y=
-%     \begin{cases}
-%         1 \text{ if } \mW\vx + \vb > 0\\
-%         0 \text{ otherwise }
-%     \end{cases}
-\end{aligned}$$ 
 
-<!-- where $\mW$ is the vector of weights, $\vx$ is the input vector, $\vb$ is a bias, and $\vy$ is the classification. In neural networks, a perceptron is an artificial neuron using a step function as the activation function. -->
+ $$
+ \begin{aligned}          
+     y=
+     \begin{cases}
+         1 \text{ if } \mW\vx + \vb > 0\\
+         0 \text{ otherwise }
+     \end{cases}
+ \end{aligned}
+ $$ 
+
+ where $\mW$ is the vector of weights, $\vx$ is the input vector, $\vb$ is a bias, and $\vy$ is the classification. In neural networks, a perceptron is an artificial neuron using a step function as the activation function. 
 
 ::: sidecaption
 Biomimicry of termite technique achieves superior energy efficiency in buildings.
@@ -280,27 +279,45 @@ The name is explained by  @goodfellow2016: "*A graph showing the concepts being
 
 The quintessential example of a deep learning model is the deep feedforward network or [MLP]{acronym-label="MLP" acronym-form="singular+full"} [@russell2010].
 
-::: definition
-<!-- Let,
 
--   be the input vector $\{\vx_1, \ldots, \vx_m\}$
+::: {#def-MLP}
 
--   be the layer index, such that $k \in [1,l]$,
+Let,
 
--   be the matrix of weights in the $k$-th layer, where $i \in [0,d_{k-1}], j \in [1, d_k] \text{ and }\mW^{(k)}_{0,:}$ are the biases
+-   ${\vx}$ be the input vector $\{\vx_1, \ldots, \vx_m\}$
 
--   be a nonlinear function,
+-   $k$ be the layer index, such that $k \in [1,l]$,
 
-a **[MLPs]{acronym-label="MLP" acronym-form="plural+full"}** is a neural network where the input is defined by: $$\begin{aligned}
-        h^{(0)}= 1^\frown \vx,
-    
-\end{aligned}$$ a hidden layer is defined by: $$\begin{aligned}
+-   $\mW^{(k)}_{i,j}$be the matrix of weights in the $k$-th layer, where $i \in [0,d_{k-1}], j \in [1, d_k] \text{ and }\mW^{(k)}_{0,:}$ are the biases
+
+-   $\sigma$ be a nonlinear function,
+
+a **[MLPs]{acronym-label="MLP" acronym-form="plural+full"}** is a neural network where the input is defined by: 
+
+
+ $$
+ \begin{aligned}          
+    h^{(0)}= 1\frown \vx
+ \end{aligned}
+ $$ 
+
+
+a hidden layer is defined by: 
+
+ $$
+ \begin{aligned}          
         h^{(k)}&=\sigma^{(k)}(\mW^{(k)~\top} h^{(k-1)}).
-    
-\end{aligned}$$ The output is defined by: $$\begin{aligned}
-        \hat{y}&=h^{(l)}.
-    
-\end{aligned}$$ -->
+ \end{aligned}
+ $$ 
+
+
+The output is defined by:
+ $$
+ \begin{aligned}          
+  \hat{y}&=h^{(l)}.
+ \end{aligned}
+ $$ 
+
 :::
 
 Deep Learning is usually associated with [DNNs]{acronym-label="DNN" acronym-form="plural+full"}, but the network architecture is only one of its components:
@@ -321,9 +338,9 @@ A known problem, though, is that DNNs are prone to overfitting ([\[sec:bias-vari
 
 This chapter derived the need for a *language* from the definitions of *intelligence* and *intelligent agents*. An intelligent agent needs *language* to store her knowledge (what she has learned) and with that to communicate/share this knowledge with its future self and with other agents.
 
-We claim (without proving) that a language can be derived from a definition of knowledge: an epistemic choice. We claim that mathematics and science can be seen as languages that differ in consequence of different views on what knowledge is and gave historical background on two epistemic views, Rationalism and Empiricism ([\[sec:rationalism,sec:empiricism\]][7]).
+We claim (without proving) that a language can be derived from a definition of knowledge: an epistemic choice. We claim that mathematics and science can be seen as languages that differ in consequence of different views on what knowledge is and gave historical background on two epistemic views, Rationalism and Empiricism (@sec-rationalism,@sec-empiricism).
 
-We gave historical background on [AI]{acronym-label="AI" acronym-form="singular+full"} and showed that different epistemic views relate to [AI]{acronym-label="AI" acronym-form="singular+short"} movements: Symbolism and Connectionism. We gave some background on basic [AI]{acronym-label="AI" acronym-form="singular+short"} concepts: intelligent agents, machine learning, types of learning, neural networks and deep learning, showing that [DL]{acronym-label="DL" acronym-form="singular+short"} relates to Connectionism and, hence, to science and an empiricist epistemology. Previously ([\[sec:bringing_science\]][8]), we have discussed that Computer Science generally relates to the rationalist epistemology. We hope this can help us better understand our research community.
+We gave historical background on [AI]{acronym-label="AI" acronym-form="singular+full"} and showed that different epistemic views relate to [AI]{acronym-label="AI" acronym-form="singular+short"} movements: Symbolism and Connectionism. We gave some background on basic [AI]{acronym-label="AI" acronym-form="singular+short"} concepts: intelligent agents, machine learning, types of learning, neural networks and deep learning, showing that [DL]{acronym-label="DL" acronym-form="singular+short"} relates to Connectionism and, hence, to science and an empiricist epistemology. Previously (@sec-bringing_science), we have discussed that Computer Science generally relates to the rationalist epistemology. We hope this can help us better understand our research community.
 
 ### Assumptions
 

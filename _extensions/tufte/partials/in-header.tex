@@ -19,9 +19,31 @@
 \renewcommand{\allcaps}[1]{\textls[15]{\MakeTextUppercase{#1}}}
 \renewcommand{\smallcaps}[1]{\smallcapsspacing{\scshape\MakeTextLowercase{#1}}}
 \renewcommand{\textsc}[1]{\smallcapsspacing{\textsmallcaps{#1}}}
-\usepackage{fontspec}
+% \usepackage{fontspec}
+\PassOptionsToPackage{no-math}{fontspec}
 \setmainfont{TeX Gyre Pagella}
 \setsansfont{TeX Gyre Heros}[Scale=MatchUppercase]
+
+\ExplSyntaxOn
+\int_new:N \l_mathcode_minus_int
+\int_new:N \l_mathcode_equal_int
+\exp_args:Nx \AtBeginDocument {
+  \exp_not:n {
+    \int_set:Nn \l_mathcode_minus_int { \XeTeXmathcodenum `\- }
+    \int_set:Nn \l_mathcode_equal_int { \XeTeXmathcodenum `\= }
+  }
+  \mathcode \int_eval:n { `\- } = \number \mathcode `\- \scan_stop:
+  \mathcode \int_eval:n { `\= } = \number \mathcode `\= \scan_stop:
+}
+\AtBeginDocument {
+  \XeTeXmathcodenum `\- = \l_mathcode_minus_int
+  \XeTeXmathcodenum `\= = \l_mathcode_equal_int
+}
+\ExplSyntaxOff
+
+\usepackage[italic]{mathastext}
+\setromanfont{TeX Gyre Termes}
+
 \fi
 %%%%%%%
 

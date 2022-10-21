@@ -17,7 +17,7 @@ book:
     # - Front/dedication.qmd
     # - Front/ack.qmd
     # - Front/epigraph.qmd
-    # - Chapters/context.qmd
+    - Chapters/context.qmd
     - part: Background
       chapters:
         - Chapters/ai.qmd
@@ -37,11 +37,12 @@ book:
     # - part: Development
     #   chapters:
     #   - Back/quarto-questions.qmd
+
 format:
     pdf:
       classoption: ["12pt", "british"]
-      # include-in-header:
-      #   - Tex/math_commands.tex
+      include-in-header:
+        - Tex/math_commands.tex
 bibliography: bibliography.bib
   
 
