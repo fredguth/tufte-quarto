@@ -4,6 +4,12 @@
 <!-- Q:  Why is this appearing on PDF? -->
 # Welcome {.unnumbered .unlisted}
 
-This is a Tufte-Quarto book.
+This is a showcase of the Tufte-Quarto project type.  
+
+See [pdf](./IBToDL.pdf).
+
+
+[![A thesis built with Tufte-Quarto. Click to download pdf.](cover.svg){.column-margin #fig-cover}](./IBToDL.pdf)
+
 
 :::

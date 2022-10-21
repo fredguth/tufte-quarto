@@ -1,12 +1,15 @@
 # Questions
 
+## List of questions
 - Why `Welcome` from  `/index.qmd` is appearing in pdf?
 - `Part` `/background.qmd` is not appearing in TOC (pdf).  Is this a Tufte-book.cls problem?
 - pdf figures in website are being framed. Why? 
 - Header configuration is set to include short-tile instead of title.  Couldn't insert just a space, though.  Why blank space without mathmode didn't work?
 - How to include math macros in the html?  
+- What is the page full of definitions that appear while routing in the website? `math_definitions.tex`?
+- Too much info in the margin citation. Create custom bib style?
 
-# Known-issues
+## Known-issues
 
 1. Tufte-book can't handle label inside caption.
 
@@ -27,9 +30,7 @@
 
     \end{figure}
     ```
-    ====
-
-
+    
  2. Can't render svg image in pdf and can't render pdf image in html.
     - current solution is quite ugly: 
 
@@ -48,6 +49,6 @@
 
     ```
 
-3. Tufte-class works only until subsubsection -> ###, #### -> returns error
+3. Tufte-class works only until subsection -> `### subsection`; `#### subsubsection`-> returns error
 
-4. sidecite is duplicating citations. Solved this same problem in my dissertation. 
+4. sidecite is duplicating citations in the same margin. Solved this same problem in my dissertation and in the kaobook class. Only problem is that Tufte-book class is a little too cryptic for me. 

@@ -144,7 +144,7 @@ In 1956, John McCarthy, Claude Shannon (who invented Information Theory, @fig-cl
 > Might satisfy his mind\
 > \
 > ---John Godfrey Saxe,\
-> \smaller{The Blind Men and the Elephant}
+> *The Blind Men and the Elephant*
 
 {{< pagebreak >}} 
 

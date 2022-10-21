@@ -34,15 +34,22 @@ book:
     # - Back/notation.qmd
     # - Back/acronyms.qmd
     # - Back/colophon.qmd
-    # - part: Development
-    #   chapters:
-    #   - Back/quarto-questions.qmd
+    - part: Tufte-Quarto
+      chapters:
+      - Back/quarto-questions.qmd
+      - Back/todo.qmd
 
-format:
+format: # specific to my dissertation
+    html:
+      include-in-header:
+        - Tex/_dollar.tex # hack for macros in html https://github.com/quarto-dev/quarto-cli/discussions/2845
+        - Tex/math_definitions.tex
+        - Tex/_dollar.tex # hack for macros in html https://github.com/quarto-dev/quarto-cli/discussions/2845
     pdf:
       classoption: ["12pt", "british"]
       include-in-header:
         - Tex/math_commands.tex
+        - Tex/math_definitions.tex
 bibliography: bibliography.bib
   
 
