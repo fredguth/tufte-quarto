@@ -1,8 +1,11 @@
 /env/
 /.quarto/
-./*.tex
-./*.csl
-./*.bst
-./*.pdf
-./*.log
+*.tex
+*.cls
+*.bst
+*.pdf
+*.log
+*.aux
+*.def
+
 _tufte/

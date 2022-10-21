@@ -6,7 +6,9 @@
 
 %%%%%%%
 %  FIX Makeuppercase error
+%  FIX Font clash Math error
 %  See https://tex.stackexchange.com/q/202142/157312
+%  https://tex.stackexchange.com/q/17265/157312
 \usepackage{ifxetex}
 \ifxetex
 \renewcommand{\textls}[2][5]{%
@@ -33,7 +35,6 @@
 \setlength{\JustifyingParindent}{0pt}%
 \setlength{\parskip}{\baselineskip}
 
-
 %%
 % Produces a full title page
 
@@ -54,8 +55,3 @@
 }
 
 
-\usepackage{beramono}  % change default monofont
-% \usepackage{ifpdf}
-% \usepackage{mathpazo}
-% \usepackage{letterspace}
-% \usepackage{soul}

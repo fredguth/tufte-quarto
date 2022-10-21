@@ -1,0 +1,377 @@
+%%%%% NEW MATH DEFINITIONS %%%%%
+
+\usepackage{mathspec}            % replaces amssymb; do not use unicode-math
+\usepackage{bm}
+\usepackage{bigints}
+\usepackage{nicefrac}
+\usepackage{venndiagram}
+\usepackage{xpatch}
+
+
+
+
+
+%  SumInt operator
+\DeclareMathOperator*{\SumInt}{%
+\mathchoice%
+  {\ooalign{$\displaystyle\sum$\cr\hidewidth$\displaystyle\bigintsss$\hidewidth\cr}}
+  {\ooalign{\raisebox{.14\height}{\scalebox{.7}{$\textstyle\sum$}}\cr\hidewidth$\textstyle\bigintsss$\hidewidth\cr}}
+  {\ooalign{\raisebox{.2\height}{\scalebox{.6}{$\scriptstyle\sum$}}\cr$\scriptstyle\bigintsss$\cr}}
+  {\ooalign{\raisebox{.2\height}{\scalebox{.6}{$\scriptstyle\sum$}}\cr$\scriptstyle\bigintsss$\cr}}
+}
+
+
+% https://tex.stackexchange.com/questions/218372/cancel-maths-expression-with-a-down-arrow
+\makeatletter
+% #1, #2 offset of label   #6 extra width to clear arrowhead
+% #3, #4 vector direction  #7 superscript label style
+% #5 vector width          #8 superscript label
+\def\cantox@vector#1#2#3#4#5#6#7#8{%
+  \dimen@.5\p@
+  \setbox\z@\vbox{\boxmaxdepth.5\p@
+   \hbox{\kern-1.2\p@\kern#1\dimen@$#7{#8}\m@th$}}%
+  \ifx\canto@fil\hidewidth  \wd\z@\z@ \else \kern-#6\unitlength \fi
+  \ooalign{%
+    \canto@fil$\m@th \CancelColor
+    \vcenter{\hbox{\dimen@#6\unitlength \kern\dimen@
+      \multiply\dimen@#4\divide\dimen@#3 \vrule\@depth\dimen@\@width\z@
+      \vector(#3,-#4){#5}%
+    }}_{\raise-#2\dimen@\copy\z@\kern-\scriptspace}$%
+    \canto@fil \cr
+    \hfil \box\@tempboxa \kern\wd\z@ \hfil \cr}}
+\def\bcancelto#1#2{\let\canto@vector\cantox@vector\cancelto{#1}{#2}}
+\makeatother
+
+% Remove venndiagram frame
+\tikzset{
+  vennframe/.style={draw=none} % define a new style for the frames
+}
+\makeatletter
+\xpatchcmd{\endvenndiagram3sets}
+{\draw (0,0) rectangle (\@venn@w,\@venn@h);} % replace this
+{\draw [vennframe] (0,0) rectangle (\@venn@w,\@venn@h);} % with this -- add the style
+{}{}
+
+\xpatchcmd{\endvenndiagram2sets}
+{\draw (venn bottom left) rectangle (\@venn@w,\@venn@h);}
+{\draw [vennframe] (venn bottom left) rectangle (\@venn@w,\@venn@h);}
+{}{}
+\makeatother
+
+\newcommand*\wrapscope[1]{%
+  \expandafter\newcommand\csname o#1\endcsname[1][]{%
+    \begin{scope}[##1]
+    \csname #1\endcsname
+    \end{scope}
+  }%
+}%
+
+\wrapscope{fillA}
+\wrapscope{fillACapB}
+
+\makeatletter
+\tikzset{
+  clip/.append code={%
+    \let\tikz@options=\pgfutil@empty
+    \tikz@addmode\tikz@mode@fillfalse%
+    \tikz@addmode\tikz@mode@drawfalse%
+    \tikz@addmode\tikz@mode@doublefalse%
+    \tikz@addmode\tikz@mode@boundaryfalse%
+    \tikz@addmode\tikz@mode@fade@pathfalse%
+    \tikz@addmode\tikz@mode@fade@scopefalse%
+  }
+}
+\makeatother
+
+
+
+
+\DeclareSymbolFont{bbold}{U}{bbold}{m}{n}
+\DeclareSymbolFontAlphabet{\mathbbold}{bbold}
+
+
+
+\newcommand{\diag}{\mathop{\mathrm{diag}}}
+\newcommand{\typical}[1]{{\sA^{\epsilon}_{#1} }}
+\newcommand{\Typical}[1]{{\sA^{\delta}_{#1} }}
+
+\newcommand{\ind}{\bot}
+% Highlight a newly defined term
+\newcommand{\newterm}[1]{{\bf #1}}
+% \newcommand{\eqdef}{{\overset{\text{def}}{=}}}
+\newcommand{\eqdef}{{\triangleq}}
+
+% \let\oldint\int
+% \renewcommand{\int}{{\bigintssss}}
+\renewcommand{\leq}{{~\leqslant ~}}
+\renewcommand{\geq}{{~\geqslant ~}}
+
+
+\def\ceil#1{\lceil #1 \rceil}
+\def\floor#1{\lfloor #1 \rfloor}
+\def\truth{{\mathbbold{1}}}
+\newcommand{\train}{\mathcal{D}}
+\newcommand{\valid}{\mathcal{D_{\mathrm{valid}}}}
+\newcommand{\test}{\mathcal{D_{\mathrm{test}}}}
+
+\def\eps{{\epsilon}}
+
+% Matrix
+\def\mSigma{{\bm{\Sigma}}}
+\def\mA{{\bm{A}}}
+\def\mB{{\bm{B}}}
+\def\mC{{\bm{C}}}
+\def\mD{{\bm{D}}}
+\def\mE{{\bm{E}}}
+\def\mF{{\bm{F}}}
+\def\mG{{\bm{G}}}
+\def\mH{{\bm{H}}}
+\def\mI{{\bm{I}}}
+\def\mJ{{\bm{J}}}
+\def\mK{{\bm{K}}}
+\def\mL{{\bm{L}}}
+\def\mM{{\bm{M}}}
+\def\mN{{\bm{N}}}
+\def\mO{{\bm{O}}}
+\def\mP{{\bm{P}}}
+\def\mQ{{\bm{Q}}}
+\def\mR{{\bm{R}}}
+\def\mS{{\bm{S}}}
+\def\mT{{\bm{T}}}
+\def\mU{{\bm{U}}}
+\def\mV{{\bm{V}}}
+\def\mW{{\bm{W}}}
+\def\mX{{\bm{X}}}
+\def\mY{{\bm{Y}}}
+\def\mZ{{\bm{Z}}}
+
+
+% Vectors
+\def\vmu{{\bm{\mu}}}
+\def\vtheta{{\bm{\theta}}}
+\def\va{{\bm{a}}}
+\def\vb{{\bm{b}}}
+\def\vc{{\bm{c}}}
+\def\vd{{\bm{d}}}
+\def\ve{{\bm{e}}}
+\def\vf{{\bm{f}}}
+\def\vg{{\bm{g}}}
+\def\vh{{\bm{h}}}
+\def\vi{{\bm{i}}}
+\def\vj{{\bm{j}}}
+\def\vk{{\bm{k}}}
+\def\vl{{\bm{l}}}
+\def\vm{{\bm{m}}}
+\def\vn{{\bm{n}}}
+\def\vo{{\bm{o}}}
+\def\vp{{\bm{p}}}
+\def\vq{{\bm{q}}}
+\def\vr{{\bm{r}}}
+\def\vs{{\bm{s}}}
+\def\vt{{\bm{t}}}
+\def\vu{{\bm{u}}}
+\def\vv{{\bm{v}}}
+\def\vw{{\bm{w}}}
+\def\vx{{\bm{x}}}
+\def\vy{{\bm{y}}}
+\def\vz{{\bm{z}}}
+
+% Outcomes
+\def\rmu{{\mu}}
+\def\rtheta{{\theta}}
+\def\ra{{a}}
+\def\rb{{b}}
+\def\rc{{c}}
+\def\rd{{d}}
+\def\re{{e}}
+\def\rf{{f}}
+\def\rg{{g}}
+\def\rh{{h}}
+\def\ri{{i}}
+\def\rj{{j}}
+\def\rk{{k}}
+\def\rl{{l}}
+\def\rm{{m}}
+\def\rn{{n}}
+\def\ro{{o}}
+\def\rp{{p}}
+\def\rq{{q}}
+\def\rr{{r}}
+\def\rs{{s}}
+\def\rt{{t}}
+\def\ru{{u}}
+\def\rv{{v}}
+\def\rw{{w}}
+\def\rx{{x}}
+\def\ry{{y}}
+\def\rz{{z}}
+% Sets
+\def\sOmega{{\mathbb{\Omega}}}
+\def\sPhi{{\mathbb{\Phi}}}
+\def\sA{{\mathbb{A}}}
+\def\sB{{\mathbb{B}}}
+\def\sC{{\mathbb{C}}}
+\def\sD{{\mathbb{D}}}
+% Don't use a set called E, because this would be the same as our symbol
+% for expectation.
+\def\sF{{\mathbb{F}}}
+\def\sG{{\mathbb{G}}}
+\def\sH{{\mathbb{H}}}
+\def\sI{{\mathbb{I}}}
+\def\sJ{{\mathbb{J}}}
+\def\sK{{\mathbb{K}}}
+\def\sL{{\mathbb{L}}}
+\def\sM{{\mathbb{M}}}
+\def\sN{{\mathbb{N}}}
+\def\sO{{\mathbb{O}}}
+\def\sP{{\mathbb{P}}}
+\def\sQ{{\mathbb{Q}}}
+\def\sR{{\mathbb{R}}}
+\def\sS{{\mathbb{S}}}
+\def\sT{{\mathbb{T}}}
+\def\sU{{\mathbb{U}}}
+\def\sV{{\mathbb{V}}}
+\def\sW{{\mathbb{W}}}
+\def\sX{{\mathbb{X}}}
+\def\sY{{\mathbb{Y}}}
+\def\sZ{{\mathbb{Z}}}
+
+% Random variables
+\def\rvA{{\mathit{A}}}
+\def\rvB{{\mathit{B}}}
+\def\rvC{{\mathit{C}}}
+\def\rvD{{\mathit{D}}}
+\def\rvE{{\mathit{E}}}
+\def\rvF{{\mathit{F}}}
+\def\rvG{{\mathit{G}}}
+\def\rvH{{\mathit{H}}}
+\def\rvI{{\mathit{I}}}
+\def\rvJ{{\mathit{J}}}
+\def\rvK{{\mathit{K}}}
+\def\rvL{{\mathit{L}}}
+\def\rvM{{\mathit{M}}}
+\def\rvN{{\mathit{\eta}}}
+\def\rvO{{\mathit{O}}}
+\def\rvP{{\mathit{P}}}
+\def\rvQ{{\mathit{Q}}}
+\def\rvR{{\mathit{R}}}
+\def\rvS{{\mathit{S}}}
+\def\rvT{{\mathit{T}}}
+\def\rvU{{\mathit{U}}}
+\def\rvV{{\mathit{V}}}
+\def\rvW{{\mathit{W}}}
+\def\rvX{{\mathit{X}}}
+\def\rvY{{\mathit{Y}}}
+\def\rvZ{{\mathit{Z}}}
+
+
+
+\newcommand{\theory}{\hat{\rvT}_{\epsilon,~\delta}}
+\renewcommand{\Pr}[2][\text{}]{\text{Pr}_{#1}\,\left[\,#2\,\right]}
+\newcommand{\pr}{\text{Pr}}
+% The true underlying data generating distribution
+\newcommand{\pdata}{p_{\textrm{data}}}
+% The empirical distribution defined by the training set
+\newcommand{\ptrain}{\hat{p}_{\textrm{data}}}
+\newcommand{\Ptrain}{\hat{P}_{\textrm{data}}}
+% The model distribution
+\newcommand{\pmodel}{p_{\textrm{model}}}
+\newcommand{\Pmodel}{P_{\textrm{model}}}
+\newcommand{\ptildemodel}{\tilde{p}_{\texrm{model}}}
+% Stochastic autoencoder distributions
+\newcommand{\pencode}{p_{\textrm{encoder}}}
+\newcommand{\pdecode}{p_{\textrm{decoder}}}
+\newcommand{\precons}{p_{\textrm{reconstruct}}}
+
+\newcommand{\KL}{D_{\mathrm{KL}}}
+\newcommand{\Var}{\mathrm{Var}}
+\newcommand{\Cov}{\mathrm{Cov}}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator{\Tr}{Tr}
+\let\ab\allowbreak
+
+\newcommand{\lang}{\mathrm{L}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\LH}{\mathcal{L}}
+\newcommand{\Real}{\sR}
+\newcommand{\Natural}{\sN}
+\renewcommand{\AA}{\mathcal{A}}
+\renewcommand{\SS}{S}
+\newcommand{\DD}{D}
+\newcommand{\CC}{\sC}
+\newcommand{\XX}{\mathcal{X}}
+\newcommand{\aXX}{\sA_{\rvX}}
+\newcommand{\aZZ}{\sA_{\rvZ}}
+\newcommand{\aYY}{\sA_{\rvY}}
+\newcommand{\YY}{\mathcal{Y}}
+% \newcommand{\YY}{\sA_{\rvY}}
+\newcommand{\HH}{\mathcal{H}}
+\newcommand{\LL}{\mathcal{L}}
+\newcommand{\OO}{\mathcal{O}}
+\newcommand{\NN}{\mathcal{N}}
+\newcommand{\UU}{\mathcal{U}}
+\newcommand{\PXY}{P(\rvX,\rvY)}
+\newcommand{\PWD}{P(\rvW,\rvD)}
+\newcommand{\PDW}{P(\rvD,\rvW)}
+\newcommand{\PwD}{P(\rw,\rvD)}
+\newcommand{\PDw}{P(\rvD,\rw)}
+\newcommand{\QXY}{Q(\rvX,\rvY)}
+\newcommand{\QWD}{Q(\rvW,\rvD)}
+\newcommand{\QDW}{Q(\rvD,\rvW)}
+\newcommand{\QwD}{Q(\rw,\rvD)}
+\newcommand{\QDw}{Q(\rvD,\rw)}
+\newcommand{\pxy}{p(x,y)}
+\newcommand{\Ix}{I_{\rvX}}
+\newcommand{\Iy}{I_{\rvY}}
+\newcommand{\IXZ}{I\,[{\rvZ};{\rvX}]}
+\newcommand{\empIXZ}{\tilde{I}[{\rvZ};{\rvX}]}
+\newcommand{\IZX}{I[{\rvZ};{\rvX}]}
+\newcommand{\IYZ}{I[{\rvZ};{\rvY}]}
+\newcommand{\IZY}{I[{\rvZ};{\rvY}]}
+\newcommand{\IXY}{I[{\rvX};{\rvY}]}
+\newcommand{\IYX}{I[{\rvY};{\rvX}]}
+\newcommand{\HX}{H[{\rvX}]}
+\newcommand{\HY}{H[{\rvY}]}
+\newcommand{\HXY}{H[{\rvX},{\rvY}]}
+\newcommand{\HXgivenY}{H[{\rvX}|{\rvY}]}
+\newcommand{\HYgivenX}{H[{\rvY}|{\rvX}]}
+\newcommand{\empIXY}{\tilde{I}[{\rvX};{\rvY}]}
+\newcommand{\IZN}{I[{\rvZ};{\rvN}]}
+\newcommand{\INZ}{I[{\rvZ};{\rvN}]}
+\newcommand{\IWD}{I[{\rvW};{\rvD}]}
+\newcommand{\IDW}{I[{\rvW};{\rvD}]}
+\newcommand{\empIWD}{\tilde{I}[{w};{\rvD}]}
+\newcommand{\empIDW}{\tilde{I}[{w};{\rvD}]}
+\newcommand{\HYX}{H[{\rvY}|{\rvX}]}
+\newcommand{\HYZ}{H[{\rvY}|{\rvZ}]}
+\newcommand{\sample}{\rvS^{(n)}}
+% Information Theory
+\newcommand{\src}{\rvS}
+\newcommand{\srcsymb}{\rs} % a source  outcome
+% \newcommand{\Rate}{\textup{\textcyrillic{Я}}}
+\newcommand{\Rate}{\textup{\text{Rate}}}
+
+
+% \renewcommand{\alph}[1]{\sA_{#1}}
+\newcommand{\srcalph}{\sA_{\rvS}}
+\newcommand{\srcrate}{R_{\rvS}}
+\newcommand{\srcblk}{\src^{n}}
+\newcommand{\enc}{\rvX}
+\newcommand{\encrate}{\sR_{\rvX}}
+\newcommand{\encvec}{\vx}
+\newcommand{\encsymb}{\rx}
+\newcommand{\encblk}{\enc^{k}}
+\newcommand{\encalph}{\sA_{\rvX}}
+\newcommand{\dec}{\rvY}
+\newcommand{\decsymb}{\ry}
+\newcommand{\decalph}{\sA_{\rvY}}
+\newcommand{\decvec}{\vy}
+\newcommand{\tQ}{\HH^{\delta}_{Q}}
+\newcommand{\tQZL}{\HH^{\delta}_{Q(Z_L|X)}}
+\newcommand{\tQprime}{\HH^{\delta}_{Q'}}
+\newcommand{\tQZLplus}{\HH^{\delta}_{Q(Z_{L+1}|X)}}
+
+\newcommand{\typicalset}{\sT_{\epsilon}^{(n)}}
+\newcommand{\jointlyset}{\sJ_{\epsilon}^{(n)}}
+\newcommand{\noise}{\rvN}

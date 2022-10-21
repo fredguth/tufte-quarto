@@ -19,7 +19,6 @@ contributes:
         reference-location: margin
         citation-location: margin
         documentclass: tufte-book
-        classoptions: []
         number-sections: false
         format-resources:
           - tufte-book.cls
