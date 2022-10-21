@@ -17,15 +17,15 @@ book:
     # - Front/dedication.qmd
     # - Front/ack.qmd
     # - Front/epigraph.qmd
-    - Chapters/context.qmd
-    # - part: background.qmd
-    #   chapters:
-    #     - Chapters/ai.qmd
+    # - Chapters/context.qmd
+    - part: Background
+      chapters:
+        - Chapters/ai.qmd
     #     - Chapters/prob.qmd
     #     - Chapters/mlt.qmd
     #     - Chapters/info.qmd
     # - part: intermezzo.qmd
-    # - part: emergence.qmd
+    # - part: A new theory
     #   chapters: 
     #     - Chapters/ib-method.qmd
     #     - Chapters/ib-rl.qmd
@@ -34,13 +34,17 @@ book:
     # - Back/notation.qmd
     # - Back/acronyms.qmd
     # - Back/colophon.qmd
-
-bibliography: bibliography.bib
-
-tufte:
-  format:
+    # - part: Development
+    #   chapters:
+    #   - Back/quarto-questions.qmd
+format:
     pdf:
       classoption: ["12pt", "british"]
+      # include-in-header:
+      #   - Tex/math_commands.tex
+bibliography: bibliography.bib
+  
+
   # cover: "Images/cover.pdf"
   # coversheet: "Images/coversheet.pdf"
 

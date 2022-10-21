@@ -45,23 +45,78 @@
 
 
 % Prints an epigraph and speaker in sans serif, all-caps type.
-\newcommand{\openepigraph}[2]{%
-  %\sffamily\fontsize{14}{16}\selectfont
+\newcommand{\epigraph}[2]{%
   \begin{fullwidth}
-  \sffamily\large
+  \begin{flushright}
+  \sffamily\fontsize{8}{10}\selectfont
+  \sffamily\footnotesize
   \begin{doublespace}
-  \noindent\allcaps{#1}\\% epigraph
-  \noindent\allcaps{#2}% author
+  \vspace{-8cm}\noindent\allcaps{#1}\\% epigraph
+  \noindent\allcaps{#2}\\% author
   \end{doublespace}
+  \vspace{5.1cm}
+  \end{flushright}
   \end{fullwidth}
+  \normalfont
 }
+
 
 \newcommand{\blankpage}{\newpage\hbox{}\thispagestyle{empty}\newpage}
 
 
 % insert 4cm before quote
-\renewenvironment{quote}
-               {\hspace{4cm}\list{}{\rightmargin\leftmargin}%
-                \small%
-                \item\relax}
-               {\endlist}
+\renewenvironment{quote}{
+  \list{}{\leftmargin=3.5cm\topsep=0pt}
+  \item\relax\small\itshape
+}
+{\endlist}
+
+
+%  change chapter formatting
+\titlespacing*{\chapter}{0pt}{5cm}{1cm}
+% \titlespacing*{\section}{0pt}{.6em}{.3em}
+% \titlespacing*{\subsection}{0pt}{.4em}{.2em}
+
+\titlespacing*{\section}{0pt}{0cm}{0cm}
+\titlespacing*{\subsection}{0pt}{0cm}{0cm}
+
+
+%  Change Figure Caption in the Margin size
+% \renewenvironment{@tufte@margin@float}[2][-1.2ex]%
+%   {\FloatBarrier% process all floats before this point so the figure/table numbers stay in order.
+%   \begin{lrbox}{\@tufte@margin@floatbox}%
+%   \begin{minipage}{\marginparwidth}%
+%     \@tufte@caption@font\footnotesize% <-- Add fontnotesize
+%     \def\@captype{#2}%
+%     \hbox{}\vspace*{#1}%
+%     \@tufte@caption@justification%
+%     \@tufte@margin@par%
+%     \noindent\normalsize%<-- restored size
+%   }
+%   {\end{minipage}%
+%   \end{lrbox}%
+%   \marginpar{\usebox{\@tufte@margin@floatbox}}%
+  % }
+
+
+\renewcommand\footnotesize{%
+   \@setfontsize\footnotesize\@viiipt{9}%
+   \abovedisplayskip 5\p@ \@plus2\p@ \@minus4\p@
+   \abovedisplayshortskip \z@ \@plus\p@
+   \belowdisplayshortskip 2.8\p@ \@plus\p@ \@minus2\p@
+   \def\@listi{\leftmargin\leftmargini
+               \topsep 2.5\p@ \@plus\p@ \@minus\p@
+               \parsep 2\p@ \@plus\p@ \@minus\p@
+               \itemsep \parsep}%
+   \belowdisplayskip \abovedisplayskip
+}
+
+% % Define Tuftian float styles (with the caption in the margin)
+% \newcommand{\floatc@tufteplain}[2]{%
+% \begin{lrbox}{\@tufte@caption@box}%
+%   \begin{minipage}[\floatalignment]{\marginparwidth}\hbox{}%
+%     \footnotesize\@tufte@caption@font{\@fs@cfont #1:} #2\par\normalsize%
+%   \end{minipage}%
+% \end{lrbox}%
+% \smash{\hspace{\@tufte@caption@fill}\usebox{\@tufte@caption@box}}%
+% }

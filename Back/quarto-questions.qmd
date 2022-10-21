@@ -1,0 +1,52 @@
+# Questions
+
+- Why `Welcome` from  `/index.qmd` is appearing in pdf?
+- `Part` `/background.qmd` is not appearing in TOC (pdf).  Is this a Tufte-book.cls problem?
+- pdf figures in website are being framed. Why? 
+- Header configuration is set to include short-tile instead of title.  Couldn't insert just a space, though.  Why blank space without mathmode didn't work?
+
+
+# Known-issues
+
+1. Tufte-book can't handle label inside caption.
+
+    Tufte-book.cls breaks when processing the line bellow:
+    ```markdown
+    ![A way of flying](/Images/goya.jpg){.column-body #fig-goya}
+    ```
+    which becomes:
+
+    ```tex
+    \begin{figure}
+
+    {\centering \includegraphics{Images/goya.jpg}
+
+    }
+
+    \caption{\label{fig-goya}A way of flying}
+
+    \end{figure}
+    ```
+    ====
+
+
+ 2. Can't render svg image in pdf and can't render pdf image in html.
+    - current solution is quite ugly: 
+
+    ```markdown
+    ::: {.content-hidden unless-format="pdf" }
+
+    ![IBT "genealogy" tree.](/Images/dissertation-map.pdf){.column-margin width=90%}
+
+    :::
+
+    ::: {.content-hidden unless-format="html"}
+
+    ![IBT "genealogy" tree.](/Images/dissertation-map.svg){.column-margin width=90%}
+
+    :::
+
+    ```
+
+3. Tufte-class works only until subsubsection -> ###, #### -> returns error
+

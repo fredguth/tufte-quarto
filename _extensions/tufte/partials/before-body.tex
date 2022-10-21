@@ -7,29 +7,5 @@
 % \includepdf{Images/coversheet.pdf} 
 %  TODO: remove/change maketitle if cover present
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% r.1 blank page
 
 
-% insert 4cm before quote
-\renewenvironment{quote}{%
-  \list{}{\leftmargin4cm}
-  \item\relax\small
-}
-{\endlist}
-\clearpage
-
-\renewcommand{\openepigraph}[2]{%
-  \begin{fullwidth}
-  \begin{flushright}
-  \vspace{-13\baselineskip}
-  \sffamily\fontsize{8}{10}\selectfont
-  \sffamily\footnotesize
-  \begin{doublespace}
-  \noindent\allcaps{#1}\\% epigraph
-  \noindent\allcaps{#2}\\% author
-  \end{doublespace}
-  \end{flushright}
-  \end{fullwidth}
-  \normalfont
-  \vspace{7\baselineskip}
-}

@@ -18,9 +18,17 @@
 .title .chapter-number {
     color: #212529;
     font-size: 1.5rem;
+    margin-right: 2rem;
+}
+
+.header-section-number {
+    color: #5a6570;
+    font-size: 1.3rem;
+    margin-right: 2rem;
 }
 body {
-    font-size: .9rem
+    font-size: .9rem;
+    quotes: "‘" "’";
 }
 
 .title .chapter-title {
@@ -29,10 +37,28 @@ body {
 }
 
 .blockquote {
+    border-left: none;
+}
+.blockquote p {
     font-size: smaller;
     padding-left: 2rem;
     padding-right: 1.5rem;
     color: #5a6570;
     margin-left: 4cm;
-    border-left: none
+    font-style: italic;
+}
+
+/* .blockquote p::before {
+  content: open-quote;
+} */
+
+
+.panel-caption, .figure-caption, figcaption {
+    color: #5a6570;
+    font-size: .825rem;
+    margin-bottom: .825rem;
+}
+
+.theorem-title {
+    margin-right: 1.5rem;
 }

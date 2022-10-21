@@ -11,13 +11,15 @@ contributes:
       html:
         page-layout: full
         reference-location: margin
-        citation-location: margin
+        citation-location: block
         title-block-style: none
         css: styles.css
+        number-sections: false
       pdf:
         reference-location: margin
         citation-location: margin
         documentclass: tufte-book
+        classoptions: []
         number-sections: false
         format-resources:
           - tufte-book.cls

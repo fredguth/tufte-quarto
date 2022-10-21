@@ -1,28 +1,41 @@
-\openepigraph{As far as the laws of mathematics refer to reality, they are not certain; \\
- and as far as they are certain, they do not refer to reality.}{Albert Einstein}
+\epigraph{As far as the laws of mathematics refer to reality, they are not certain; \\
+ and as far as they are certain, they do not refer to reality.}{--- Albert Einstein}
 
 # Introduction {#ch:introduction}
 
 In his acceptance speech for the Test-of-Time award in NeurIPS 2017,[^1] Ali Rahimi[^2] started a controversy by frankly declaring [@rahimi2017 12'10"]. His concerns on the lack of theoretical understanding of machine learning for critical decision-making are rightful:
 
-> |
-    ‘We are building systems that govern healthcare and mediate our civic dialogue. We would influence elections. I would like to live in a society whose systems are built on top of verifiable, rigorous, thorough knowledge and not on alchemy.’
+> ‘We are building systems that govern healthcare and mediate our civic dialogue. We would influence elections. I would like to live in a society whose systems are built on top of verifiable, rigorous, thorough knowledge and not on alchemy.’
 
 The next day, Yann LeCun[^3] responded: 
 
-> |
-    ‘Criticising an entire com- munity (. . .) for practising “alchemy”, simply because our current theoretical tools have not caught up with our practice is dangerous.’
+> ‘Criticising an entire community (\ldots) for practising “alchemy”, simply because our current theoretical tools have not caught up with our practice is dangerous.’
 
-Both researchers, at least, agree upon one thing: the practice of machine learning has outpaced its theoretical development. That is certainly a research opportunity.
+Both researchers, at least, agree upon one thing: *the practice of machine learning has outpaced its theoretical development*. That is certainly a research opportunity.
 
 [^2]: Research Scientist, Google. 
 
-![Richard Feynman, Nobel laureate physicist.](/Images/Feynman.pdf){.column-margin #fig-feynman}
+::: {.content-hidden unless-format="pdf"}
+
+![Richard Feynman, Nobel laureate physicist.](/Images/Feynman.pdf){.column-margin #fig-feynman width=90%}
+
+:::
+
+::: {.content-hidden unless-format="html"}
+
+![Richard Feynman, Nobel laureate physicist.](/Images/Feynman.svg){.column-margin #fig-feynman width=90%}
+
+:::
+
+::: {.content-hidden}
 
 ## Context 
+
+:::
+
 ### A Tale of Babylonians and Greeks {#sec:greeks}
 
-Richard Feynman [@fig-feynman] used to lecture this story [@feynman1994]: Babylonians were pioneers in mathematics; Yet, the Greeks took the credit. We are used to the Greek way of doing Math: start from the most basic axioms and build up a knowledge system. Babylonians were quite the opposite; they were pragmatic. No knowledge was considered more fundamental than others, and there was no urge to derive proofs in a particular order. Babylonians were concerned with the phenomena, Greeks with the ordinance. In Feynman's view, science is constructed in the Babylonian way. There is no fundamental truth. Theories try to connect dots from different pieces of knowledge. Only as science advances, one can worry about reformulation, simplification and ordering. Scientists are Babylonians; mathematicians are Greeks.
+Richard Feynman ([@fig-feynman]) used to lecture this story [@feynman1994]: Babylonians were pioneers in mathematics; Yet, the Greeks took the credit. We are used to the Greek way of doing Math: start from the most basic axioms and build up a knowledge system. Babylonians were quite the opposite; they were pragmatic. No knowledge was considered more fundamental than others, and there was no urge to derive proofs in a particular order. Babylonians were concerned with the phenomena, Greeks with the ordinance. In Feynman's view, science is constructed in the Babylonian way. There is no fundamental truth. Theories try to connect dots from different pieces of knowledge. Only as science advances, one can worry about reformulation, simplification and ordering. Scientists are Babylonians; mathematicians are Greeks.
 
 [^1]: Conference on Neural Information Processing.
 
@@ -30,7 +43,7 @@ Mathematics and science are both tools for knowledge acquisition. They are also 
 
 Science is empiric, based on facts collected from **experience**. When physicists around the world measured events that corroborated Newton's *"Law of Universal Gravitation"*, they did not prove it correct; they just made his theory more and more plausible. Still, only one experiment was needed to show that Einstein's *Relativity Theory* was even more believable. In contrast, we can and do prove things in mathematics.
 
-In mathematics, knowledge is absolute truth, and the way one builds new knowledge with it, its inference method, is deduction. Mathematics is a language, a formal one, a tool to precisely communicate some kinds of thoughts. As it happens with natural languages, there is beauty in it. The mathematician expands the boundaries of expression in this language.
+In mathematics, knowledge is absolute truth, and the way one builds new knowledge with it, its *inference method*, is deduction. **Mathematics is a language**, a formal one, a tool to precisely communicate some kinds of thoughts. As it happens with natural languages, there is beauty in it. The mathematician expands the boundaries of expression in this language.
 
 In science, there are no axioms: a falsifiable hypothesis/theory is proposed, and logical conclusions (predictions) from the theory are empirically tested. Despite inferring hypotheses by induction, there is no influence of psychology in the process. A tested hypothesis is not absolute truth. A hypothesis is never verified, only falsified by experiments [@popper2004 p. 31-50]. Scientific knowledge is belief justified by experience; there are degrees of plausibility.
 
@@ -43,7 +56,7 @@ Understanding the epistemic contrast between mathematics and science will help u
 To illustrate, take the ancient human desire of flying. There have always been stories of men strapping wings to themselves and attempting to fly by jumping from a tower and flapping those wings like birds [see @farrington2016]. While concepts like lift, stability, and control were poorly understood, most human flight attempts ended in severe injury or even death. It did not matter how much evidence, how many hours of seeing different animals flying, those ludicrous brave men experienced; the *meaning* they took from what they saw was wrong, and their predictions incorrect.
 
 
-![A way of flying](/Images/goya.jpg){.column-body}
+![ ‘A way of flying’, Francisco Goya, 1815--1820, Amsterdam, Rijksmuseum.](/Images/goya.jpg){.column-body}
 
 <!-- Tufte-book.cls breaks when processing the line bellow:
 ![A way of flying](/Images/goya.jpg){.column-body #fig-goya}
@@ -65,11 +78,9 @@ which becomes:
 Tufte-book can't handle label inside caption.
  -->
 
-[^3]: Director of Facebook AI Research.
 
-<
 
-They did not die in vain[^4]; Science advances when scientists are wrong. Theories must be falsifiable, and scientists cheer for their failure. When it fails, there is room for new approaches. Only when we understood the observations in animal flight from the aerodynamics perspective, we learned to fly better than any other animal before. Science works by a "natural selection" of ideas, where only the fittest ones survive until a better one is born. Chaitin also points out that an idea has "fertility" to the extent to which it "illuminates us, inspires us with other ideas, and suggests unsuspected connections and new viewpoints" [@chaitin2006 p. 9]. 
+They did not die in vain[^4]; Science advances when scientists are wrong. Theories must be falsifiable, and scientists cheer for their failure. When it fails, there is room for new approaches. Only when we understood the observations in animal flight from the aerodynamics perspective, we learned to fly better than any other animal before. Science works by a "natural selection" of ideas, where only the fittest ones survive until a better one is born. Chaitin also points out that an idea has "fertility" to the extent to which it *"illuminates us, inspires us with other ideas, and suggests unsuspected connections and new viewpoints"* [@chaitin2006 p. 9]. 
 
 Being a Babylonian enterprise, science has no clear path. One of the exciting facts one can learn by studying its history is that robust discoveries have arisen through the study of phenomena in human-made devices [@pierce1980]. For instance, Carnot's first and only scientific work [@klein1974] gave birth to thermodynamics: the study of energy, the conversion between its different forms, and the ability of energy to do work; the science that explains how steam engines work. However, steam engines came before Carnot's work and were studied by him. Such human-made devices may present a simplified instance of more complex natural phenomena.
 
@@ -81,29 +92,29 @@ Despite the name, Computer Science has been more mathematics than science. We, c
 
 Nevertheless, [AI]{acronym-label="AI" acronym-form="singular+short"} has essentially become a Babylonian enterprise, a scientific endeavour. Thus, there is no surprise when some computer scientists still see AI with some distrust and even disdain, despite its undeniable usefulness:
 
--   Even among AI researchers, there is a trend of "mathiness" and speculation disguised as explanations in conference papers [@lipton2018].
+-  Even among AI researchers, there is a trend of "mathiness" and speculation disguised as explanations in conference papers [@lipton2018].
 
--   There are few venues for papers that describe surprising phenomena without trying to come up with an explanation. As if the mere inconsistency of the current theoretical framework was unworthy of publication.
+-  There are few venues for papers that describe surprising phenomena without trying to come up with an explanation. As if the mere inconsistency of the current theoretical framework was unworthy of publication.
 
-While physicists rejoice in finding phenomena that contradict current theories, computer scientists get baffled. In Natural Sciences, unexplained phenomena lead to theoretical development. Some believe they bring *winters*, periods of progress stagnation and lack of funding in [AI]{acronym-label="AI" acronym-form="singular+short"}.[^6]
+While physicists rejoice in finding phenomena that contradict current theories, computer scientists get baffled. In Natural Sciences, unexplained phenomena lead to theoretical development. Some believe they bring *winters*, periods of progress stagnation and lack of funding in [AI]{acronym-label="AI" acronym-form="singular+short"}. This seems to be LeCun's opinion.[^6] 
 
-Artificial Intelligence has been through several of the aforementioned "winters". In 1957, Herbert Simon[^7] famously predicted that within ten years, a computer would be a chess champion [@russell2010 section 1.3]. It took around 40 years, in any case. Computer scientists lacked understanding of the exponential nature of the problems they were trying to solve: Computational Complexity Theory had yet to be invented.
+Artificial Intelligence has been through several of the aforementioned "winters".  In 1957, Herbert Simon[^7] famously predicted that within ten years, a computer would be a chess champion [@russell2010 section 1.3]. It took around 40 years, in any case. Computer scientists lacked understanding of the exponential nature of the problems they were trying to solve: Computational Complexity Theory had yet to be invented.
 
 Machine Learning Theory (computational and statistical) tries to avoid a similar trap by analysing and classifying learning problems according to the number of samples required to learn them (besides the number of steps). The matter of concern is that it currently predicts that generalisation requires simpler models in terms of parameters. In total disregard to the theory, deep learning models have shown spectacular generalisation power with hundreds of millions of parameters (and even more impressive overfitting capacity ).
 
 ## Problem
 
-![Piling data](/Images/machine_learning_2x.png){.column-margin #fig-pile_data}
+![Source: https://xkcd.com/1838/. Reprinted with permission.](/Images/machine_learning_2x.png){.column-margin #fig-pile_data}
 
-In the last decade, we have witnessed a myriad of astonishing successes in Deep Learning. Despite those many successes in research and industry applications, we may again be climbing a peak of inflated expectations. If in the past, the false solution was to "add computation power" on problems, today we try to solve them by "piling data" [@fig-pile_data]. Such behaviour has triggered a winner-takes-all competition for who collects more data (our data) amidst a handful of large corporations, raising ethical concerns about privacy and concentration of power [@oneil2016].
+In the last decade, we have witnessed a myriad of astonishing successes in Deep Learning. Despite those many successes in research and industry applications, we may again be climbing a peak of inflated expectations. If in the past, the false solution was to "add computation power" on problems, today we try to solve them by "piling data" ([@fig-pile_data]). Such behaviour has triggered a winner-takes-all competition for who collects more data (our data) amidst a handful of large corporations, raising ethical concerns about privacy and concentration of power [@oneil2016].
 
 Nevertheless, we know that learning from way fewer samples is possible: humans show a much better generalisation ability than our current state-of-the-art artificial intelligence. To achieve such needed generalisation power, we may need to understand better how learning happens in deep learning. Rethinking generalisation might reshape the foundations of machine learning theory [@zhang2016].
 
 ### Possible new explanation in the horizon
 
-In $2015$,  @tishby2015dlib proposed a theory of deep learning  [@tishby2015dlib] based on the information-theoretical concept of the bottleneck principle, of which Tishby is one of the authors. Later, in 2017,  @shwartz-ziv2017 followed up on the [IBT]{acronym-label="IBT" acronym-form="singular+full"} with the paper  , which was presented in a well-attended workshop[^8], with appealing visuals that clearly showed a *"phase transition"* happening during training. The video posted on Youtube [@tishby2017yt1] became a "sensation"[^9], and received a wealth of publicity when well-known researchers like Geoffrey Hinton[^10], Samy Bengio (Apple) and Alex Alemi (Google Research) have expressed interest in Tishby's ideas [@wolchover2017quanta]. they are called formal languages.
+In 2015,  @tishby2015dlib proposed a theory of deep learning  [@tishby2015dlib] based on the information-theoretical concept of the bottleneck principle, of which Tishby is one of the authors. Later, in 2017,  @shwartz-ziv2017 followed up on the [IBT]{acronym-label="IBT" acronym-form="singular+full"} with the paper  , which was presented in a well-attended workshop[^8], with appealing visuals that clearly showed a *"phase transition"* happening during training. The video posted on Youtube [@tishby2017yt1] became a "sensation"[^9], and received a wealth of publicity when well-known researchers like Geoffrey Hinton[^10], Samy Bengio (Apple) and Alex Alemi (Google Research) have expressed interest in Tishby's ideas [@wolchover2017quanta]. they are called formal languages.
 
-> *I believe that the information bottleneck idea could be very important in future deep neural network research.* --- Alex Alemi
+> ‘I believe that the information bottleneck idea could be very important in future deep neural network research.’ --- Alex Alemi
 
 Andrew Saxe (Harvard University) rebutted  @shwartz-ziv2017 claims in   and was followed by other critics. According to Saxe, it was impossible to reproduce  [@shwartz-ziv2017]'s experiments with different parameters.
 
@@ -121,6 +132,16 @@ This dissertation aims to investigate *to what extent* can the emergent Informat
 
 ### Research Questions
 
+1. What are the fundamentals of IBT? How do they differ from the ones from MLT?
+2. What is the relationship between IBT and current MLT? How different or similar they are?
+3. Is IBT capable of explaining the phenomena MLT already explains?
+4. Does IBT invalidate results in MLT?
+5. Is IBT capable of explaining phenomena still not well understood by MLT?
+6. What are Information Bottleneck Theory’s (IBT) strengths?
+7. What are Information Bottleneck Theory’s (IBT) weaknesses?
+8. What has been already developed in IBT?
+9. What are Information Bottleneck Theory’s (IBT) research opportunities?
+
 ## Methodology
 
 1.  Given that [IBT]{acronym-label="IBT" acronym-form="singular+short"} is yet not a well-established learning theory, there were two difficulties that the research had to address:
@@ -129,7 +150,9 @@ This dissertation aims to investigate *to what extent* can the emergent Informat
 
     2.  Early on, the marks of an emergent theory in its infancy manifested in the form of missing assumptions, inconsistent notation, borrowed jargon, and seeming missing steps. Foremost, it was unclear what was missing from the theory and what was missing in our understanding.
 
-    An initial literature review on [IBT]{acronym-label="IBT" acronym-form="singular+short"} was conducted to define the scope.[^11] We then chose to narrow the research to **theoretical perspective on generalisation**, where we considered that it could bring fundamental advances. We made the deliberate choice of going deeper in a limited area of [IBT]{acronym-label="IBT" acronym-form="singular+short"} and not broad, leaving out a deeper experimental and application analysis, all the work on [ITL]{acronym-label="ITL" acronym-form="singular+full"}[^12]  [@principe2010] and statistical-mechanics-based analysis of SGD  [@chaudhari2018SGD; @chaudhari2019]. From this set of constraints, we chose a list of pieces of [IBT]{acronym-label="IBT" acronym-form="singular+short"} literature to go deeper ([\[ch:literature\]][3]).
+    An initial literature review on [IBT]{acronym-label="IBT" acronym-form="singular+short"} was conducted to define the scope.[^11] We then chose to narrow the research to **theoretical perspective on generalisation**, where we considered that it could bring fundamental advances. We made the deliberate choice of going deeper in a limited area of [IBT]{acronym-label="IBT" acronym-form="singular+short"} and not broad, leaving out a deeper experimental and application analysis, all the work on [ITL]{acronym-label="ITL" acronym-form="singular+full"}[^12]  [@principe2010] and statistical-mechanics-based analysis of SGD  [@chaudhari2018SGD; @chaudhari2019]. From this set of constraints, we chose a list of pieces of [IBT]{acronym-label="IBT" acronym-form="singular+short"} literature to go deeper. 
+
+    <!-- TODO: add link to appendice -->
 
 2.  In order to answer , we discuss the epistemology of [AI]{acronym-label="AI" acronym-form="singular+long"} to choose fundamental axioms (definition of intelligence and the definition of knowledge) with which we deduced from the ground up [MLT]{acronym-label="MLT" acronym-form="singular+short"}, [IT]{acronym-label="IT" acronym-form="singular+short"} and [IBT]{acronym-label="IBT" acronym-form="singular+short"}, revealing hidden assumptions, pointing out similarities and differences. By doing that, we built a "genealogy" of these research fields. This comparative study was essential for identifying missing gaps and research opportunities.
 
@@ -145,15 +168,15 @@ In the research conducted, we produced three main results that, to the extent of
 
 2.  We propose an Information-Theoretical learning problem different from [MDL]{acronym-label="MDL" acronym-form="singular+short"} proposed by  [@hinton1993] for which we derived bounds using Shannon's . These results, however, are only indicative as they lack peer review to be validated.
 
-3.  We present a critique on @achille2019phd's explanation [@achille2019phd; @achille2017emergence] for the role of layers in Deep Representation in the [IBT]{acronym-label="IBT" acronym-form="singular+short"} perspective ([\[sec:achille_proof_critique\]][4]), pointing out a weakness in the argument that, as far as we know, has not yet been presented. We then propose a counter-intuitive *hypothesis* that layers reduce the model's "effective" hypothesis space. This *hypothesis* is not formally proven in the present work, but we try to give the intuition behind it ([\[sec:proposed_hypothesis\]][5]). This result has not yet been validated as well.
+3.  We present a critique on @achille2019phd's explanation [@achille2019phd; @achille2017emergence] for the role of layers in Deep Representation in the [IBT]{acronym-label="IBT" acronym-form="singular+short"} perspective (@sec-achille_proof_critique), pointing out a weakness in the argument that, as far as we know, has not yet been presented. We then propose a counter-intuitive *hypothesis* that layers reduce the model's "effective" hypothesis space. This *hypothesis* is not formally proven in the present work, but we try to give the intuition behind it (@sec-proposed_hypothesis). This result has not yet been validated as well.
 
 ## Dissertation preview and outline
 
-The dissertation is divided into two main parts ([\[pt:background\]][6] and [\[pt:emergence_of_theory\]][7]), with a break in the middle ([\[pt:intermezzo\]][8]).
+The dissertation is divided into two main parts (`Background` and `The emergence of a theory`), with a break in the middle (`Intermezzo`).
 
-1.  Background ([\[pt:background\]][6])
+1.  Background
 
-    -   Chapter 2--Artificial Intelligence: The chapter defines what artificial intelligence is, presents the epistemological differences of intelligent agents in history, and discusses their consequences to machine learning theory.
+    -   Chapter 2 --- Artificial Intelligence: The chapter defines what artificial intelligence is, presents the epistemological differences of intelligent agents in history, and discusses their consequences to machine learning theory.
 
     -   Chapter 3 --- Probability Theory: The chapter derives propositional calculus and probability theory from a list of desired characteristics for epistemic agents. It also presents basic Probability Theory concepts.
 
@@ -161,11 +184,25 @@ The dissertation is divided into two main parts ([\[pt:background\]][6] and [\[p
 
     -   Chapter 5 --- Information Theory: The chapter derives Shannon Information from Probability Theory, explicates some implicit assumptions, and explains basic Information Theory concepts.
 
-2.  Intermezzo ([\[pt:intermezzo\]][8])
+2.  Intermezzo
 
     -   Chapter 6 --- Information-Theoretical Epistemology: This chapter closes the background part and opens the IBT part of the dissertation. It shows the connection of [IT]{acronym-label="IT" acronym-form="singular+short"} and [MLT]{acronym-label="MLT" acronym-form="singular+short"} in the learning problem, proves that Shannon theorems can be used to prove PAC bounds and present the [MDL]{acronym-label="MDL" acronym-form="singular+full"} Principle, an earlier example of this kind of connection.
 
-3.  The emergence of a theory ([\[pt:emergence_of_theory\]][7])
+::: {.content-hidden unless-format="pdf" }
+
+![IBT "genealogy" tree.](/Images/dissertation-map.pdf){.column-margin width=90%}
+
+:::
+
+::: {.content-hidden unless-format="html"}
+
+![IBT "genealogy" tree.](/Images/dissertation-map.svg){.column-margin width=90%}
+
+:::
+
+
+
+3.  The emergence of a theory 
 
     -   Chapter 7 --- IB Principle: Explains the IB method and its tools: [KL]{acronym-label="KL" acronym-form="singular+full"} as a natural distortion (loss) measure, the IB Lagrangian and the Information Plane.
 
@@ -179,24 +216,36 @@ We found out that [IBT]{acronym-label="IBT" acronym-form="singular+short"} does 
 
 Furthermore, they both share more or less the same "genealogy" of assumptions. [IBT]{acronym-label="IBT" acronym-form="singular+short"} can be seen as particular case of [MLT]{acronym-label="MLT" acronym-form="singular+short"}. Nevertheless, [IBT]{acronym-label="IBT" acronym-form="singular+short"} allows us to better understand the training process and provide a different narrative that helps us comprehend Deep Learning phenomena in a more general way.
 
+::: {.border-bottom}
+>
+>
+>
+
+:::
+</BR>
+
+
+
+
+
 [^3]: Deep Learning pioneer and 2018 Turing award winner. <https://bit.ly/3CQNwTU>
 
 [^4]: Those "researchers" deserved, at least, a Darwin Award of Science. The Darwin Award is satirical honours that recognise individuals who have unwillingly contributed to human evolution by selecting themselves out of the gene pool.
 
 [^5]: Understanding human intelligence using artificial intelligence is a field of study called Computational Neuroscience.
 
-[^6]: This seems to be Yann LeCun's opinion: However, due to all possible alternative explanations (lack of computational power, no availability of massive annotated datasets), it seems harsh or simply wrong to blame theorists.
+[^6]: Due to all possible alternative explanations (lack of computational power, no availability of massive datasets), it seems harsh or simply wrong to blame theorists.
 
-[^7]: Herbert Simon ($1916$--$2001$) received the Turing Award in $1975$, and the Nobel Prize in Economics in $1978$.
+[^7]: Herbert Simon (1916--2001) received the Turing Award in 1975, and the Nobel Prize in Economics in 1978.
 
 [^8]: Deep Learning: Theory, Algorithms, and Applications. Berlin, June 2017 <http://doc.ml.tu-berlin.de/dlworkshop2017>
 
-[^9]: By the time of this writing, this video as more than $84,000$ views, which is remarkable for an hour-long workshop presentation in an academic niche. <https://youtu.be/bLqJHjXihK8>
+[^9]: By the time of this writing, this video as more than 84,000 views, which is remarkable for an hour-long workshop presentation in an academic niche. <https://youtu.be/bLqJHjXihK8>
 
 [^10]: Another Deep Learning Pioneer **and** Turing award winner (2018).
 
 [^11]: Not even the term [IBT]{acronym-label="IBT" acronym-form="singular+short"} is universally adopted.
 
-[^12]: [ITL]{acronym-label="ITL" acronym-form="singular+short"} makes the opposite path we are taking, bringing concepts of machine learning to information theory problems. -->
+[^12]: [ITL]{acronym-label="ITL" acronym-form="singular+short"} makes the opposite path we are taking, bringing concepts of machine learning to information theory problems. 
 
 
