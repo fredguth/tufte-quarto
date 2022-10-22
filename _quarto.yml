@@ -41,18 +41,28 @@ book:
 
 format: # specific to my dissertation
     html:
+      html-math-method: mathjax
       include-in-header:
-        # - Tex/math_commands.tex
-        - Tex/_dollar.tex # hack for macros in html https://github.com/quarto-dev/quarto-cli/discussions/2845
-        - Tex/math_definitions.tex
-        - Tex/_dollar.tex # hack for macros in html https://github.com/quarto-dev/quarto-cli/discussions/2845
+        - text: |
+            <script>
+              window.MathJax = {
+                loader: {
+                  load: ['[tex]/bm', '[tex]/bigints', '[tex]/nicefrac', '[tex]/venndiagram', '[tex]/xpatch']
+                },
+                tex: {
+                  packages: {'[+]': ['bm', 'bigints', 'nicefrac', 'venndiagram', 'xpatch']}
+                }
+              };
+            </script>
+        - "Tex/_dollar.tex" # hack for macros in html https://github.com/quarto-dev/quarto-cli/discussions/2845
+        - "Tex/math_macros.tex"
+        - "Tex/_dollar.tex" # hack for macros in html https://github.com/quarto-dev/quarto-cli/discussions/2845
     pdf:
       classoption: ["12pt", "british"]
       include-in-header:
         - Tex/math_commands.tex
-        - Tex/math_definitions.tex
 bibliography: bibliography.bib
-  
+
 
   # cover: "Images/cover.pdf"
   # coversheet: "Images/coversheet.pdf"
