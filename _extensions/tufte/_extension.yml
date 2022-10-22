@@ -6,7 +6,7 @@ contributes:
   project:
     project:
       type: book
-      output-dir: _tufte
+      output-dir: docs
     format:
       html:
         page-layout: full
@@ -24,7 +24,7 @@ contributes:
           - tufte-book.cls
           - tufte-common.def
           - tufte.bst
-        include-in-header: 
+        include-in-header:
           - "partials/in-header.tex"
           - "partials/definitions.tex"
         template-partials:

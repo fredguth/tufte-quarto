@@ -41,19 +41,24 @@ book:
 
 format: # specific to my dissertation
     html:
+      open-graph: true
+      site-url: https://fredguth.github.io/tufte-quarto/
+      repo-url: https://github.com/fredguth/tufte-quarto/
+      repo-actions: [edit, issue]
+      page-footer:
+        left: |
+          © 2022 onwards, Fred Guth
+        right:
+          - icon: twitter
+            href: https://twitter.com/fredguth
+            aria-label: Fred's Twitter
+          - icon: github
+            href: https://github.com/fredguth/tufte-quarto/
+            aria-label: Tufte-Quarto on GitHub
       html-math-method: mathjax
-      include-in-header:
-        - text: |
-            <script>
-              window.MathJax = {
-                loader: {
-                  load: ['[tex]/bm', '[tex]/bigints', '[tex]/nicefrac', '[tex]/venndiagram', '[tex]/xpatch']
-                },
-                tex: {
-                  packages: {'[+]': ['bm', 'bigints', 'nicefrac', 'venndiagram', 'xpatch']}
-                }
-              };
-            </script>
+      include-before-body:
+        - js.html
+      include-in-header: 
         - "Tex/_dollar.tex" # hack for macros in html https://github.com/quarto-dev/quarto-cli/discussions/2845
         - "Tex/math_macros.tex"
         - "Tex/_dollar.tex" # hack for macros in html https://github.com/quarto-dev/quarto-cli/discussions/2845

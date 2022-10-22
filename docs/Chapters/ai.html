@@ -82,79 +82,76 @@ div.csl-indent {
     "search-submit-button-title": "Submit"
   }
 }</script>
-<script>
-window.MathJax = {
-  loader: {
-    load: ['[tex]/bm', '[tex]/bigints', '[tex]/nicefrac', '[tex]/venndiagram', '[tex]/xpatch']
-  },
-  tex: {
-    packages: {'[+]': ['bm', 'bigints', 'nicefrac', 'venndiagram', 'xpatch']}
-  }
-};
-</script>
+<meta property="og:title" content="The emergence of
+an Information Bottleneck Theory
+of Deep Learning
+- 2&nbsp; Artificial Intelligence">
+<meta property="og:description" content="This chapter defines artificial intelligence, presents the epistemological differences of intelligent agents in history, and discusses their consequences to machine learning theory.">
+<meta property="og:site-name" content="The emergence of\
+an Information Bottleneck Theory\
+of Deep Learning\
+">
+</head><body class="nav-sidebar floating slimcontent">$$
+% \def\cantox@vector#1#2#3#4#5#6#7#8{%
+%   \dimen@.5\p@
+%   \setbox\z@\vbox{\boxmaxdepth.5\p@
+%    \hbox{\kern-1.2\p@\kern#1\dimen@$#7{#8}\m@th$}}%
+%   \ifx\canto@fil\hidewidth  \wd\z@\z@ \else \kern-#6\unitlength \fi
+%   \ooalign{%
+%     \canto@fil$\m@th \CancelColor
+%     \vcenter{\hbox{\dimen@#6\unitlength \kern\dimen@
+%       \multiply\dimen@#4\divide\dimen@#3 \vrule\@depth\dimen@\@width\z@
+%       \vector(#3,-#4){#5}%
+%     }}_{\raise-#2\dimen@\copy\z@\kern-\scriptspace}$%
+%     \canto@fil \cr
+%     \hfil \box\@tempboxa \kern\wd\z@ \hfil \cr}}
+% \def\bcancelto#1#2{\let\canto@vector\cantox@vector\cancelto{#1}{#2}}
 
+% \tikzset{
+%   vennframe/.style={draw=none} 
+% }
+% \xpatchcmd{\endvenndiagram3sets}
+% {\draw (0,0) rectangle (\@venn@w,\@venn@h);} % replace this
+% {\draw [vennframe] (0,0) rectangle (\@venn@w,\@venn@h);} % with this -- add the style
+% {}{}
 
-</head><body class="nav-sidebar floating slimcontent">\(
-\def\cantox@vector#1#2#3#4#5#6#7#8{%
-  \dimen@.5\p@
-  \setbox\z@\vbox{\boxmaxdepth.5\p@
-   \hbox{\kern-1.2\p@\kern#1\dimen@$#7{#8}\m@th$}}%
-  \ifx\canto@fil\hidewidth  \wd\z@\z@ \else \kern-#6\unitlength \fi
-  \ooalign{%
-    \canto@fil$\m@th \CancelColor
-    \vcenter{\hbox{\dimen@#6\unitlength \kern\dimen@
-      \multiply\dimen@#4\divide\dimen@#3 \vrule\@depth\dimen@\@width\z@
-      \vector(#3,-#4){#5}%
-    }}_{\raise-#2\dimen@\copy\z@\kern-\scriptspace}$%
-    \canto@fil \cr
-    \hfil \box\@tempboxa \kern\wd\z@ \hfil \cr}}
-\def\bcancelto#1#2{\let\canto@vector\cantox@vector\cancelto{#1}{#2}}
+% \xpatchcmd{\endvenndiagram2sets}
+% {\draw (venn bottom left) rectangle (\@venn@w,\@venn@h);}
+% {\draw [vennframe] (venn bottom left) rectangle (\@venn@w,\@venn@h);}
+% {}{}
 
-\tikzset{
-  vennframe/.style={draw=none} 
-}
-\xpatchcmd{\endvenndiagram3sets}
-{\draw (0,0) rectangle (\@venn@w,\@venn@h);} % replace this
-{\draw [vennframe] (0,0) rectangle (\@venn@w,\@venn@h);} % with this -- add the style
-{}{}
+% \newcommand*\wrapscope[1]{%
+%   \expandafter\newcommand\csname o#1\endcsname[1][]{%
+%     \begin{scope}[##1]
+%     \csname #1\endcsname
+%     \end{scope}
+%   }%
+% }%
 
-\xpatchcmd{\endvenndiagram2sets}
-{\draw (venn bottom left) rectangle (\@venn@w,\@venn@h);}
-{\draw [vennframe] (venn bottom left) rectangle (\@venn@w,\@venn@h);}
-{}{}
+% \wrapscope{fillA}
+% \wrapscope{fillACapB}
 
-\newcommand*\wrapscope[1]{%
-  \expandafter\newcommand\csname o#1\endcsname[1][]{%
-    \begin{scope}[##1]
-    \csname #1\endcsname
-    \end{scope}
-  }%
-}%
-
-\wrapscope{fillA}
-\wrapscope{fillACapB}
-
-\tikzset{
-  clip/.append code={%
-    \let\tikz@options=\pgfutil@empty
-    \tikz@addmode\tikz@mode@fillfalse%
-    \tikz@addmode\tikz@mode@drawfalse%
-    \tikz@addmode\tikz@mode@doublefalse%
-    \tikz@addmode\tikz@mode@boundaryfalse%
-    \tikz@addmode\tikz@mode@fade@pathfalse%
-    \tikz@addmode\tikz@mode@fade@scopefalse%
-  }
-}
+% \tikzset{
+%   clip/.append code={%
+%     \let\tikz@options=\pgfutil@empty
+%     \tikz@addmode\tikz@mode@fillfalse%
+%     \tikz@addmode\tikz@mode@drawfalse%
+%     \tikz@addmode\tikz@mode@doublefalse%
+%     \tikz@addmode\tikz@mode@boundaryfalse%
+%     \tikz@addmode\tikz@mode@fade@pathfalse%
+%     \tikz@addmode\tikz@mode@fade@scopefalse%
+%   }
+% }
 
 
 
 
-\DeclareSymbolFont{bbold}{U}{bbold}{m}{n}
-\DeclareSymbolFontAlphabet{\mathbbold}{bbold}
+% \DeclareSymbolFont{bbold}{U}{bbold}{m}{n}
+% \DeclareSymbolFontAlphabet{\mathbbold}{bbold}
 
 
 
-
+\def\bm{\boldsymbol}
 \newcommand{\typical}[1]{{\sA^{\epsilon}_{#1} }}
 \newcommand{\Typical}[1]{{\sA^{\delta}_{#1} }}
 \def\diag{\mathop{\mathrm{diag}}}
@@ -426,8 +423,8 @@ window.MathJax = {
 \newcommand{\noise}{\rvN}
 
 
-\)
 
+$$
 
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
@@ -551,12 +548,32 @@ of Deep Learning<br>
     </div>
 <!-- main -->
 <main class="content page-columns page-full column-body" id="quarto-document-content">
+ <script>
+    window.MathJax = {
+        loader: {
+            load: ['[tex]/bm', '[tex]/bigints', '[tex]/nicefrac', '[tex]/venndiagram', '[tex]/xpatch']
+        },
+        tex: {
+            packages: {'[+]': ['bm', 'bigints', 'nicefrac', 'venndiagram', 'xpatch']}
+        }
+    };
+</script>
 
 <header id="title-block-header">
 <h1 class="title display-7"><span class="chapter-title">Artificial Intelligence</span></h1>
 
 </header>
 
+<script>
+  window.MathJax = {
+    loader: {
+      load: ['[tex]/bm', '[tex]/bigints', '[tex]/nicefrac', '[tex]/venndiagram', '[tex]/xpatch']
+    },
+    tex: {
+      packages: {'[+]': ['bm', 'bigints', 'nicefrac', 'venndiagram', 'xpatch']}
+    }
+  };
+</script>
 <p>This chapter defines artificial intelligence, presents the epistemological differences of intelligent agents in history, and discusses their consequences to machine learning theory.</p>
 <section id="artificial-intelligence" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="artificial-intelligence">What is Artificial Intelligence?</h2>
@@ -769,6 +786,9 @@ Anatomy of an Intelligent Agent. Inspired by art in @russell2010.
 </blockquote>
 <p>The name is explained by &nbsp;<span class="citation" data-cites="goodfellow2016">Goodfellow, Bengio, and Courville (<a href="#ref-goodfellow2016" role="doc-biblioref">2016</a>)</span>: “<em>A graph showing the concepts being built on top of each other is a deep graph. Therefore the name, deep learning</em>”&nbsp;<span class="citation" data-cites="goodfellow2016">(<a href="#ref-goodfellow2016" role="doc-biblioref">Goodfellow, Bengio, and Courville 2016</a>)</span>. Although it is a direct descendant of the connectionist movement, it goes beyond the neuroscientific perspective in its modern form. It is more a general principle of learning multiple levels of compositions.</p>
 <p>The quintessential example of a deep learning model is the deep feedforward network or <span data-acronym-label="MLP" data-acronym-form="singular+full">MLP</span>&nbsp;<span class="citation" data-cites="russell2010">(<a href="#ref-russell2010" role="doc-biblioref">Russell, Norvig, and Davis 2010</a>)</span>.</p>
+<ul>
+<li><span class="math inline">\({x}\)</span>, <span class="math inline">\(y\)</span></li>
+</ul>
 <div id="def-MLP" class="theorem definition">
 <p><span class="theorem-title"><strong>Definition 2.3 </strong></span>Let,</p>
 <ul>
