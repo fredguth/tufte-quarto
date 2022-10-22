@@ -31,27 +31,50 @@ body {
     quotes: "‘" "’";
 }
 
-.title .chapter-title {
-    font-style: italic;
+/* h1 {
     font-family: 'Minion Pro', 'Crimson', serif;
+    font-style: italic;
+    padding-bottom: 1rem;
+    letter-spacing: 0rem;
+} */
+
+header .chapter-title {
+    font-family: 'Minion Pro', 'Crimson', serif;
+    font-style: italic;
+    text-transform: none;
+    font-size: 2.2rem;
+    letter-spacing: normal;
 }
 
+.quarto-secondary-nav-title, .title {
+    /* font-family: 'Minion Pro', 'Crimson', serif; */
+    font-family: helvetica, monospace;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: .125em;
+    line-height: 1.25em; 
+    font-size: 1.5rem;
+    padding-top: .825rem
+    
+}
+.quarto-secondary-nav-title {
+    font-size: 1.1rem;
+}
 .blockquote {
     border-left: none;
 }
 .blockquote p {
     font-size: smaller;
-    padding-left: 2rem;
-    padding-right: 1.5rem;
     color: #5a6570;
-    margin-left: 4cm;
     font-style: italic;
 }
 
-/* .blockquote p::before {
-  content: open-quote;
-} */
 
+@media (min-width:1280px) {
+    .blockquote p {
+        padding-left: 4cm;
+    }
+}
 
 .panel-caption, .figure-caption, figcaption {
     color: #5a6570;
@@ -62,6 +85,7 @@ body {
 .theorem-title {
     margin-right: 1.5rem;
 }
+
 
 #fig-cover img {
     background-color: #f3ede8;

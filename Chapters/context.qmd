@@ -1,7 +1,18 @@
+---
+title: Introduction
+description: |
+    As far as the laws of mathematics refer to reality, they are not certain; \
+    and as far as they are certain, they do not refer to reality.
+    --- Albert Einstein
+---
 \epigraph{As far as the laws of mathematics refer to reality, they are not certain; \\
  and as far as they are certain, they do not refer to reality.}{--- Albert Einstein}
 
+::: {.content-hidden when-format="html"}
+
 # Introduction {#ch:introduction}
+
+:::
 
 In his acceptance speech for the Test-of-Time award in NeurIPS 2017,[^1] Ali Rahimi[^2] started a controversy by frankly declaring [@rahimi2017 12'10"]. His concerns on the lack of theoretical understanding of machine learning for critical decision-making are rightful:
 
