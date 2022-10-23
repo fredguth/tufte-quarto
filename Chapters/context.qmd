@@ -20,7 +20,7 @@ In his acceptance speech for the Test-of-Time award in NeurIPS 2017,[^1] Ali Rah
 
 The next day, Yann LeCun[^3] responded: 
 
-> ‘Criticising an entire community (\ldots) for practising “alchemy”, simply because our current theoretical tools have not caught up with our practice is dangerous.’
+> ‘Criticising an entire community (...) for practising “alchemy”, simply because our current theoretical tools have not caught up with our practice is dangerous.’
 
 Both researchers, at least, agree upon one thing: *the practice of machine learning has outpaced its theoretical development*. That is certainly a research opportunity.
 

@@ -8,6 +8,7 @@
 - How to include math macros in the html?  
 - What is the page full of definitions that appear while routing in the website? `math_definitions.tex`?
 - Too much info in the margin citation. Create custom bib style?
+- How to show title-block for each chapter in website?
 
 ## Known-issues
 

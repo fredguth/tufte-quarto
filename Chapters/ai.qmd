@@ -1,7 +1,19 @@
+---
+title: Artificial Intelligence
+description: |
+    I visualise a time when we will be to robots what dogs are to humans \
+    \ldots and I am rooting for the machines.
+    --- Claude Shannon
+---
+
 \epigraph{I visualise a time when we will be to robots what dogs are to humans \\
 \ldots and I am rooting for the machines.}{--- Claude Shannon}
 
+::: {.content-hidden when-format="html"}
+
 # Artificial Intelligence {#ch-artificial_intelligence}
+
+:::
 
 This chapter defines artificial intelligence, presents the epistemological differences of intelligent agents in history, and discusses their consequences to machine learning theory.
 
@@ -33,7 +45,9 @@ Under our generous definition, intelligence is not limited to humans. It applies
 
 This competence without comprehension is what the philosopher Daniel Dennett calls *Turing's strange inversion of reasoning*[^23][]{#turing_strange_inversion label="turing_strange_inversion"}. The idea of a *strange inversion* comes from one of Darwin's 19^th^-century critics [@mackenzie1868 as cited by @dennett2009]:
 
-> ‘In the theory with which we have to deal, Absolute Ignorance is the artificer; so that we may enunciate as the fundamental principle of the whole system, that, **in order to make a perfect and beautiful machine, it is not requisite to know how to make it**. This proposition will be found, on careful examination, to express, in condensed form, the essential purport of the \[Evolution\] Theory, and to express in a few words all Mr Darwin's meaning; who, by **a strange inversion of reasoning**, seems to think Absolute Ignorance fully qualified to take the place of Absolute Wisdom in all of the achievements of creative skill.’ --- Robert MacKenzie\
+> ‘In the theory with which we have to deal, Absolute Ignorance is the artificer; so that we may enunciate as the fundamental principle of the whole system, that, **in order to make a perfect and beautiful machine, it is not requisite to know how to make it**. This proposition will be found, on careful examination, to express, in condensed form, the essential purport of the \[Evolution\] Theory, and to express in a few words all Mr Darwin's meaning; who, by **a strange inversion of reasoning**, seems to think Absolute Ignorance fully qualified to take the place of Absolute Wisdom in all of the achievements of creative skill.’ 
+>
+> --- Robert MacKenzie\
 
 Counterintuitively to  @mackenzie1868 and many others to this date, intelligence can emerge from absolute ignorance. Turing's strange inversion of reasoning comes from the realisation that his automata can perform calculations by symbol manipulation, proving that it is possible to build agents that behave intelligently, even if they are entirely ignorant of the meaning of what they are doing [@turing2007].
 
@@ -45,7 +59,7 @@ The idea of creating an intelligent agent is perhaps as old as humans. There are
 
 This interest may explain why, since ancient times, philosophers have looked for *mechanical* methods of reasoning. Chinese, Indian and Greek philosophers all developed formal deduction in the first millennium BC.In particular, Aristotelian syllogism, *laws of thought*, provided patterns for argument structures to yield irrefutable conclusions, given correct premises. These ancient developments were the beginning of the field we now call *Logic*.
 
-### Rationalism: The Cartesian view of Nature {#sec:rationalism}
+### Rationalism: The Cartesian view of Nature {#sec-rationalism}
 
 ::: {.content-hidden unless-format="pdf"}
 
@@ -57,7 +71,7 @@ Example of Lull's Ars Magna's paper discs.
 
 ::: {.content-hidden unless-format="html"}
 
-![](/Images/ars_magna_disc.svg){.column-margin}
+![](/Images/ars_magna_disc.png){.column-margin}
 
 Example of Lull's Ars Magna's paper discs.
 
@@ -82,9 +96,9 @@ Kurt Gödel's incompleteness theorem (1931) proved that any language expressive 
 
 Alan Turing brought a new perspective to the *Entscheidungs Problem*: a function on natural numbers that an algorithm in a formal language cannot represent cannot be computable [@chaitin2006]. Gödel's limit appears in this context as functions that are not computable,  no algorithm can decide whether another algorithm will stop or not (the halting problem). To prove that, Turing developed a whole new general theory of computation: what is computable and how to compute it, laying out a blueprint to build computers, and making possible Artificial Intelligence research as we know it. An area in which Turing himself was very much invested.
 
-### Empiricism: The sceptical view of Nature {#sec:empiricism}
+### Empiricism: The sceptical view of Nature {#sec-empiricism}
 
-![David Hume, Scottish Enlighten- ment philosopher, historian, economist, librarian and essayist.](/Images/hume.png){.column-margin}
+![David Hume, Scottish Enlighten- ment philosopher, historian, economist, librarian and essayist.](/Images/hume.svg){.column-margin}
 
 The response to **rationalism** was **empiricism**, the epistemological view that knowledge comes from sensory experience, our perceptions of the world. Locke explains this with the peripatetic axiom[^24]: *"there is nothing in the intellect that was not previously in the senses"* [@williams2020]. Bacon, Locke and Hume were great exponents of this movement, which established the grounds of the scientific method.
 
@@ -122,11 +136,11 @@ Their work inspired John von Neumann's demonstration of how to create a universa
 
 In 1956, John McCarthy, Claude Shannon (who invented Information Theory, @fig-claude-shannon), Marvin Minsky and Nathaniel Rochester organised a 2-month summer workshop in Dartmouth College to bring researchers of different fields concerned with *"thinking machines"* (cybernetics, information theory, automata theory). The workshop attendees became a community of researchers and chose the term *"artificial intelligence"* for the field.
 
-::: {.content-hidden unless-format="html" .column-body-outset #fig-elephant #blind-men}
+::: {.content-hidden unless-format="html" .column-body #fig-elephant #blind-men}
 </BR>
 </BR>
 
-![The Blind Men and the Elephant.](/Images/elephant.svg)
+![The Blind Men and the Elephant.](/Images/elephant-colored.png)
 
 :::
 
@@ -152,24 +166,23 @@ In 1956, John McCarthy, Claude Shannon (who invented Information Theory, @fig-cl
 
 ### Anatomy of intelligent agents {#sec-anatomy_ia}
 
+Like the blind men in the parable, an intelligent agent shall model her understanding of Nature from limited sensory data.
 
-<!-- ::: {.column-body .content-hidden unless-format="pdf" #fig-anatomy width=60%}
+::: {.content-hidden unless-format="pdf" #fig-anatomy}
 
-![](/Images/anatomy.pdf)
+![](/Images/anatomy.pdf){.column-body  width=70%}
 
 Anatomy of an Intelligent Agent. Inspired by art in @russell2010.
 
 :::
 
-::: {.column-body .content-hidden unless-format="html" #fig-anatomy width=60%}
+::: {.content-hidden unless-format="html" #fig-anatomy}
 
-![](/Images/anatomy.svg)
+![](/Images/anatomy.svg){.column-body  width=70%}
 
 Anatomy of an Intelligent Agent. Inspired by art in @russell2010.
 
-::: -->
-
-Like the blind men in the parable, an intelligent agent shall model her understanding of Nature from limited sensory data.
+:::
 
 Thus, an agent perceives her environment with sensors, treat sensory data as facts and use these facts to possibly update her model of Nature, use the model to decide her actions, and acts via her actuators. In a way, agents continually communicate with Nature in a perception/action conversation [@fig-anatomy].
 
@@ -231,11 +244,17 @@ It was pioneered by McCulloch and Pitts in 1943 [@mcculloch1943]. One of Connec
 
  where $\mW$ is the vector of weights, $\vx$ is the input vector, $\vb$ is a bias, and $\vy$ is the classification. In neural networks, a perceptron is an artificial neuron using a step function as the activation function. 
 
-::: sidecaption
+::: {layout-ncol=2 layout-valign="bottom" #fig-termite}
+
+![Building in Harare, Zimbabwe, is mod- elled after termite mounds. Photo by Mike Pearce.](/Images/arup_building.jpg)
+
+![Cathedral termite mound, Australia. Photo by Awoisoak Kaosiowa, 2008.](/Images/termite_cathedral.jpg)
+
 Biomimicry of termite technique achieves superior energy efficiency in buildings.
+
 :::
 
-See [\[fig:termite_cathedral\]][4], termites self-cooling mounds keep the temperature inside at exactly $31^{\circ} C$, ideal for their fungus-farming; while the temperatures outside range from 2 to $40^{\circ} C$ throughout the day. Such building techniques inspired architect Mike Pearce to design a shopping mall that uses a tenth of the energy used by a conventional building of the same size.
+See @fig-termite, termites self-cooling mounds keep the temperature inside at exactly $31^{\circ} C$, ideal for their fungus-farming; while the temperatures outside range from 2 to $40^{\circ} C$ throughout the day. Such building techniques inspired architect Mike Pearce to design a shopping mall that uses a tenth of the energy used by a conventional building of the same size.
 
 From where does termites intelligence come?
 
@@ -245,13 +264,24 @@ From where does termites intelligence come?
 
 Such collective intelligence happens in groups of just a couple of million termites. There are around 80 to 90 billion neurons in the human brain, each less capable than a termite, but collectively they show incomparable intelligence capabilities.
 
-![A brief history of connectionism. Adapted from  .]
+
+
+![A brief history of connectionism. Adapted from @tishby2020DeepMath.](/Images/winters.png){width=70%}
+
 
 In contrast with the symbolic approach, in neural networks, the knowledge is not explicit in symbols but implicit in the strength of the connections between the neurons. Besides, it is a very general and flexible approach since these connections can be updated algorithmically: they are algorithms that *learn*: the connectionist approach is an example of what we now call Machine Learning.
 
 ### Machine Learning
 
-Look at [\[fig:lulu\]][5]. Is this a picture of a cat? How to write a program to do such a simple classification task (cat/no cat)? One could develop clever ways to use *features* from the input picture and process them to guess. Though, it is not an easy program to design. Worse, even if one manages to program such a task, how much would it worth to accomplish a related *task*, to recognise a dog, for example? For long, this was the problem of researchers in many areas of interest of AI:[CV]{acronym-label="CV" acronym-form="singular+full"}, [NLP]{acronym-label="NLP" acronym-form="singular+full"}, Speech Recognition [SR]{acronym-label="SR" acronym-form="singular+short"}; much mental effort was put, with inferior results, in problems that we humans solve with apparent ease.
+::: {.column-margin #fig-lulu}  
+
+![](/Images/lulu.png)
+
+Is this a cat?
+
+:::
+
+Look at @fig-lulu. Is this a picture of a cat? How to write a program to do such a simple classification task (cat/no cat)? One could develop clever ways to use *features* from the input picture and process them to guess. Though, it is not an easy program to design. Worse, even if one manages to program such a task, how much would it worth to accomplish a related *task*, to recognise a dog, for example? For long, this was the problem of researchers in many areas of interest of AI:[CV]{acronym-label="CV" acronym-form="singular+full"}, [NLP]{acronym-label="NLP" acronym-form="singular+full"}, Speech Recognition [SR]{acronym-label="SR" acronym-form="singular+short"}; much mental effort was put, with inferior results, in problems that we humans solve with apparent ease.
 
 The solution is an entirely different approach for building artificial intelligence: instead of making the program do the *task*, build the program that outputs the program that does the *task*. In other words, learning algorithms use "training data" to infer the transformations to the input that generates the desired output.
 
@@ -279,6 +309,7 @@ The name is explained by  @goodfellow2016: "*A graph showing the concepts being
 
 The quintessential example of a deep learning model is the deep feedforward network or [MLP]{acronym-label="MLP" acronym-form="singular+full"} [@russell2010].
 
+![](/Images/neuralnetwork-1.png)
 
 ::: {#def-MLP}
 

@@ -15,6 +15,9 @@ contributes:
         title-block-style: none
         css: styles.css
         number-sections: false
+        linkcolor: Maroon
+        backgroundcolor: FloralWhite
+        sidebarbackgroundcolor: FloralWhite
       pdf:
         reference-location: margin
         citation-location: margin

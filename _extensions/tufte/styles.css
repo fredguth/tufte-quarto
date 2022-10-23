@@ -88,5 +88,19 @@ header .chapter-title {
 
 
 #fig-cover img {
-    background-color: #f3ede8;
+    background-color: white;
+    border: 1px solid #555;
 }
+
+.figure-img {
+    margin: auto;
+}
+
+#quarto-sidebar {
+    background: transparent;
+}
+
+div.sidebar-item-container .active, div.sidebar-item-container :hover, div.sidebar-item-container .show>.nav-link, div.sidebar-item-container .sidebar-link>code {
+    color: maroon;
+}
+
