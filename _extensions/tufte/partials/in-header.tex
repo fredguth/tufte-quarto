@@ -8,7 +8,7 @@
 %  FIX Makeuppercase error
 %  FIX Font clash Math error
 %  See https://tex.stackexchange.com/q/202142/157312
-%  https://tex.stackexchange.com/q/17265/157312
+% 
 \usepackage{ifxetex}
 \ifxetex
 \renewcommand{\textls}[2][5]{%
@@ -19,8 +19,9 @@
 \renewcommand{\allcaps}[1]{\textls[15]{\MakeTextUppercase{#1}}}
 \renewcommand{\smallcaps}[1]{\smallcapsspacing{\scshape\MakeTextLowercase{#1}}}
 \renewcommand{\textsc}[1]{\smallcapsspacing{\textsmallcaps{#1}}}
-% \usepackage{fontspec}
+
 \PassOptionsToPackage{no-math}{fontspec}
+
 \setmainfont{TeX Gyre Pagella}
 \setsansfont{TeX Gyre Heros}[Scale=MatchUppercase]
 
@@ -75,5 +76,3 @@
   \thispagestyle{empty}%
   \clearpage%
 }
-
-

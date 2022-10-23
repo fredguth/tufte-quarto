@@ -76,33 +76,35 @@ In the sceptical agent, the one derived from the empiricist epistemology (author
 
 ##### Desiderata for a sceptical language {#sec:desiderata_language_sceptical}
 
-As we did for rational agents, let us state a set of desired characteristics for the language of science, $\lang_S= <\Sigma_S, \Phi_S>$ [^36]:
+As we did for rational agents, let us state a set of desired characteristics for the language of science, $\lang_S= <\Sigma_S, \Phi_S>$ [@sowinski2016; @caticha2008; @jaynes2003]:
 
-<<<<<<< HEAD
-I.  **Knowledge is a set of beliefs, quantifiable by real numbers and dependent on prior evidence [@sowinski2016; @caticha2008; @jaynes2003]:**[]{#beliefs label="beliefs"} Let $S_i \in \Sigma_S$ be sentences about the world. Given any two statements $S_1$, $S_2$, the agent must be able to say that $S_1$ is more plausible than $S_2$, or that $S_2$ is more plausible than $S_1$ or that $S_1$ and $S_2$ are equally plausible. Thus we can list statements in an increasing plausibility order. Real numbers can represent this transitive ordering.[^37]
-=======
-I.  **Knowledge is a set of beliefs, quantifiable by real numbers and dependent on prior evidence [@sowinski2016; @caticha2008; @jaynes2003]:** Let $S_i \in \Sigma_S$ be sentences about the world.  Given any two statements $S_1$, $S_2$, the agent must be able to say that $S_1$ is more plausible than $S_2$, or that $S_2$ is more plausible than $S_1$ or that $S_1$ and $S_2$ are equally plausible. Thus we can list statements in an increasing plausibility order. Real numbers can represent this transitive ordering.[^37][]{#beliefs label="beliefs"}
->>>>>>> e27700f (prob with MathJax problems)
-
+I.  []{#beliefs label="beliefs"}**Knowledge is a set of beliefs, quantifiable by real numbers and dependent on prior evidence:** 
+Let $S_i \in \Sigma_S$ be sentences about the world.  Given any two statements $S_1$, $S_2$, the agent must be able to say that $S_1$ is more plausible than $S_2$, or that $S_2$ is more plausible than $S_1$ or that $S_1$ and $S_2$ are equally plausible. Thus we can list statements in an increasing plausibility order. Real numbers can represent this transitive ordering.[^37]
     Let $b$ be a measure of degrees of belief in $S$ given some previous knowledge $K$: [^38]
 \
+ $$   
     \begin{aligned}
             &b: \Sigma_S \to \Real\\
             &b: S \mapsto b(S|K)
     \end{aligned}
-\
+ $$
+
      Here we capture that plausibility (degrees of belief) is not a function of a sentence, but a relation between a sentence and a given assumed prior knowledge $K$.
 
 
 II. **"Common sense:"**[]{#common_sense label="common_sense"}
 
     The plausibility of compound sentences should be related by some logical function to the plausibility of the sentences that form them. We already showed that a minimal rational language has only one operator. Here, instead of using the [NAND]{.sans-serif} operator, for a matter of familiarity, let us use the almost minimal language with the operators [NOT]{.sans-serif} ($\neg$) and [AND]{.sans-serif} ($\land$). In this setting, we are saying there are such functions $f$ and $g$ that [@sowinski2016]: 
-\
+
+
+ $$   
     \begin{aligned}
-            &b(\neg S|K) = f[b(S|K)] \tag{NOT}\\
+            &b(\neg S|K) = f[b(S|K)] \\
             &b(S-1 \land S_2 | K) = g[b(S_1|K), b(S_1|S_2), b(S_2|K), b(S_2|S_1)]
     \end{aligned}
-\
+ $$
+ 
+
 
 III. **Consistency:** The functions $f$ and $g$ must be consistent with the grammar $\Phi$ (production rules). Consistency guarantees that whatever path used to compute the plausibility of a statement in the context of the same knowledge web (the same set of constraints) must lead to the same degree of belief.[]{#consistency label="consistency"}
 
@@ -111,6 +113,12 @@ III. **Consistency:** The functions $f$ and $g$ must be consistent with the gram
      (b) No proposition can be arbitrarily ignored.
 
      (c) Propositions that are identical must be assigned the same degree of belief.
+
+
+
+
+     
+<!-- 
 
 Such desiderata have a name; it is known as Cox's axioms[]{#cox label="cox"}, and one can derive the Sum Rule and the Product Rule (see [1.4]) from them, therefore, also the Bayes' Theorem ([1.9]), and reverse-engineer Kolmogorov's Axioms of Probability Theory (that will be seen in [\[sec:kolmogorov_axioms\]][3], [\[fig:kolmogorov\]][4])[]{#future:cox_to_kolmogorov label="future:cox_to_kolmogorov"} [@sowinski2016; @jaynes2003; @caticha2008; @terenin2015].
 
@@ -529,4 +537,4 @@ As we have settled that our focus is Deep Learning, which relates to the sceptic
   [25]: #absolute_truth {reference-type="ref" reference="absolute_truth"}
   [26]: #unambiguous {reference-type="ref" reference="unambiguous"}
   [27]: #beliefs {reference-type="ref" reference="beliefs"}
-  [28]: #common_sense {reference-type="ref" reference="common_sense"}
+  [28]: #common_sense {reference-type="ref" reference="common_sense"} -->
