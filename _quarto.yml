@@ -21,7 +21,7 @@ book:
     - part: Background
       chapters:
         - Chapters/ai.qmd
-    #     - Chapters/prob.qmd
+        - Chapters/prob.qmd
     #     - Chapters/mlt.qmd
     #     - Chapters/info.qmd
     # - part: intermezzo.qmd
