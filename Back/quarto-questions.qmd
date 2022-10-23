@@ -4,11 +4,13 @@
 - Why `Welcome` from  `/index.qmd` is appearing in pdf?
 - ~~`Part` `/background.qmd` is not appearing in TOC (pdf).  Is this a Tufte-book.cls problem?~~
 - pdf figures in website are being framed. Why? 
+    - can I remove file extension and site get svg or png and pdf get .pdf?
 - Header configuration is set to include short-tile instead of title.  Couldn't insert just a space, though.  Why blank space without mathmode didn't work?
 - How to include math macros in the html?  
 - What is the page full of definitions that appear while routing in the website? `math_definitions.tex`?
 - Too much info in the margin citation. Create custom bib style?
 - How to show title-block for each chapter in website?
+
 
 ## Known-issues
 

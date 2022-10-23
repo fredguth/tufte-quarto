@@ -21,6 +21,7 @@ contributes:
       pdf:
         reference-location: margin
         citation-location: margin
+        fig-cap-location: bottom
         documentclass: tufte-book
         number-sections: false
         format-resources:

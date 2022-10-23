@@ -4,6 +4,7 @@ description: |
     I visualise a time when we will be to robots what dogs are to humans \
     \ldots and I am rooting for the machines.
     --- Claude Shannon
+fig-cap-location: bottom
 ---
 
 \epigraph{I visualise a time when we will be to robots what dogs are to humans \\
@@ -98,7 +99,20 @@ Alan Turing brought a new perspective to the *Entscheidungs Problem*: a function
 
 ### Empiricism: The sceptical view of Nature {#sec-empiricism}
 
-![David Hume, Scottish Enlighten- ment philosopher, historian, economist, librarian and essayist.](/Images/hume.svg){.column-margin}
+::: {.content-hidden unless-format="pdf"}
+
+![](/Images/hume.png){.column-margin}
+
+David Hume, Scottish Enlightenment philosopher, historian, economist, librarian and essayist.
+
+:::
+
+
+::: {.content-hidden unless-format="html"}
+
+![David Hume, Scottish Enlightenment philosopher, historian, economist, librarian and essayist.](/Images/hume.svg){.column-margin}
+
+:::
 
 The response to **rationalism** was **empiricism**, the epistemological view that knowledge comes from sensory experience, our perceptions of the world. Locke explains this with the peripatetic axiom[^24]: *"there is nothing in the intellect that was not previously in the senses"* [@williams2020]. Bacon, Locke and Hume were great exponents of this movement, which established the grounds of the scientific method.
 
@@ -136,19 +150,25 @@ Their work inspired John von Neumann's demonstration of how to create a universa
 
 In 1956, John McCarthy, Claude Shannon (who invented Information Theory, @fig-claude-shannon), Marvin Minsky and Nathaniel Rochester organised a 2-month summer workshop in Dartmouth College to bring researchers of different fields concerned with *"thinking machines"* (cybernetics, information theory, automata theory). The workshop attendees became a community of researchers and chose the term *"artificial intelligence"* for the field.
 
-::: {.content-hidden unless-format="html" .column-body #fig-elephant #blind-men}
+::: {.content-hidden unless-format="html" .column-body #blind-men}
 </BR>
 </BR>
 
-![The Blind Men and the Elephant.](/Images/elephant-colored.png)
+![The Blind Men and the Elephant.](/Images/elephant-colored.png){#fig-elephant}
 
 :::
 
-::: {.content-hidden unless-format="pdf" .column-body-outset #fig-elephant #blind-men}
+::: {.content-hidden unless-format="pdf" .column-page #fig-elephant #blind-men}
  
-![The Blind Men and the Elephant.](/Images/elephant.pdf)
+ {{< pagebreak >}} 
+\vspace{2cm}
+![](/Images/elephant.pdf)
+
+The Blind Men and the Elephant.
 
 :::
+
+\vspace{3cm}
 
 > It was six men of Indostan\
 > To learning much inclined,\
@@ -168,13 +188,15 @@ In 1956, John McCarthy, Claude Shannon (who invented Information Theory, @fig-cl
 
 Like the blind men in the parable, an intelligent agent shall model her understanding of Nature from limited sensory data.
 
-::: {.content-hidden unless-format="pdf" #fig-anatomy}
 
-![](/Images/anatomy.pdf){.column-body  width=70%}
 
-Anatomy of an Intelligent Agent. Inspired by art in @russell2010.
+
+::: {.content-hidden unless-format="pdf"}
+
+![Anatomy of an Intelligent Agent.](/Images/anatomy.png)
 
 :::
+
 
 ::: {.content-hidden unless-format="html" #fig-anatomy}
 
@@ -184,7 +206,7 @@ Anatomy of an Intelligent Agent. Inspired by art in @russell2010.
 
 :::
 
-Thus, an agent perceives her environment with sensors, treat sensory data as facts and use these facts to possibly update her model of Nature, use the model to decide her actions, and acts via her actuators. In a way, agents continually communicate with Nature in a perception/action conversation [@fig-anatomy].
+<!-- Thus, an agent perceives her environment with sensors, treat sensory data as facts and use these facts to possibly update her model of Nature, use the model to decide her actions, and acts via her actuators. In a way, agents continually communicate with Nature in a perception/action conversation [@fig-anatomy]. -->
 
 The expected result of this conversation is a change in the agent's [KB]{acronym-label="KB" acronym-form="singular+full"}, therefore in her model and, more importantly, her future decisions. The model is an abstraction of how the agent "thinks" the world is (her "mental picture" of the environment). Therefore, it should be consistent with it: if something is true in Nature, it is equally valid, *mutatis mutandis*, in the model. A Model should also be as simple as possible so that the agent can make decisions that maximise a chosen performance measure, but not simpler. As the agent knows more about Nature, less it gets surprised by it.
 
@@ -228,6 +250,18 @@ Those inflated expectations lead to disillusionment and funding cuts[^29] [@rus
 
 ### Connectionism: a different approach
 
+::: {.content-hidden unless-format="pdf" width=80%}
+
+![Building in Harare, Zimbabwe, is mod- elled after termite mounds. Photo by Mike Pearce.](/Images/arup_building.jpg){.column-margin}
+
+:::
+
+::: {.content-hidden unless-format="pdf" width=80%}
+
+![Cathedral termite mound, Australia. Photo by Awoisoak Kaosiowa, 2008.](/Images/termite_cathedral.jpg){.column-margin #fig-termite}
+
+:::
+
 The fundamental idea in Connectionism is that *intelligent behaviour emerges from a large number of simple computational units when networked together* [@goodfellow2016].
 
 It was pioneered by McCulloch and Pitts in 1943 [@mcculloch1943]. One of Connectionism's first wave developments was Frank Rosenblatt's Perceptron, an algorithm for learning binary classifiers, or more specifically threshold functions: 
@@ -244,7 +278,19 @@ It was pioneered by McCulloch and Pitts in 1943 [@mcculloch1943]. One of Connec
 
  where $\mW$ is the vector of weights, $\vx$ is the input vector, $\vb$ is a bias, and $\vy$ is the classification. In neural networks, a perceptron is an artificial neuron using a step function as the activation function. 
 
-::: {layout-ncol=2 layout-valign="bottom" #fig-termite}
+
+<!-- ::: {.content-hidden unless-format="pdf" layout="[29,-2,25]" layout-valign="bottom"}
+
+![Building in Harare, Zimbabwe, is mod- elled after termite mounds. Photo by Mike Pearce.](/Images/arup_building.jpg)
+
+
+![Cathedral termite mound, Australia. Photo by Awoisoak Kaosiowa, 2008.](/Images/termite_cathedral.jpg)
+
+\vspace{1cm}
+
+::: -->
+
+::: {.content-hidden unless-format="html" layout-ncol=2 layout-valign="bottom" #fig-termite}
 
 ![Building in Harare, Zimbabwe, is mod- elled after termite mounds. Photo by Mike Pearce.](/Images/arup_building.jpg)
 
@@ -264,22 +310,13 @@ From where does termites intelligence come?
 
 Such collective intelligence happens in groups of just a couple of million termites. There are around 80 to 90 billion neurons in the human brain, each less capable than a termite, but collectively they show incomparable intelligence capabilities.
 
-
-
-![A brief history of connectionism. Adapted from @tishby2020DeepMath.](/Images/winters.png){width=70%}
-
+![A brief history of connectionism.](/Images/winters.png){width=70%}
 
 In contrast with the symbolic approach, in neural networks, the knowledge is not explicit in symbols but implicit in the strength of the connections between the neurons. Besides, it is a very general and flexible approach since these connections can be updated algorithmically: they are algorithms that *learn*: the connectionist approach is an example of what we now call Machine Learning.
 
 ### Machine Learning
 
-::: {.column-margin #fig-lulu}  
-
-![](/Images/lulu.png)
-
-Is this a cat?
-
-:::
+![Is this a cat?](/Images/lulu.png){.column-margin #fig-lulu}
 
 Look at @fig-lulu. Is this a picture of a cat? How to write a program to do such a simple classification task (cat/no cat)? One could develop clever ways to use *features* from the input picture and process them to guess. Though, it is not an easy program to design. Worse, even if one manages to program such a task, how much would it worth to accomplish a related *task*, to recognise a dog, for example? For long, this was the problem of researchers in many areas of interest of AI:[CV]{acronym-label="CV" acronym-form="singular+full"}, [NLP]{acronym-label="NLP" acronym-form="singular+full"}, Speech Recognition [SR]{acronym-label="SR" acronym-form="singular+short"}; much mental effort was put, with inferior results, in problems that we humans solve with apparent ease.
 
