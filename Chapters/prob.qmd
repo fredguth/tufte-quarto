@@ -78,7 +78,11 @@ In the sceptical agent, the one derived from the empiricist epistemology (author
 
 As we did for rational agents, let us state a set of desired characteristics for the language of science, $\lang_S= <\Sigma_S, \Phi_S>$ [^36]:
 
+<<<<<<< HEAD
 I.  **Knowledge is a set of beliefs, quantifiable by real numbers and dependent on prior evidence [@sowinski2016; @caticha2008; @jaynes2003]:**[]{#beliefs label="beliefs"} Let $S_i \in \Sigma_S$ be sentences about the world. Given any two statements $S_1$, $S_2$, the agent must be able to say that $S_1$ is more plausible than $S_2$, or that $S_2$ is more plausible than $S_1$ or that $S_1$ and $S_2$ are equally plausible. Thus we can list statements in an increasing plausibility order. Real numbers can represent this transitive ordering.[^37]
+=======
+I.  **Knowledge is a set of beliefs, quantifiable by real numbers and dependent on prior evidence [@sowinski2016; @caticha2008; @jaynes2003]:** Let $S_i \in \Sigma_S$ be sentences about the world.  Given any two statements $S_1$, $S_2$, the agent must be able to say that $S_1$ is more plausible than $S_2$, or that $S_2$ is more plausible than $S_1$ or that $S_1$ and $S_2$ are equally plausible. Thus we can list statements in an increasing plausibility order. Real numbers can represent this transitive ordering.[^37][]{#beliefs label="beliefs"}
+>>>>>>> e27700f (prob with MathJax problems)
 
     Let $b$ be a measure of degrees of belief in $S$ given some previous knowledge $K$: [^38]
 \
@@ -118,7 +122,7 @@ Again, here we explicit that by using Bayesian inference to build and communicat
 
 Let us take this opportunity to explore what some assumptions mean to human intelligence in particular. It is indisputable[^39] that humans are not rational, neither sceptical agents. The whole idea of imagining an epistemic agent is a consequence of addressing intelligence without human complexities.
 
-However, are humans irrational because of biology or psychology? Are we irrational for lack of will, or could it be that Nature wires the human brain in a way that pr*events* us from following these axioms? Here we argue that biology has an important role. Researchers have found, for instance, that visual acuity can be permanently impaired if there is a sensory deficit during early post-natal development [@wiesel:1982]. Futhermore, if the human brain is not exposed to some samples in its infancy, it will never achieve the accuracy level if it had experienced them, regardless of experiencing those examples later. In other words, *human beliefs depend on the order in which pieces of evidence are presented*, contradicting Cox's axiom [\[axiom:order\]][5].
+However, are humans irrational because of biology or psychology? Are we irrational for lack of will, or could it be that Nature wires the human brain in a way that pr*events* us from following these axioms? Here we argue that biology has an important role. Researchers have found, for instance, that visual acuity can be permanently impaired if there is a sensory deficit during early post-natal development [@wiesel1982]. Futhermore, if the human brain is not exposed to some samples in its infancy, it will never achieve the accuracy level if it had experienced them, regardless of experiencing those examples later. In other words, *human beliefs depend on the order in which pieces of evidence are presented*, contradicting Cox's axiom [\[axiom:order\]][5].
 
 ## Formalizing Probability Theory
 
