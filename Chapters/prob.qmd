@@ -3,7 +3,6 @@ title: Probability Theory
 description: |
     A wise man proportions his belief to the evidence. 
     --- David Hume
-fig-cap-location: bottom
 ---
 \epigraph{A wise man proportions his belief to the evidence.}{--- David Hume}
 
@@ -12,7 +11,6 @@ fig-cap-location: bottom
 # Probability Theory {#ch:probability}
 
 :::
-
 
 In this chapter, propositional calculus and probability theory are derived from a list of desired characteristics for sceptical agents.
 
@@ -24,15 +22,18 @@ We, as intelligent agents, do not know how Nature is; we only know how we percei
 
 We use language to describe Nature. However, natural languages, like English, German, Portuguese, are ambiguous, and we need contextual clues and other information to more clearly communicate meaning. To avoid this, an intelligent agent uses formal language.
 
-A *formal language* is a mathematical tool created for precise communication about a specific subject. For example, arithmetic is a language for calculations. Chemists have a language that represents the chemical structures of molecules. Programming languages are formal languages that express computations. In a nutshell, a formal language is a set of words (strings) whose letters (symbols) are taken from an alphabet and are well-formed according to a specific set of rules, grammar. Let $\lang= <\Sigma, \Phi>$ be a formal language where: $$\begin{aligned}
-    \Sigma &= \{S_1, S_2, \cdots, S_n\} \text{ is an alphabet,}\\
-    \Phi &= {\Phi_1 \cup \Phi_2 \cup \cdots \cup \Phi_k} \text{ is a set of operations, the grammar,}
-\end{aligned}$$ and: $$\begin{aligned}
+A *formal language* is a mathematical tool created for precise communication about a specific subject. For example, arithmetic is a language for calculations. Chemists have a language that represents the chemical structures of molecules. Programming languages are formal languages that express computations. In a nutshell, a formal language is a set of words (strings) whose letters (symbols) are taken from an alphabet and are well-formed according to a specific set of rules, grammar. Let $\lang= <\Sigma, \Phi>$ be a formal language: 
+
+\begin{align}
+    \Sigma =& \{S_1, S_2, \cdots, S_n\} \text{ is an alphabet,}\\
+    \Phi =& {\Phi_1 \cup \Phi_2 \cup \cdots \cup \Phi_k} \text{ is the grammar, where:}\\
     \Phi_1 &\text{ is the set of unary operations}, \nonumber\\
     \Phi_2 &\text{ is the set of binary operations}, \nonumber\\
-    \cdots &\nonumber \\
+    &\cdots \nonumber \\
     \Phi_k &\text{ is the set of k-ary operations.}\nonumber
-\end{aligned}$$ A formal language allows a quantitative description of a state of knowledge and defines how this state can be updated on new evidence.[^32]
+\end{align}
+
+A formal language allows a quantitative description of a state of knowledge and defines how this state can be updated on new evidence.[^32]
 
 With this definition, we can also think that a formal language is what @sowinski2016 calls a *realm of discourse*, all the valid formed *strings*[^33] that one can derive; everything one can *say* about Nature.
 
@@ -40,73 +41,65 @@ Interestingly, formal languages allow us to manipulate representations of the en
 
 ### From Rationalism to Propositional Calculus {#sec:from_rationalism}
 
-##### Rational Agents
-
-can form representations of a complex world, use deduction as the inference process to derive updated representations, and use these new representations to decide what to do. In other words, rational agents are the consequence of the epistemological view of *rationalism*.
+**Rational Agents** can form representations of a complex world, use deduction as the inference process to derive updated representations, and use these new representations to decide what to do. In other words, rational agents are the consequence of the epistemological view of *rationalism*.
 
 When a rational agent establishes a particular statement's truth value, all statements formed in her knowledge base from that statement instantly feel that update. Therefore, a rational agent cannot hold contradictions.
 
-##### Desiderata for a rational language {#sec:desiderata_language}
+**Desiderata for a rational language [](){#sec-desiderata_language}**
 
 We want to build a language for rational agents with the following desired characteristics:
 
-I.  **knowledge is absolute**[]{#absolute_truth label="absolute_truth"}; a sentence[^34] can be either true or false;
+i.  **knowledge is absolute**[]{#absolute_truth label="absolute_truth"}; a sentence[^34] can be either true or false;
 
-II. **unambiguous**[]{#unambiguous label="unambiguous"}, a constructed sentence can only have one meaning;
+ii. **unambiguous**[]{#unambiguous label="unambiguous"}, a constructed sentence can only have one meaning;
 
-III. **consistent**; a language without paradoxes, whatever path chosen to derive a sentence truth value will lead to the same assignment;[]{#rational_consistency label="rational_consistency"}
+iii. **consistent**; a language without paradoxes, whatever path chosen to derive a sentence truth value will lead to the same assignment;[]{#rational_consistency label="rational_consistency"}
 
-IV. **minimal**; uses the most reduced set of symbols possible.[]{#rational_minimality label="rational_minimality"}
+iv. **minimal**; uses the most reduced set of symbols possible.[]{#rational_minimality label="rational_minimality"}
 
-Let $\lang_R= <\Sigma_R, \Phi_R>$ be the formal language built from these constraints, where sentences are either axiom symbols or compounded sentences formed using special symbols called operators, each operator denoting one operation, $\phi \in \Phi_R$.
+We call $\lang_R= <\Sigma_R, \Phi_R>$ the formal language built from these constraints, where sentences are either axiom symbols or compounded sentences formed using special symbols called operators, each operator denoting one operation, $\phi \in \Phi_R$.
 
-It is possible to prove[]{#future:prove_minimal_language_logic label="future:prove_minimal_language_logic"} that $\lang_R$ only needs one operator [@sowinski2016; @jaynes2003]: [NAND]{.sans-serif} (or [XOR]{.sans-serif}), and it is also equivalent to Propositional Calculus.[^35] In other words, Logic is the language that emerges from our desiderata, from rationalism. **Logic is the language of mathematics**.
+It is possible to prove that $\lang_R$ only needs one operator [@sowinski2016; @jaynes2003]: [NAND]{.sans-serif} (or [XOR]{.sans-serif}), and it is also equivalent to Propositional Calculus.[^35] In other words, Logic is the language that emerges from our desiderata, from rationalism. **Logic is the language of mathematics**.
 
 A point worth mentioning is that using Logic as an agent formal language means the **implicit acceptance** of the constraints above.
 
-### From Empiricism to Probability Theory {#sec:from_empiricism}
+### From Empiricism to Probability Theory {#sec-from_empiricism}
 
 The constraints that lead to Logic are very restrictive to use in the real-world; rational language has a comparatively small *realm of discourse*. Hume would say that it is only helpful for *relations of ideas*, talking in the abstract, and not for *matters of facts*, talking about reality.
 
 A realm of discourse to talk about reality needs at least the empiricist perspective where knowledge is justified belief, and that one should *weigh her beliefs to the evidence.* The quantity that specifies to what degree we believe a proposition is true is constrained by other beliefs, i.e., previous experience and evidence gathered.
 
-##### Sceptical Agents {#sec:sceptical_agents}
+**Sceptical Agents {#sec:sceptical_agents}**
 
 In the sceptical agent, the one derived from the empiricist epistemology (authors have called these agents epistemic agents [@caticha2008], idealised epistemic agents [@sowinski2016] or robots [@jaynes2003]), beliefs are not independent of each other [@caticha2008], they form an interconnected web that is the agent's knowledge base. The update mechanism, its inference method, follows the principle of minimality, i.e. it tries to minimise the change in the knowledge base.
 
-##### Desiderata for a sceptical language {#sec:desiderata_language_sceptical}
+**Desiderata for a sceptical language {#sec-desiderata_language_sceptical}**
 
 As we did for rational agents, let us state a set of desired characteristics for the language of science, $\lang_S= <\Sigma_S, \Phi_S>$ [@sowinski2016; @caticha2008; @jaynes2003]:
 
-I.  []{#beliefs label="beliefs"}**Knowledge is a set of beliefs, quantifiable by real numbers and dependent on prior evidence:** 
+i.  []{#beliefs label="beliefs"}**Knowledge is a set of beliefs, quantifiable by real numbers and dependent on prior evidence:** 
 Let $S_i \in \Sigma_S$ be sentences about the world.  Given any two statements $S_1$, $S_2$, the agent must be able to say that $S_1$ is more plausible than $S_2$, or that $S_2$ is more plausible than $S_1$ or that $S_1$ and $S_2$ are equally plausible. Thus we can list statements in an increasing plausibility order. Real numbers can represent this transitive ordering.[^37]
     Let $b$ be a measure of degrees of belief in $S$ given some previous knowledge $K$: [^38]
-\
- $$   
-    \begin{aligned}
+ 
+    \begin{align}
             &b: \Sigma_S \to \Real\\
             &b: S \mapsto b(S|K)
-    \end{aligned}
- $$
+    \end{align}
+ 
 
      Here we capture that plausibility (degrees of belief) is not a function of a sentence, but a relation between a sentence and a given assumed prior knowledge $K$.
 
 
-II. **"Common sense:"**[]{#common_sense label="common_sense"}
+ii. **"Common sense:"**[]{#common_sense label="common_sense"}
 
     The plausibility of compound sentences should be related by some logical function to the plausibility of the sentences that form them. We already showed that a minimal rational language has only one operator. Here, instead of using the [NAND]{.sans-serif} operator, for a matter of familiarity, let us use the almost minimal language with the operators [NOT]{.sans-serif} ($\neg$) and [AND]{.sans-serif} ($\land$). In this setting, we are saying there are such functions $f$ and $g$ that [@sowinski2016]: 
 
+    \begin{align}
+            &b(\neg S|K) = f[b(S|K)] \tag{NOT}\\
+            &b(S-1 \land S_2 | K) = g[b(S_1|K), b(S_1|S_2), b(S_2|K), b(S_2|S_1)] \tag{AND}
+    \end{align}
 
- $$   
-    \begin{aligned}
-            &b(\neg S|K) = f[b(S|K)] \\
-            &b(S-1 \land S_2 | K) = g[b(S_1|K), b(S_1|S_2), b(S_2|K), b(S_2|S_1)]
-    \end{aligned}
- $$
- 
-
-
-III. **Consistency:** The functions $f$ and $g$ must be consistent with the grammar $\Phi$ (production rules). Consistency guarantees that whatever path used to compute the plausibility of a statement in the context of the same knowledge web (the same set of constraints) must lead to the same degree of belief.[]{#consistency label="consistency"}
+iii. **Consistency:** The functions $f$ and $g$ must be consistent with the grammar $\Phi$ (production rules). Consistency guarantees that whatever path used to compute the plausibility of a statement in the context of the same knowledge web (the same set of constraints) must lead to the same degree of belief.[]{#consistency label="consistency"}
 
      (a) Beliefs that depend on multiple propositions cannot depend on the order in which they are presented.[]{#axiom:order label="axiom:order"}
 
@@ -114,15 +107,9 @@ III. **Consistency:** The functions $f$ and $g$ must be consistent with the gram
 
      (c) Propositions that are identical must be assigned the same degree of belief.
 
-
-
-
-     
-<!-- 
-
 Such desiderata have a name; it is known as Cox's axioms[]{#cox label="cox"}, and one can derive the Sum Rule and the Product Rule (see [1.4]) from them, therefore, also the Bayes' Theorem ([1.9]), and reverse-engineer Kolmogorov's Axioms of Probability Theory (that will be seen in [\[sec:kolmogorov_axioms\]][3], [\[fig:kolmogorov\]][4])[]{#future:cox_to_kolmogorov label="future:cox_to_kolmogorov"} [@sowinski2016; @jaynes2003; @caticha2008; @terenin2015].
 
-In other words, Probability Theory is the language that emerges from our desiderata, from empiricism. "**Probability theory is the Logic of Science**" [@jaynes2003], and our measure $b$ is usually called probability $P$.
+In other words, Probability Theory is the language that emerges from our desiderata, from empiricism. *‘Probability theory is the Logic of Science’* [@jaynes2003], and our measure $b$ is usually called probability $P$.
 
 Again, here we explicit that by using Bayesian inference to build and communicate concepts of the world (models), we are assuming Cox's axioms above.
 
@@ -140,40 +127,102 @@ Several concepts in the following sections are *relations of ideas*, not *matter
 
 ## Experiments, Sample Spaces and Events
 
-The set of possible outcomes of an ***experiment*** is the **sample space** $\Omega$. Let us use the canonical *experiment* of rolling a dice. In this experiment, the sample space is: $$\begin{aligned}
+The set of possible outcomes of an *experiment* is the *sample space* $\Omega$. Let us use the canonical *experiment* of rolling a dice. In this experiment, the sample space is: 
+
+::: {.content-hidden when-format="pdf"}
+
+\begin{align}
+    \Omega = \left\{\Large{⚀, ⚁, ⚂ , ⚃, ⚄, ⚅ }\large \right\}
+\end{align}
+ 
+An **outcome** or **realisation** is a point $\omega \in \Omega$:
+\begin{align}
+    \omega_3&= \Large{⚂} \\
+    \Omega &= \left\{\large\omega_1= \Large{⚀}\large ,\cdots, \omega_6 = \Large{⚅} \right\}.
+\end{align}
+
+::: 
+
+::: {.content-hidden when-format="html"}
+
+\begin{align}
     \Omega = \left\{\epsdice{1},\epsdice{2},\epsdice{3},\epsdice{4},\epsdice{5},\epsdice{6} \right\}
-\end{aligned}$$ An **outcome** or **realisation** is a point $\omega \in \Omega$: $$\begin{aligned}
+\end{align}
+ An **outcome** or **realisation** is a point $\omega \in \Omega$: 
+ \begin{align}
     \omega_3&=\epsdice{3}\\
     \Omega &= \left\{\omega_1=\epsdice{1},\cdots,\omega_6=\epsdice{6} \right\}.
-\end{aligned}$$ An **Event** is something that can be said about the *experiment*, "The dice rolled to an odd number". It is a true proposition. Nevertheless, easier than writing so much, we denote *events* with letters. **Events are subsets of $\Omega$** (see [\[fig:event_A\]][6]). $$\begin{aligned}
-    A &= \left\{\va_1=\epsdice{1}, \va_2=\epsdice{3}, \va_3=\epsdice{5} \right\}\\
-    A &\subset \Omega
-\end{aligned}$$ We say that $A_1, A_2, \cdots$ are **mutually exclusive** or **disjoint** *events* if $A_i \cap A_j=\emptyset, \forall i\neq j$. For example, $A$ is the *event* "the dice rolled to the value 5" and $B$ is the *event* "the dice rolled to an even number". In this case, $A$ and $B$ are disjoint (see [\[fig:disjoint_events\]][7]).
+\end{align}
 
-::: sidecaption
-Events, disjoint events and partitions.
 :::
 
-A **partition** of $\Omega$ is a sequence of disjoint events (sets) $A_i$ (see [\[fig:partition\]][8]), where: $$\begin{aligned}
-    A_1, A_2, \cdots A_i \text{ s.t. } (A_1 \cup A_2 \cup A_3 \cdots = \bigcup\limits_{i=1}^{\infty} A_i) = \Omega
-\end{aligned}$$
 
-## Kolmogorov's definition of Probability {#sec:probability}
+An **Event** is something that can be said about the *experiment*, "The dice rolled to an odd number". It is a true proposition. Nevertheless, easier than writing so much, we denote *events* with letters. **Events are subsets of $\Omega$** (see [\[fig:event_A\]][6]). 
+
+::: {.content-hidden when-format="pdf"}
+
+\begin{align}
+    A &= \left\{\large\va_1= \Large{⚀}\large, \va_2= \Large{⚂}\large , \va_3= \Large{⚄}\large \right\}\\
+    A &\subset \Omega
+\end{align}
+
+:::
+
+::: {.content-hidden when-format="html"}
+
+\begin{align}
+    A &= \left\{\va_1=\epsdice{1}, \va_2=\epsdice{3}, \va_3=\epsdice{5} \right\}\\
+    A &\subset \Omega
+\end{align}
+
+
+:::
+We say that $A_1, A_2, \cdots$ are **mutually exclusive** or **disjoint** *events* if $A_i \cap A_j=\emptyset, \forall i\neq j$. For example, $A$ is the *event* "the dice rolled to the value 5" and $B$ is the *event* "the dice rolled to an even number". In this case, $A$ and $B$ are disjoint (see [\[fig:disjoint_events\]][7]).
+
+::: {.colum-body-outer layout-nrow=1}
+
+![An *event* $A$.](/Images/eventA)
+
+![Disjoint events $A$ and $B$: $A \cap B = \emptyset$](/Images/disjointAB)
+
+![A partition of $\Omega$.](/Images/partition)
+
+:::
+
+<!-- 
+
+::: sidecaption
+![Events, disjoint events and partitions.](/Images/event_A.png){#fig:event_A label="fig:event_A"}
+![Disjoint events A and B: $A \cap B \eq \emptyset$](/Images/event_A.png){#fig:event_A label="fig:event_A"}
+:::
+
+A **partition** of $\Omega$ is a sequence of disjoint events (sets) $A_i$ (see [\[fig:partition\]][8]), where: 
+\begin{align}
+    A_1, A_2, \cdots A_i \text{ s.t. } (A_1 \cup A_2 \cup A_3 \cdots = \bigcup\limits_{i=1}^{\infty} A_i) = \Omega
+\end{align}
+
+## Kolmogorov's definition of Probability {#sec-robability}
 
 []{#sec:kolmogorov_axioms label="sec:kolmogorov_axioms"}
 
 ::: definition
+
 A function $P: \powerset(\Omega) \to \sR$ that maps any *event* $A$ to a real number $P(A)$ is called the **probability measure** or a **probability distribution** if it satisfies Kolmogorov's axioms [@wasserman2013]:
 
 1.  $P(A)\geq 0, \forall A$
 
 2.  $P(\Omega)=1$
 
-3.  If $A$ and $B$ are disjoint, i.e. $A \ind B$,[]{#axiom:disjoint label="axiom:disjoint"} $$\begin{aligned}
-                P(A \lor B)= P(A)+P(B)\label{eq:sum_rule}\tag{Sum Rule}
+3.  If $A$ and $B$ are disjoint, i.e. $A \ind B$,[]{#axiom:disjoint label="axiom:disjoint"} 
+\begin{align}
+                <!-- P(A \lor B)= P(A)+P(B)\label{eq:sum_rule}\tag{Sum Rule} 
             
-    \end{aligned}$$
-:::
+\end{align}
+
+::: 
+
+-->
+
 
 Visually, we can represent the probability of an *event* $A$, $P(A)$, as the proportion of the sample space the *event* occupies. To differentiate *events* from their probabilities, we will shade the area of the *event*.
 
@@ -181,12 +230,16 @@ Visually, we can represent the probability of an *event* $A$, $P(A)$, as the pro
 Kolmogorov's Axioms and their direct consequences.[]{#fig:kolmogorov_axioms label="fig:kolmogorov_axioms"}
 :::
 
-Directly from the Kolmogorov Axioms, one can derive [@jaynes2003] other properties (see [\[fig:axiom1, fig:axiom2, fig:axiom3\]][9]): $$\begin{aligned}
+Directly from the Kolmogorov Axioms, one can derive [@jaynes2003] other properties (see [\[fig:axiom1, fig:axiom2, fig:axiom3\]][9]): 
+
+<!-- 
+
+\begin{align}
 P(\emptyset)&=0\\
 B \subset A &\implies P(B) \leq P(A)\\
 0 &\leq P(A) \leq 1\\
 P(\bar{A})&=1-P(A).
-\end{aligned}$$
+\end{align}
 
 ## Joint event
 
@@ -199,32 +252,37 @@ When talking about *events* as propositions, it is straightforward to use logic 
 ## Independent events {#sec:independent_events}
 
 ::: definition
-[]{#def:independence label="def:independence"} Events $A$ and $B$ are **independent** ($A \ind B$) if: $$\begin{aligned}
+[]{#def:independence label="def:independence"} Events $A$ and $B$ are **independent** ($A \ind B$) if: 
+\begin{align}
 A\neq \emptyset, B\neq \emptyset \implies P(A)>0, P(B)>0\label{eq:P(A, B)>0}\\
 P(A, B) = P(A \land B) = P(A) \cdot P(B)\label{eq:Product_Rule}\\
 \nonumber \tag{Product Rule}
-\end{aligned}$$
+\end{align}
 :::
 
 **Disjoint *events* cannot be independent**, since (from [\[eq:P(A, B)\>0\]][10]) $P(A) \cdot P(B)> 0$, but as disjoint *events* ([\[fig:disjoint_events\]][7]) $P(A \land B)=P(\emptyset)=0$, leading to contradiction.
 
-Independence can be assumed or derived by verifying: $$\begin{aligned}
+Independence can be assumed or derived by verifying: 
+\begin{align}
 P(A \land B)= P(A) \cdot P(B).\\
 \nonumber \tag{Independent variables}
-\end{aligned}$$
+\end{align}
 
 ## Conditional probability
 
 As we have explained before ([1.1.3.0.1]), the plausibility of an outcome or a set of outcomes depends on a web of interconnected prior beliefs. So, what exists are probabilities *conditional* to a given prior assumption.
 
 ::: definition
-If $P(B)>0$ then the **conditional probability** of A given B is: $$\begin{aligned}
+If $P(B)>0$ then the **conditional probability** of A given B is: 
+\begin{align}
 \label{eq:conditional_probability}
 P(A|B) \eqdef \frac{P(A,B)}{P(B)}
-\end{aligned}$$ $$\begin{aligned}
+\end{align}
+
+\begin{align}
 \label{eq:joint_probability}
 P(A, B) \eqdef P(A|B)\cdot P(B)
-\end{aligned}$$
+\end{align}
 :::
 
 Except if $P(A) \equiv P(B)$, $P(A|B) \neq P(B|A)$. Also, $P(A|B)=P(A) \iff A \ind B$.[^310]
@@ -232,39 +290,45 @@ Except if $P(A) \equiv P(B)$, $P(A|B) \neq P(B|A)$. Also, $P(A|B)=P(A) \iff A \i
 ## Marginal probability {#marginalisation}
 
 ::: theorem
-Let $A_1, \cdots, A_k$ be a partition of $\Omega$. Then, for any *event* B, $$\begin{aligned}
+Let $A_1, \cdots, A_k$ be a partition of $\Omega$. Then, for any *event* B, 
+\begin{align}
 P(B)=\sum_{i=1}^k P(B|A_i)\cdot P(A_i)\label{eq:law_of_total_probabilities} 
-\end{aligned}$$
+\end{align}
 :::
 
 ::: proof
 *Proof.* [^311] Define $C_i = (B,A_i)$. Let $C_1, \cdots C_k$ be disjoint and $B = \bigcup\limits_{i=1}^k C_i$.\
 Therefore:
 
-$$\begin{aligned}
+
+\begin{align}
         P(B) &\triangleq P(\bigcup\limits_{i=1}^k C_i)
         \overset{\text{\ref{eq:sum_rule}}}{=} \sum_i P(C_i)\\
         &\triangleq \sum_i P(B,A_i)
         \overset{\text{\ref{eq:conditional_probability}}}{=} \sum_{i=1}^k P(B|A_i)\cdot P(A_i) \tag{Law of Total Probability}
     
-\end{aligned}$$ ◻
+\end{align}
+◻
 :::
 
 ## Bayes' theorem {#sec:bayes_theorem}
 
 ::: theorem
-Let $A_1, \cdots, A_k$ be a partition of $\Omega$ s.t. $P(A_i)>0, \forall i$ then, $\forall i=1, \cdots, k$: $$\begin{aligned}
+Let $A_1, \cdots, A_k$ be a partition of $\Omega$ s.t. $P(A_i)>0, \forall i$ then, $\forall i=1, \cdots, k$: 
+\begin{align}
         P(A_i|B)= \frac{P(B|A_i)\cdot P(A_i)}{\sum_i P(B|A_i)\cdot P(A_i)}
     
-\end{aligned}$$
+\end{align}
 :::
 
 ::: proof
-*Proof.* From equations [\[eq:conditional_probability\]][11], [\[eq:joint_probability\]][12] and [\[eq:law_of_total_probabilities\]][13]: $$\begin{aligned}
+*Proof.* From equations [\[eq:conditional_probability\]][11], [\[eq:joint_probability\]][12] and [\[eq:law_of_total_probabilities\]][13]: 
+\begin{align}
         P(A_i|B)&\overset{\text{\ref{eq:conditional_probability}}}{=}\frac{P(A_i,B)}{P(B)} \overset{\text{\ref{eq:joint_probability}}}{=} \frac{P(B|A_i) \cdot P(A_i)}{P(B)}  \\
         &\overset{\text{\ref{eq:law_of_total_probabilities}}}{=}\frac{P(B|A_i)\cdot P(A_i)}{\sum_{i=1}^k P(B|A_i)\cdot P(A_i)}
     
-\end{aligned}$$ ◻
+\end{align}
+◻
 :::
 
 We call $P(A_i)$ the **prior** of A, and $P(A_i|B)$ the **posterior** probability of A.
@@ -275,9 +339,10 @@ We call $P(A_i)$ the **prior** of A, and $P(A_i|B)$ the **posterior** probabilit
 A **random variable** is a mapping $\rvX:\Omega \to \Real$ that assigns a real number $\rvX(\omega)$ to each outcome $\omega$, $\omega \mapsto \rvX(\omega)$.
 :::
 
-Given a random variable $\rvX$, the probability of an outcome $\rx$ can be expressed as: $$\begin{aligned}
+Given a random variable $\rvX$, the probability of an outcome $\rx$ can be expressed as: 
+\begin{align}
     P(\rvX=\rx) = P(\rvX^{-1}(\rx)) = P(\{\omega \in \Omega: \rvX(\omega)=\rx\})\label{eq:P(X=x)} 
-\end{aligned}$$
+\end{align}
 
 Several works on Probability Theory choose to start by defining random variables, rarely mentioning sample spaces, *events* or the connection with logical propositions.
 
@@ -304,10 +369,11 @@ Besides providing this shorter notation, the mapping of the random variable allo
 ::: definition
 A probability distribution of a discrete random variable $\rvX$ or **probability mass function (pmf)** is a function $p: \Omega \to [0,1]$ that provides the probabilities of occurrence of different possible outcomes in an *experiment* (sample space):
 
-$$\begin{aligned}
+
+\begin{align}
         p(\rx) = P(\rvX = \rx), \tag{pmf}
     
-\end{aligned}$$
+\end{align}
 :::
 
 If $\rvX$ is continuous, $P(\rvX=\rx)\to 0$, therefore we need to use intervals in this case.
@@ -335,29 +401,34 @@ A statistical model is a function $p_{\theta}(\rx) \equiv p(\rx | \theta)$ repre
 ### Uniform distribution {#sec:uniform_distribution}
 
 $\nonumber \\\rvX \sim \text{Uniform}(a,b)$, if:\
-$$\begin{aligned}
+
+\begin{align}
     p(\rx)=
     \begin{cases}
         \frac{1}{b-a} & x \in [a,b]\\
         0 & \rx \notin [a,b]
     \end{cases}
-\end{aligned}$$
+\end{align}
 
 ### Normal distribution
 
-$\nonumber \\\rvX \sim \mathcal{N}(\mu, \sigma^2)$, if: $$\begin{aligned}
+$\nonumber \\\rvX \sim \mathcal{N}(\mu, \sigma^2)$, if: 
+\begin{align}
     p(\rx)=\frac{1}{\sigma \sqrt{2\pi}}\exp{\Biggl{\{}{-\frac{1}{2\sigma^2}{(x-\mu)}^2}\Biggr{\}}}, \\~x \in \Real \\
-\end{aligned}$$ where $\mu \in \Real$ (mean) and $\sigma > 0$ (standard deviation). We say that $\rvX$ has a **standard Normal distribution** if $\mu = 0$, $\sigma =1$.
+\end{align}
+where $\mu \in \Real$ (mean) and $\sigma > 0$ (standard deviation). We say that $\rvX$ has a **standard Normal distribution** if $\mu = 0$, $\sigma =1$.
 
 ### Exponential distribution
 
-$\rvX \sim \text{Exp}(\lambda)$, if: $$\begin{aligned}
+$\rvX \sim \text{Exp}(\lambda)$, if: 
+\begin{align}
     p(\rx;\lambda) =
     \begin{cases}
         \lambda e^{-\lambda \rx} & \rx \ge 0, \\
         0 & \rx < 0.
     \end{cases}
-\end{aligned}$$ where $\lambda > 0$ is the *rate parameter* of the distribution.
+\end{align}
+where $\lambda > 0$ is the *rate parameter* of the distribution.
 
 ## Joint Distributions
 
@@ -378,48 +449,57 @@ iii. $\forall A \subset \Real \times \Real, P((\rvX,\rvY)\in A)=\iint_{A}p(\rx,\
 ## Expectancy, Variance and Covariance
 
 ::: definition
-The **expected value** or **mean** of $\rvX$ is: $$\begin{aligned}
+The **expected value** or **mean** of $\rvX$ is: 
+\begin{align}
         \E (\rvX)=\langle \rvX \rangle = \SumInt_x \rx~p(\rx)~dx = \mu = \mu_X
     
-\end{aligned}$$
+\end{align}
 :::
 
 ::: theorem
-Let $\rvX_1, \cdots, \rvX_n$ be random variables and $a_1, \cdots, a_n$ be constants, then from the *Sum Rule*: $$\begin{aligned}
+Let $\rvX_1, \cdots, \rvX_n$ be random variables and $a_1, \cdots, a_n$ be constants, then from the *Sum Rule*: 
+\begin{align}
         \E \biggl(\sum_i a_i\rvX_i\biggr)=\sum_i a_i(\E (\rvX_i))
     
-\end{aligned}$$
+\end{align}
 :::
 
 ::: theorem
-Let $\rvX_1, \cdots, \rvX_n$ be independent random variables, then from the *Product Rule*: $$\begin{aligned}
+Let $\rvX_1, \cdots, \rvX_n$ be independent random variables, then from the *Product Rule*: 
+\begin{align}
         \E (\prod_i \rvX_i)=\prod_i \E (\rvX_i)
     
-\end{aligned}$$
+\end{align}
 :::
 
 ::: definition
-Let $\rvX$ be a random variable with mean $\mu$. The **variance** of $\rvX$ is defined by: $$\begin{aligned}
+Let $\rvX$ be a random variable with mean $\mu$. The **variance** of $\rvX$ is defined by: 
+\begin{align}
         \sigma^2 = \sigma_{\rvX}^2 =\E {(\rvX - \mu)}^2
     
-\end{aligned}$$ assumming this expectation exists. The standard deviation is $\sigma$.
+\end{align}
+assumming this expectation exists. The standard deviation is $\sigma$.
 :::
 
 ::: definition
-Let ${\rvX}$ and ${\rvY}$ be random variables with means $\mu_{\rvX}$ and $\mu_{\rvY}$, and with standard deviations $\sigma_{\rvX}$ and $\sigma_{\rvY}$. The **covariance** between ${\rvX}$ and ${\rvY}$ is defined as [@wasserman2013 p.74]: $$\begin{aligned}
+Let ${\rvX}$ and ${\rvY}$ be random variables with means $\mu_{\rvX}$ and $\mu_{\rvY}$, and with standard deviations $\sigma_{\rvX}$ and $\sigma_{\rvY}$. The **covariance** between ${\rvX}$ and ${\rvY}$ is defined as [@wasserman2013 p.74]: 
+\begin{align}
         \operatorname{Cov}({\rvX},{\rvY}) = \E (({\rvX} - \mu_{\rvX})({\rvY} - \mu_{\rvY}))
     
-\end{aligned}$$ and the correlation as: $$\begin{aligned}
+\end{align}
+and the correlation as: 
+\begin{align}
         \rho = \rho_{{\rvX},{\rvY}} = \rho({\rvX},{\rvY}) = \frac{\operatorname{Cov}({\rvX},{\rvY})}{\sigma_{\rvX} \sigma_{\rvY}}
     
-\end{aligned}$$
+\end{align}
 :::
 
 ::: theorem
-The covariance satisfies: $$\begin{aligned}
+The covariance satisfies: 
+\begin{align}
         \operatorname{Cov}({\rvX},{\rvY})=\E ({\rvX}{\rvY})- \E({\rvX}) \E({\rvY}).
     
-\end{aligned}$$
+\end{align}
 :::
 
 ## Independent Sampling
@@ -468,6 +548,9 @@ From the derivation, we did a basic Statistics review (influenced by [@wasserma
 
 As we have settled that our focus is Deep Learning, which relates to the sceptical agent, we will abstain from keeping the rational language assumptions in our analysis and assume an epistemic agent is sceptical.
 
+
+-->
+
 [^31]: We can take this idea further and think that at any moment, we need to communicate with our past selves to check if new evidence is consistent with our prior model.
 
 [^32]: An inference method defines the rules for updating knowledge.
@@ -490,9 +573,11 @@ As we have settled that our focus is Deep Learning, which relates to the sceptic
 
 [^311]: Remember: $(B, A) \equiv (B \cap A)$.
 
-[^312]: An *event* can be seen as a special kind of *random variable*. , a random variable $\rvD$ is the truth function (also known as the indicator function) over an event $D$: $$\begin{aligned}
+[^312]: An *event* can be seen as a special kind of *random variable*. , a random variable $\rvD$ is the truth function (also known as the indicator function) over an event $D$: 
+\begin{align}
         \rvD=\truth_D
-    \end{aligned}$$ That is the reason one can say that "*random variables* define *events*."
+    \end{align}
+    That is the reason one can say that "*random variables* define *events*."
 
 [^313]: In this dissertation, we will use $P(\rvX)$ to express the probability of a random variable, and $p(\rx)$ to represent a *pmf* or *pdf* of the random variable outcomes.
 
@@ -502,6 +587,7 @@ As we have settled that our focus is Deep Learning, which relates to the sceptic
 
 [^316]: Our definition of knowledge hinted at a Bayesian perspective of knowledge.
 
+<---
   [1]: #blind_men {reference-type="ref" reference="blind_men"}
   [2]: #turing_strange_inversion {reference-type="ref" reference="turing_strange_inversion"}
   [1.4]: #sec:probability {reference-type="ref" reference="sec:probability"}
@@ -537,4 +623,4 @@ As we have settled that our focus is Deep Learning, which relates to the sceptic
   [25]: #absolute_truth {reference-type="ref" reference="absolute_truth"}
   [26]: #unambiguous {reference-type="ref" reference="unambiguous"}
   [27]: #beliefs {reference-type="ref" reference="beliefs"}
-  [28]: #common_sense {reference-type="ref" reference="common_sense"} -->
+  [28]: #common_sense {reference-type="ref" reference="common_sense"} --> -->

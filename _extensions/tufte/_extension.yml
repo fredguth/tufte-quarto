@@ -18,6 +18,9 @@ contributes:
         linkcolor: Maroon
         backgroundcolor: FloralWhite
         sidebarbackgroundcolor: FloralWhite
+        mainfont: "heuristica"
+        toc-location: left
+        toc-title: "Contents"
       pdf:
         reference-location: margin
         citation-location: margin
@@ -40,9 +43,10 @@ contributes:
         toc-title: "Contents"
         indent: 0px
         biblio-style: dinat
-
-
-
+        mainfont: "Minion Pro"
+        mainfontoptions: [minionint,footnotefigures, frenchmath]
+        sansfont: "TeX Gyre Heros"
+        sansfontoptions: "Scale=MatchUppercase"
 
 # TODO Remove before publishing
         # citation-location: margin

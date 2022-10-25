@@ -41,6 +41,7 @@ book:
 
 format: # specific to my dissertation
     html:
+      default-image-extension: svg
       open-graph: true
       site-url: https://fredguth.github.io/tufte-quarto/
       repo-url: https://github.com/fredguth/tufte-quarto/
@@ -56,13 +57,14 @@ format: # specific to my dissertation
             href: https://github.com/fredguth/tufte-quarto/
             aria-label: Tufte-Quarto on GitHub
       html-math-method: mathjax
-      include-before-body:
-        - js.html
-      include-in-header: 
+      include-in-header:
         - "Tex/_dollar.tex" # hack for macros in html https://github.com/quarto-dev/quarto-cli/discussions/2845
         - "Tex/math_macros.tex"
         - "Tex/_dollar.tex" # hack for macros in html https://github.com/quarto-dev/quarto-cli/discussions/2845
+      include-after-body:
+        - js.html
     pdf:
+      default-image-extension: pdf
       classoption: ["12pt", "british"]
       include-in-header:
         - Tex/math_commands.tex

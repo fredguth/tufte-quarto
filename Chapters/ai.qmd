@@ -266,15 +266,15 @@ The fundamental idea in Connectionism is that *intelligent behaviour emerges fro
 
 It was pioneered by McCulloch and Pitts in 1943 [@mcculloch1943]. One of Connectionism's first wave developments was Frank Rosenblatt's Perceptron, an algorithm for learning binary classifiers, or more specifically threshold functions: 
 
- $$
- \begin{aligned}          
+ 
+ \begin{align}          
      y=
      \begin{cases}
          1 \text{ if } \mW\vx + \vb > 0\\
          0 \text{ otherwise }
      \end{cases}
- \end{aligned}
- $$ 
+ \end{align}
+ 
 
  where $\mW$ is the vector of weights, $\vx$ is the input vector, $\vb$ is a bias, and $\vy$ is the classification. In neural networks, a perceptron is an artificial neuron using a step function as the activation function. 
 

@@ -9,8 +9,7 @@
 %  FIX Font clash Math error
 %  See https://tex.stackexchange.com/q/202142/157312
 % 
-\usepackage{ifxetex}
-\ifxetex
+
 \renewcommand{\textls}[2][5]{%
   \begingroup\addfontfeatures{LetterSpace=#1}#2\endgroup
 }
@@ -21,9 +20,9 @@
 \renewcommand{\textsc}[1]{\smallcapsspacing{\textsmallcaps{#1}}}
 
 \PassOptionsToPackage{no-math}{fontspec}
-
-\setmainfont{TeX Gyre Pagella}
-\setsansfont{TeX Gyre Heros}[Scale=MatchUppercase]
+% \usepackage[mathlf, minionint,footnotefigures, frenchmath]{MinionPro}
+% \setmainfont{$$}
+% \setsansfont{TeX Gyre Heros}[Scale=MatchUppercase]
 
 \ExplSyntaxOn
 \int_new:N \l_mathcode_minus_int
@@ -43,9 +42,9 @@
 \ExplSyntaxOff
 
 \usepackage[italic]{mathastext}
-\setromanfont{TeX Gyre Termes}
+% \setromanfont{TeX Gyre Termes}
 
-\fi
+
 %%%%%%%
 
 
