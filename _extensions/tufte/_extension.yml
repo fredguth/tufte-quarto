@@ -1,6 +1,6 @@
 title: Tufte Quarto
 author: Fred Guth
-version: 1.1.0
+version: 2.0.0
 quarto-version: ">=1.2.215"
 contributes:
   project:
@@ -22,25 +22,32 @@ contributes:
         toc-location: left
         toc-title: "Contents"
       pdf:
+        documentclass: scrbook
+        classoption: 
+          - twoside
+          - fontsize=12pt
+        geometry:
+          - letterpaper
+          - left=1in
+          - top=1in
+          - headsep=2\baselineskip
+          - textwidth=26pc
+          - marginparsep=2pc
+          - marginparwidth=12pc
+          - textheight=44\baselineskip
+          - headheight=\baselineskip
+          - showframe #debug
         reference-location: margin
         citation-location: margin
         fig-cap-location: bottom
-        documentclass: tufte-book
-        classoption: [sfsidenotes]
         number-sections: false
-        format-resources:
-          - tufte-book.cls
-          - tufte-common.def
-          - tufte.bst
-        include-in-header:
-          - "partials/in-header.tex"
-          - "partials/definitions.tex"
         template-partials:
-          - "partials/title.tex"
+          - partials/title.tex
+          - partials/before-body.tex
+        include-in-header:
+          - partials/in-header.tex
         include-before-body:
-          - "partials/before-body.tex"
-        include-after-body:
-          - "partials/after-body.tex"
+          - partials/maketitle.tex
         toc-depth: 2
         toc-title: "Contents"
         indent: 0px
@@ -49,5 +56,8 @@ contributes:
         mainfont: "ETbb"
         sansfont: "TeX Gyre Heros"
         sansfontoptions: "Scale=MatchUppercase"
-        
-  
+
+          # - "partials/author.tex"
+        # include-after-body:
+          # - maketitle.tex
+          # - "partials/after-body.tex"

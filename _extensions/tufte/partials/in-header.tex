@@ -1,77 +1,30 @@
-% FIX Marginnote duplication
-\usepackage{savesym}
-\savesymbol{marginfigure}
-\savesymbol{marginnote}
-\savesymbol{sidenote}
-
-%%%%%%%
-%  FIX Makeuppercase error
-%  FIX Font clash Math error
-%  See https://tex.stackexchange.com/q/202142/157312
-% 
-
-\renewcommand{\textls}[2][5]{%
-  \begingroup\addfontfeatures{LetterSpace=#1}#2\endgroup
+\usepackage{pdfpages}
+\newenvironment{abstract}{}{}
+\newenvironment{fullwidth}
+{
+    % <begin-code>
+    \newgeometry{left=1in,top=1in, right=1in, headsep=2\baselineskip,textwidth=36pc,marginparsep=0pc,marginparwidth=0pc,textheight=44\baselineskip,headheight=\baselineskip} 
 }
-\renewcommand{\allcapsspacing}[1]{\textls[15]{#1}}
-\renewcommand{\smallcapsspacing}[1]{\textls[10]{#1}}
-\renewcommand{\allcaps}[1]{\textls[15]{\MakeTextUppercase{#1}}}
-\renewcommand{\smallcaps}[1]{\smallcapsspacing{\scshape\MakeTextLowercase{#1}}}
-\renewcommand{\textsc}[1]{\smallcapsspacing{\textsmallcaps{#1}}}
-
-\PassOptionsToPackage{no-math}{fontspec}
-% \usepackage[mathlf, minionint,footnotefigures, frenchmath]{MinionPro}
-% \setmainfont{$$}
-% \setsansfont{TeX Gyre Heros}[Scale=MatchUppercase]
-
-\ExplSyntaxOn
-\int_new:N \l_mathcode_minus_int
-\int_new:N \l_mathcode_equal_int
-\exp_args:Nx \AtBeginDocument {
-  \exp_not:n {
-    \int_set:Nn \l_mathcode_minus_int { \XeTeXmathcodenum `\- }
-    \int_set:Nn \l_mathcode_equal_int { \XeTeXmathcodenum `\= }
-  }
-  \mathcode \int_eval:n { `\- } = \number \mathcode `\- \scan_stop:
-  \mathcode \int_eval:n { `\= } = \number \mathcode `\= \scan_stop:
+{
+    % <end-code>
+    \restoregeometry
 }
-\AtBeginDocument {
-  \XeTeXmathcodenum `\- = \l_mathcode_minus_int
-  \XeTeXmathcodenum `\= = \l_mathcode_equal_int
-}
-\ExplSyntaxOff
-
-\usepackage[italic]{mathastext}
-% \setromanfont{TeX Gyre Termes}
 
 
-%%%%%%%
+\usepackage{soul}
+\sodef\allcapsspacing{}{0.15em}{0.65em}{0.6em}%
+\sodef\smallcapsspacing{}{0.075em}{0.5em}{0.6em}%
+\sodef\sotextsc{\scshape}{0.075em}{0.5em}{0.6em}%
+
+\newcommand{\allcaps}[1]{\sffamily{\MakeUppercase{\allcapsspacing{##1}}}}%
+\renewcommand{\textsc}[1]{\sotextsc{##1}}%
+
+% \setkomafont{author}{\sffamily}
+% \setkomafont{title}{\sffamily}
+% \setkomafont{publishers}{\sffamily}
 
 
-\usepackage{pdfpages}  % for cover page
-\graphicspath{{Images/}} % Make Images/ default figure path
 
 
-\setlength{\parindent}{0pt}%
-\setlength{\RaggedRightParindent}{0pt}
-\setlength{\JustifyingParindent}{0pt}%
-\setlength{\parskip}{\baselineskip}
 
-%%
-% Produces a full title page
 
-\renewcommand{\maketitlepage}[0]{%
-  \cleardoublepage%
-  {%
-  \sffamily%
-  \begin{fullwidth}%
-  \fontsize{12}{14}\selectfont\par\noindent\textcolor{darkgray}{\allcaps{\thanklessauthor}}%
-  \vspace{12.5pc}%
-  \fontsize{20}{28}\selectfont\par\noindent\textcolor{darkgray}{\allcaps{\thanklesstitle}}%
-  \vfill%
-  \fontsize{10}{12}\selectfont\par\noindent\allcaps{\thanklesspublisher}%
-  \end{fullwidth}%
-  }
-  \thispagestyle{empty}%
-  \clearpage%
-}

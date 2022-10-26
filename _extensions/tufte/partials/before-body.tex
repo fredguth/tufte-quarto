@@ -1,16 +1,19 @@
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Why can't I access metadata here?
-% \includepdf{$tufte.cover$}
-% \includepdf{$tufte.coversheet$}
-%  TODO: remove comment
-% \includepdf{Images/cover.pdf}
-% \includepdf{Images/coversheet.pdf} 
-%  TODO: remove/change maketitle if cover present
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\IfFileExists{01-Front/copyright.tex}{\input{01-Front/copyright.tex}\clearpage}{}
+%  https://quarto.org/docs/journals/templates.html#latex-partials
+
+\IfFileExists{Images/bookcover.pdf}{\includepdf[pages={1}]{Images/bookcover.pdf}}{}
+
+$if(has-frontmatter)$
 \frontmatter
-\pagenumbering{gobble} 
-\IfFileExists{01-Front/dedication.tex}{\input{01-Front/dedication.tex}\clearpage}{}
-\IfFileExists{01-Front/epigraph.tex}{\input{01-Front/epigraph.tex}\clearpage}{}
-\pagenumbering{arabic}
-\mainmatter
+$endif$
+$if(title)$
+$if(beamer)$
+\frame{\titlepage}
+$else$
+\maketitle
+$endif$
+$if(abstract)$
+\begin{abstract}
+$abstract$
+\end{abstract}
+$endif$
+$endif$

@@ -9,7 +9,6 @@ book:
   author: Fred Guth
   publisher: The Publisher
   date-format: MMMM, YYYY
-  license: "CC BY"
   chapters:
     - index.qmd
     # - 02-Main/preface.qmd
@@ -21,9 +20,9 @@ book:
     # - 03-Back/notation.qmd
     # - 03-Back/acronyms.qmd
     # - 03-Back/colophon.qmd
-  appendices:
-    - 03-Back/ack.qmd
-    - 03-Back/colophon.qmd
+  # appendices:
+  #   - 03-Back/ack.qmd
+  #   - 03-Back/colophon.qmd
 format:
   pdf:
     keep-tex: true
