@@ -2,75 +2,28 @@ project:
     type: tufte
 book:
   title: |
-    The emergence of\
-    an Information Bottleneck Theory\
-    of Deep Learning\
-  # title-short used in the head, only way I found not to insert long title there
-  title-short: $$~$$ # Q: Why blank space without mathmode didn't work?
-  output-file: IBToDL
+    Tufte-Quarto Extension\
+    Documentation
+  title-short: $$~$$ # title-short used in the pdf head
+  output-file: TufteStyledBook
   author: Fred Guth
-  publisher: Universidade de Brasília
-  date: "20/02/2022"
+  publisher: The Publisher
+  date-format: MMMM, YYYY
+  license: "CC BY"
   chapters:
     - index.qmd
-    # - Front/copyright.qmd
-    # - Front/dedication.qmd
-    # - Front/ack.qmd
-    # - Front/epigraph.qmd
-    - Chapters/context.qmd
-    - part: Background
-      chapters:
-        - Chapters/ai.qmd
-        - Chapters/prob.qmd
-    #     - Chapters/mlt.qmd
-    #     - Chapters/info.qmd
-    # - part: intermezzo.qmd
-    # - part: A new theory
-    #   chapters: 
-    #     - Chapters/ib-method.qmd
-    #     - Chapters/ib-rl.qmd
-    #     - Chapters/ib-dl.qmd
-    # - Chapters/conclusion.qmd
-    # - Back/notation.qmd
-    # - Back/acronyms.qmd
-    # - Back/colophon.qmd
-    - part: Tufte-Quarto
-      chapters:
-      - Back/quarto-questions.qmd
-      - Back/todo.qmd
-
-format: # specific to my dissertation
-    html:
-      default-image-extension: svg
-      open-graph: true
-      site-url: https://fredguth.github.io/tufte-quarto/
-      repo-url: https://github.com/fredguth/tufte-quarto/
-      repo-actions: [edit, issue]
-      page-footer:
-        left: |
-          © 2022 onwards, Fred Guth
-        right:
-          - icon: twitter
-            href: https://twitter.com/fredguth
-            aria-label: Fred's Twitter
-          - icon: github
-            href: https://github.com/fredguth/tufte-quarto/
-            aria-label: Tufte-Quarto on GitHub
-      html-math-method: mathjax
-      include-in-header:
-        - "Tex/_dollar.tex" # hack for macros in html https://github.com/quarto-dev/quarto-cli/discussions/2845
-        - "Tex/math_macros.tex"
-        - "Tex/_dollar.tex" # hack for macros in html https://github.com/quarto-dev/quarto-cli/discussions/2845
-      include-after-body:
-        - js.html
-    pdf:
-      default-image-extension: pdf
-      classoption: ["12pt", "british"]
-      include-in-header:
-        - Tex/math_commands.tex
-bibliography: bibliography.bib
-
-
-  # cover: "Images/cover.pdf"
-  # coversheet: "Images/coversheet.pdf"
-
+    # - 02-Main/preface.qmd
+    # - part: repo.qmd
+    # - part: Customizing
+    #   chapters:
+    #   - 02-Main/document.qmd              
+    #   - 02-Main/website.qmd              
+    # - 03-Back/notation.qmd
+    # - 03-Back/acronyms.qmd
+    # - 03-Back/colophon.qmd
+  appendices:
+    - 03-Back/ack.qmd
+    - 03-Back/colophon.qmd
+format:
+  pdf:
+    keep-tex: true

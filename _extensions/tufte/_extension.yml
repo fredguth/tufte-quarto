@@ -26,6 +26,7 @@ contributes:
         citation-location: margin
         fig-cap-location: bottom
         documentclass: tufte-book
+        classoption: [sfsidenotes]
         number-sections: false
         format-resources:
           - tufte-book.cls
@@ -38,12 +39,15 @@ contributes:
           - "partials/title.tex"
         include-before-body:
           - "partials/before-body.tex"
-        keep-tex: true
+        include-after-body:
+          - "partials/after-body.tex"
         toc-depth: 2
         toc-title: "Contents"
         indent: 0px
-        biblio-style: dinat
-        mainfont: "Minion Pro"
-        # mainfontoptions: [minionint,footnotefigures, frenchmath]
+        biblio-style: dina
+        # mainfont: "Minion Pro"
+        mainfont: "ETbb"
         sansfont: "TeX Gyre Heros"
         sansfontoptions: "Scale=MatchUppercase"
+        
+  

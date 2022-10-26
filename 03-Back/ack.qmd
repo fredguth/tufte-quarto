@@ -1,0 +1,8 @@
+# Acknowledgements
+
+Many thanks to the Quarto team for creating this wonderful tool. I am also grateful for the support I got at [Quarto's Discussion Board](https://github.com/quarto-dev/quarto-cli/discussions?discussions_q=author%3Afredguth), specialy:
+
+- Mickaël Canouil (`@mcanouil`);
+- Charles Teague (`@dragonstyle`);
+- Raniere Silva (`@rgaiacs`); and
+- Christophe Dervieux (`@cderv`)

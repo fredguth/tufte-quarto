@@ -7,3 +7,10 @@
 % \includepdf{Images/coversheet.pdf} 
 %  TODO: remove/change maketitle if cover present
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\IfFileExists{01-Front/copyright.tex}{\input{01-Front/copyright.tex}\clearpage}{}
+\frontmatter
+\pagenumbering{gobble} 
+\IfFileExists{01-Front/dedication.tex}{\input{01-Front/dedication.tex}\clearpage}{}
+\IfFileExists{01-Front/epigraph.tex}{\input{01-Front/epigraph.tex}\clearpage}{}
+\pagenumbering{arabic}
+\mainmatter
