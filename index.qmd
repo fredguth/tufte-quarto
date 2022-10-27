@@ -1,12 +1,23 @@
-:::{.content-hidden when-format="pdf"}:::
-# Welcome
-:::
+![A portrait Edward R. Tufte, godfather of charts. Art by Fred Guth and MidJourney.](images/et_midjourney_transparent.png){.column-margin}
+
 :::{.content-hidden when-format="html"}:::
 # Preface
 :::
+:::{.content-hidden when-format="pdf"}:::
+# Welcome
+:::
+The Tufte-Quarto project is an homage to [Edward Tufte](#sec-tufte). It simplifies the production of books using a layout that resembles [his books](https://www.edwardtufte.com/tufte/books_vdqi)[@Tufte:vdqi; @Tufte:en; @Tufte:ve] with a companion website. The goal is for the book and website share the same aesthetics. 
 
-### An homage to Edward R. Tufte 
-![A portrait Edward R. Tufte, godfather of charts. Art by Fred Guth and MidJourney.](/Images/et_midjourney_transparent.png){.column-margin}
+As an example, [my dissertation](https://fredguth.github.io/IBToDL) is being refactored with Tufte-Quarto, it gives an idea of the final result.
 
+### Usage
+To use this project type just:
+
+`quarto use template fredguth/tufte-quarto`
+
+::: {#sec-tufte}
+
+### About Edward R. Tufte
 Professor Emeritus of Political Science, Statistics and Computer Sciente at Yale University, Edward Tufte is an expert in the presentation of informational. Also known as *the godfather of charts*. Check [his website](https://www.edwardtufte.com/tufte/).
 
+:::

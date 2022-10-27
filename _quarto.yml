@@ -2,28 +2,24 @@ project:
     type: tufte
 book:
   title: |
-    Tufte-Quarto Extension\
+    Tufte-Quarto Project Type\
     Documentation
-  title-short: $$~$$ # title-short used in the pdf head
-  output-file: TufteStyledBook
+  title-short: Tufte-Quarto # title-short is used in the pdf head
+  output-file: TufteStyledBook # outputs: docs/TufteStyledBook.pdf
   author: Fred Guth
   publisher: The Publisher
   date-format: MMMM, YYYY
   license: "CC BY"
   chapters:
     - index.qmd
-    # - 02-Main/preface.qmd
-    # - part: repo.qmd
-    # - part: Customizing
-    #   chapters:
-    #   - 02-Main/document.qmd              
-    #   - 02-Main/website.qmd              
-    # - 03-Back/notation.qmd
-    # - 03-Back/acronyms.qmd
-    # - 03-Back/colophon.qmd
-  appendices:
-    - 03-Back/ack.qmd
-    - 03-Back/colophon.qmd
-format:
+    - 02-Main/customizing.qmd
+    # - 02-Back/known_issues.qmd
+    - part: about.qmd
+      chapters:
+        - 03-Back/references.qmd
+        - 03-Back/ack.qmd
+        - 03-Back/colophon.qmd
+bibliography: references.bib
+format: # remove
   pdf:
     keep-tex: true

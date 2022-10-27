@@ -1,16 +1,22 @@
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Why can't I access metadata here?
-% \includepdf{$tufte.cover$}
-% \includepdf{$tufte.coversheet$}
-%  TODO: remove comment
-% \includepdf{Images/cover.pdf}
-% \includepdf{Images/coversheet.pdf} 
-%  TODO: remove/change maketitle if cover present
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\IfFileExists{01-Front/copyright.tex}{\input{01-Front/copyright.tex}\clearpage}{}
+\IfFileExists{Images/bookcover.pdf}{\includepdf{Images/bookcover.pdf}\clearpage}{}
+
+$if(has-frontmatter)$
 \frontmatter
+$endif$
+$if(title)$
+$if(beamer)$
+\frame{\titlepage}
+$else$
+\maketitle
 \pagenumbering{gobble} 
+\IfFileExists{01-Front/copyright.tex}{\input{01-Front/copyright.tex}\clearpage}{}
 \IfFileExists{01-Front/dedication.tex}{\input{01-Front/dedication.tex}\clearpage}{}
 \IfFileExists{01-Front/epigraph.tex}{\input{01-Front/epigraph.tex}\clearpage}{}
+$endif$
+$if(abstract)$
+\begin{abstract}
+$abstract$
+\end{abstract}
+$endif$
+$endif$
 \pagenumbering{arabic}
-\mainmatter

@@ -1,13 +1,11 @@
----
-title: Colophon
----
-:::{.content-hidden when-format="html"}
-\vspace*{\fill}
-
+# Colophon {.unlisted .unnumbered}
 
 Composed in ET Book, a free and open-sopurce typeface designed by Dmitry Krasny, Bonnie Scranton, and Edward Tufte; and \TeX  Gyre Heros, a fontbased on the URW Nimbus Sans L kindly released by URW++ Design and Development Inc. under GFL.
+Based on [Tufte-Latex](https://tufte-latex.github.io/tufte-latex/) and [Quarto](https://quarto.org).
 
-\vspace*{1cm}
 
-![](/Images/gutemberg_press.pdf){.column-margin}
-:::
+![](/images/gutemberg_press){.column-margin}
+
+
+
+

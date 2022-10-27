@@ -1,0 +1,50 @@
+---
+title: Customizing
+---
+
+You can customize your book by changing `_quarto.yml` and the files it referendes.  This project organize files in 4 basic folders:
+
+- 01-Front: for frontmatter content;
+- 02-Main: for mainmatter content;
+- 03-Back: for backmatter content;
+
+### Book Structure
+
+- Cover
+- Front Matter
+    - Title Page
+    - Copyright
+    - Dedication
+    - Epigraph/dictum
+    - Table of Contents
+- Main Matter
+    - chapters
+- Back Matter
+    - references
+    - appendices
+    - acknowledgements
+    - colophon
+
+### File Structure
+
+| Book Part | File                     | How to customize |
+|-----------|:-------------------------|:-------------------|
+| Cover     | images/bookcover.pdf     | Replace the file. If no file, no cover. |
+| Titlepage | _quarto.yml             | Built from metadata. For further customization use [partials](https://quarto.org/docs/journals/templates.html). |
+| Copyright | 01-Front/dedication.tex  | Replace or exclude/rename file. |
+| Dedication| 01-Front/dedication.tex  | Replace or exclude/rename file. |
+| Epigraph  | 01-Front/epigraph.tex    | Replace or exclude/rename file. |
+| ToC  | _quarto.yml    | Built from metadata. For further customization use [partials](https://quarto.org/docs/journals/templates.html). |
+| Chapters  | _quarto.yml    | You can reference [chapters, parts and apendices](https://quarto.org/docs/books/book-structure.html).
+| Acknolegements | 03-Back/ack.qmd | Replace or exclude/rename file. |
+| Colophon | 03-Back/colophon.qmd | Replace or exclude/rename file. |
+
+### Advanced Cutomization
+
+In `_extensions/tufte/_extension.yml` you can check the default settings of the Tufte-Quarto Book type. All these settings can be overwritten in _quarto.yml. 
+
+The project uses [tufte-book](https://tufte-latex.github.io/tufte-latex/) Latex class. 
+
+### Customizing the Website
+
+Besides the settings from `_extensions/tufte/_extension.yml > format > html` that can be overwritten in `_quarto.yml > format > html`, you can further customize the website by creating a `style.css` file and referencing it in `_quarto.yml`. Check `_extensions/tufte/style.css` as an example, but avoid changing directly there as Tufte-Quarto updates may break your changes.
