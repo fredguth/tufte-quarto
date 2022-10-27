@@ -63,11 +63,21 @@ header .chapter-title {
   scrollbar-width: none;  /* Firefox */
 }
 
+.navbar-brand {
+    font-family: helvetica, monospace;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: .11em;
+    line-height: 1.5rem;
+    font-size: 1em;
+}
+.sidebar-header > div > div > a > i {
+display: none
+}
 
-
-
-
-
+.navbar-brand > a{
+    color: maroon;
+}
 .sidebar nav[role=doc-toc] ul {
     font-size: 14px;
 }

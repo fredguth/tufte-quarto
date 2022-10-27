@@ -24,6 +24,3 @@ book:
         - 03-Back/ack.qmd
         - 03-Back/colophon.qmd
 bibliography: references.bib
-format: # remove
-  pdf:
-    keep-tex: true
