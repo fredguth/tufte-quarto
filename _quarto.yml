@@ -1,6 +1,10 @@
 project:
     type: tufte
 book:
+  open-graph: true
+  site-url: https://fredguth.github.io/tufte-quarto/
+  repo-url: https://github.com/fredguth/tufte-quarto/
+  repo-actions: [edit, issue]
   title: |
     Tufte-Quarto Project Type\
     Documentation
