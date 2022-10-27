@@ -13,7 +13,7 @@ book:
   chapters:
     - index.qmd
     - 02-Main/customizing.qmd
-    # - 02-Back/known_issues.qmd
+    - 02-Main/known_issues.qmd
     - part: about.qmd
       chapters:
         - 03-Back/references.qmd

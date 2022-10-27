@@ -1,0 +1,52 @@
+# Known-issues
+
+1. Tufte-book can't handle label inside caption.
+
+    Tufte-book.cls breaks when processing the line bellow:
+
+    ```qmd
+    ![A way of flying](/Images/goya.jpg){.column-body #fig-goya}
+    ```
+    which becomes:
+
+    ```tex
+    \begin{figure}
+
+    {\centering \includegraphics{Images/goya.jpg}
+
+    }
+
+    \caption{\label{fig-goya}A way of flying}
+
+    \end{figure}
+    ```
+    
+ 2. Can't render svg image in pdf and can't render pdf image in html.
+    - current solution is quite ugly: 
+
+    ```qmd
+    ::: {.content-hidden unless-format="pdf" }
+
+    ![IBT "genealogy" tree.](/Images/dissertation-map.pdf){.column-margin width=90%}
+
+    :::
+
+    ::: {.content-hidden unless-format="html"}
+
+    ![IBT "genealogy" tree.](/Images/dissertation-map.svg){.column-margin width=90%}
+
+    :::
+
+    ```
+    For avoiding duplicating code, files are .svg in html by defaul and .pdf in pdf.
+    So you can only:
+
+    ```qmd
+
+    ![IBT "genealogy" tree.](/Images/dissertation-map){.column-margin width=90%}
+
+    ```
+
+3. Tufte-class works only until subsection -> `### subsection`; `#### subsubsection`-> returns error
+
+4. sidecite is duplicating citations in the same margin. Solved this same problem in my dissertation and in the kaobook class. Only problem is that Tufte-book class is a little too cryptic for me. 

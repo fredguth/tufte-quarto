@@ -8,7 +8,7 @@ You can customize your book by changing `_quarto.yml` and the files it referende
 - 02-Main: for mainmatter content;
 - 03-Back: for backmatter content;
 
-### Book Structure
+## Book Structure
 
 - Cover
 - Front Matter
@@ -25,7 +25,7 @@ You can customize your book by changing `_quarto.yml` and the files it referende
     - acknowledgements
     - colophon
 
-### File Structure
+## File Structure
 
 | Book Part | File                     | How to customize |
 |-----------|:-------------------------|:-------------------|
@@ -45,6 +45,6 @@ In `_extensions/tufte/_extension.yml` you can check the default settings of the 
 
 The project uses [tufte-book](https://tufte-latex.github.io/tufte-latex/) Latex class. 
 
-### Customizing the Website
+## Customizing the Website
 
 Besides the settings from `_extensions/tufte/_extension.yml > format > html` that can be overwritten in `_quarto.yml > format > html`, you can further customize the website by creating a `style.css` file and referencing it in `_quarto.yml`. Check `_extensions/tufte/style.css` as an example, but avoid changing directly there as Tufte-Quarto updates may break your changes.
