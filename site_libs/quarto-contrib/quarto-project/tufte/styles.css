@@ -1,0 +1,166 @@
+.column-margin figcaption, .margin-caption, div.aside, aside, .column-margin {
+    color: #5a6570;
+    font-size: .625rem;
+}
+.sidebar-title {
+    margin-top: .25rem;
+    padding-bottom: .5rem;
+    font-size: .76rem;
+    line-height: 1rem;
+    visibility: visible;
+}
+
+.sidebar-item-container .chapter-number {
+    color: #212529;
+    font-size: .7rem;
+}
+
+.title .chapter-number {
+    color: #212529;
+    font-size: 1.5rem;
+    margin-right: 2rem;
+}
+
+.header-section-number {
+    color: #5a6570;
+    font-size: 1.3rem;
+    margin-right: 2rem;
+}
+body {
+    font-size: 16px;
+    line-height: 24px;
+    quotes: "‘" "’";
+}
+
+/* h1 {
+    font-family: 'Minion Pro', 'Crimson', serif;
+    font-style: italic;
+    padding-bottom: 1rem;
+    letter-spacing: 0rem;
+} */
+
+header .chapter-title {
+    font-family: 'Minion Pro', 'Crimson', serif;
+    font-style: italic;
+    text-transform: none;
+    font-size: 2.2rem;
+    letter-spacing: normal;
+}
+
+.sidebar {
+    font-family: sans-serif;
+    
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.sidebar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.navbar-brand {
+    font-family: helvetica, monospace;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: .11em;
+    line-height: 1.5rem;
+    font-size: 1em;
+}
+.sidebar-header > div > div > a > i {
+display: none
+}
+
+.navbar-brand > a{
+    color: maroon;
+}
+.sidebar nav[role=doc-toc] ul {
+    font-size: 14px;
+}
+.sidebar nav[role=doc-toc] ul>li>a.active {
+    border-left: 1px solid maroon;
+    color: maroon !important;
+}
+.sidebar nav[role=doc-toc] ul>li>ul>li>a.active {
+    border-left: 1px solid maroon;
+    color: maroon !important;
+}
+.sidebar-title {
+    font-family: helvetica, monospace;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: .11em;
+    line-height: 1.12rem; 
+    font-size: .48rem;
+}
+.quarto-secondary-nav-title, .title {
+    /* font-family: 'Minion Pro', 'Crimson', serif; */
+    font-family: helvetica, monospace;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: .125em;
+    line-height: 1.25em; 
+    font-size: 1.5rem;
+    padding-top: .825rem
+    
+}
+.quarto-secondary-nav-title {
+    font-size: 1.1rem;
+}
+.blockquote {
+    border-left: none;
+}
+.blockquote p {
+    font-size: smaller;
+    color: #5a6570;
+    font-style: italic;
+}
+
+
+@media (min-width:1280px) {
+    .blockquote p {
+        padding-left: 4cm;
+    }
+}
+
+.panel-caption, .figure-caption, figcaption {
+    color: #5a6570;
+    font-size: .825rem;
+    margin-bottom: .825rem;
+}
+
+.theorem-title {
+    margin-right: 1.5rem;
+}
+
+
+#fig-cover img {
+    background-color: white;
+    border: 1px solid #555;
+}
+
+.figure-img {
+    margin: auto;
+}
+
+#quarto-sidebar {
+    background: transparent;
+}
+
+div.sidebar-item-container .active, div.sidebar-item-container :hover, div.sidebar-item-container .show>.nav-link, div.sidebar-item-container .sidebar-link>code {
+    color: maroon;
+}
+
+nav[role=doc-toc] {
+    padding-bottom: 100px;
+}
+
+.sans-serif {
+    font-family: helvetica, monospace;
+    font-style: normal;
+    text-transform: uppercase;
+}

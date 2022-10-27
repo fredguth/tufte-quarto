@@ -1,0 +1,79 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Tufte-Quarto Project Type\nDocumentation",
+    "section": "",
+    "text": "Welcome"
+  },
+  {
+    "objectID": "index.html#showcase",
+    "href": "index.html#showcase",
+    "title": "Tufte-Quarto Project Type\nDocumentation",
+    "section": "Showcase",
+    "text": "Showcase\n\nThis documentation\nThis documention itself is using Tufte-Quarto.\n\n\n\n\n\nFigure 1.1: Tufte-Quarto Documentation\n\n\n\n\nDissertation\nAs an example, my dissertation is being refactored with Tufte-Quarto, it gives an idea of a complex document built with Tufte-Quarto."
+  },
+  {
+    "objectID": "index.html#usage",
+    "href": "index.html#usage",
+    "title": "Tufte-Quarto Project Type\nDocumentation",
+    "section": "Usage",
+    "text": "Usage\nTo use this project type just:\nquarto use template fredguth/tufte-quarto"
+  },
+  {
+    "objectID": "index.html#about-edward-r.-tufte",
+    "href": "index.html#about-edward-r.-tufte",
+    "title": "Tufte-Quarto Project Type\nDocumentation",
+    "section": "About Edward R. Tufte",
+    "text": "About Edward R. Tufte\nProfessor Emeritus of Political Science, Statistics and Computer Sciente at Yale University, Edward Tufte is an expert in the presentation of informational. Also known as the godfather of charts. Check his website."
+  },
+  {
+    "objectID": "02-Main/customizing.html#book-structure",
+    "href": "02-Main/customizing.html#book-structure",
+    "title": "Customizing",
+    "section": "Book Structure",
+    "text": "Book Structure\n\nCover\nFront Matter\n\nTitle Page\nCopyright\nDedication\nEpigraph/dictum\nTable of Contents\n\nMain Matter\n\nchapters\n\nBack Matter\n\nreferences\nappendices\nacknowledgements\ncolophon"
+  },
+  {
+    "objectID": "02-Main/customizing.html#file-structure",
+    "href": "02-Main/customizing.html#file-structure",
+    "title": "Customizing",
+    "section": "File Structure",
+    "text": "File Structure\n\n\n\nBook Part\nFile\nHow to customize\n\n\n\n\nCover\nimages/bookcover.pdf\nReplace the file. If no file, no cover.\n\n\nTitlepage\n_quarto.yml\nBuilt from metadata. For further customization use partials.\n\n\nCopyright\n01-Front/dedication.tex\nReplace or exclude/rename file.\n\n\nDedication\n01-Front/dedication.tex\nReplace or exclude/rename file.\n\n\nEpigraph\n01-Front/epigraph.tex\nReplace or exclude/rename file.\n\n\nToC\n_quarto.yml\nBuilt from metadata. For further customization use partials.\n\n\nChapters\n_quarto.yml\nYou can reference chapters, parts and apendices.\n\n\nAcknolegements\n03-Back/ack.qmd\nReplace or exclude/rename file.\n\n\nColophon\n03-Back/colophon.qmd\nReplace or exclude/rename file.\n\n\n\n\nAdvanced Cutomization\nIn _extensions/tufte/_extension.yml you can check the default settings of the Tufte-Quarto Book type. All these settings can be overwritten in _quarto.yml.\nThe project uses tufte-book Latex class."
+  },
+  {
+    "objectID": "02-Main/customizing.html#customizing-the-website",
+    "href": "02-Main/customizing.html#customizing-the-website",
+    "title": "Customizing",
+    "section": "Customizing the Website",
+    "text": "Customizing the Website\nBesides the settings from _extensions/tufte/_extension.yml > format > html that can be overwritten in _quarto.yml > format > html, you can further customize the website by creating a style.css file and referencing it in _quarto.yml. Check _extensions/tufte/style.css as an example, but avoid changing directly there as Tufte-Quarto updates may break your changes."
+  },
+  {
+    "objectID": "02-Main/known_issues.html",
+    "href": "02-Main/known_issues.html",
+    "title": "Known-issues",
+    "section": "",
+    "text": "Tufte-book can’t handle label inside caption.\nTufte-book.cls breaks when processing the line bellow:\n![A way of flying](/Images/goya.jpg){.column-body #fig-goya}\nwhich becomes:\n\\begin{figure}\n\n{\\centering \\includegraphics{Images/goya.jpg}\n\n}\n\n\\caption{\\label{fig-goya}A way of flying}\n\n\\end{figure}\nCan’t render svg image in pdf and can’t render pdf image in html.\n\ncurrent solution is quite ugly:\n\n::: {.content-hidden unless-format=\"pdf\" }\n\n![IBT \"genealogy\" tree.](/Images/dissertation-map.pdf){.column-margin width=90%}\n\n:::\n\n::: {.content-hidden unless-format=\"html\"}\n\n![IBT \"genealogy\" tree.](/Images/dissertation-map.svg){.column-margin width=90%}\n\n:::\n\nFor avoiding duplicating code, files are .svg in html by defaul and .pdf in pdf. So you can only:\n\n![IBT \"genealogy\" tree.](/Images/dissertation-map){.column-margin width=90%}\n\nTufte-class works only until subsection -> ### subsection; #### subsubsection-> returns error\nsidecite is duplicating citations in the same margin. Solved this same problem in my dissertation and in the kaobook class. Only problem is that Tufte-book class is a little too cryptic for me."
+  },
+  {
+    "objectID": "03-Back/references.html",
+    "href": "03-Back/references.html",
+    "title": "References",
+    "section": "",
+    "text": "Tufte, Edward R. 2001. The Visual Display of Quantitative\nInformation. 2nd ed. Cheshire, CT: Graphics Press.\n\n\nTufte, Edward R, Nora Hillman Goeler, and Richard Benson. 1990.\nEnvisioning Information. Vol. 126. Graphics press Cheshire, CT.\n\n\nTufte, Edward R, Susan R McKay, Wolfgang Christian, and James R Matey.\n1998. Visual Explanations: Images and Quantities, Evidence and\nNarrative. American Institute of Physics."
+  },
+  {
+    "objectID": "03-Back/ack.html",
+    "href": "03-Back/ack.html",
+    "title": "Acknowledgements",
+    "section": "",
+    "text": "Many thanks to the Quarto team for creating this wonderful tool. I am also grateful for the support I got at Quarto’s Discussion Board, specialy:\n\nMickaël Canouil (@mcanouil);\nCharles Teague (@dragonstyle);\nRaniere Silva (@rgaiacs); and\nChristophe Dervieux (@cderv)"
+  },
+  {
+    "objectID": "03-Back/colophon.html",
+    "href": "03-Back/colophon.html",
+    "title": "Colophon",
+    "section": "",
+    "text": "Composed in ET Book, a free and open-sopurce typeface designed by Dmitry Krasny, Bonnie Scranton, and Edward Tufte; and Gyre Heros, a fontbased on the URW Nimbus Sans L kindly released by URW++ Design and Development Inc. under GFL. Based on Tufte-Latex and Quarto."
+  }
+]
