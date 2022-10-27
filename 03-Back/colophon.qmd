@@ -4,7 +4,7 @@ Composed in ET Book, a free and open-sopurce typeface designed by Dmitry Krasny,
 Based on [Tufte-Latex](https://tufte-latex.github.io/tufte-latex/) and [Quarto](https://quarto.org).
 
 
-![](/images/gutemberg_press){.column-margin}
+![](/Images/gutemberg_press){.column-margin}
 
 
 
