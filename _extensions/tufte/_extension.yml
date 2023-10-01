@@ -44,10 +44,10 @@ contributes:
         toc-depth: 2
         toc-title: "Contents"
         indent: 0px
-        biblio-style: dinat
+        # biblio-style: dinat
+        cite-method: natbib
         # mainfont: "Minion Pro"
         mainfont: "ETbb"
         sansfont: "TeX Gyre Heros"
         sansfontoptions: "Scale=MatchUppercase"
         default-image-extension: pdf
-  
