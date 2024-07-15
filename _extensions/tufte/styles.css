@@ -146,6 +146,10 @@ display: none
     background: transparent;
 }
 
+#quarto-sidebar.show {
+    background: white;
+}
+
 div.sidebar-item-container .active, div.sidebar-item-container :hover, div.sidebar-item-container .show>.nav-link, div.sidebar-item-container .sidebar-link>code {
     color: maroon;
 }
