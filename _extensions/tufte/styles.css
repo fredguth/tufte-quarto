@@ -33,10 +33,8 @@ body {
 } */
 
 header .chapter-title {
-    font-family: 'Minion Pro', 'Crimson', serif;
-    font-style: italic;
     text-transform: none;
-    font-size: 2.2rem;
+    font-size: 1rem;
     letter-spacing: normal;
 }
 
