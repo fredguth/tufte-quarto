@@ -19,6 +19,11 @@
     font-size: 1.3rem;
     margin-right: 2rem;
 }
+
+html {
+	scroll-behavior: smooth;
+}
+
 body {
     font-size: 18px;
     line-height: 24px;
