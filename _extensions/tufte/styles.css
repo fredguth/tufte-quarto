@@ -2,13 +2,6 @@
     color: #5a6570;
     font-size: .625rem;
 }
-.sidebar-title {
-    margin-top: .25rem;
-    padding-bottom: .5rem;
-    font-size: .76rem;
-    line-height: 1rem;
-    visibility: visible;
-}
 
 .sidebar-item-container .chapter-number {
     color: #212529;
@@ -26,8 +19,13 @@
     font-size: 1.3rem;
     margin-right: 2rem;
 }
+
+html {
+	scroll-behavior: smooth;
+}
+
 body {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
     quotes: "‘" "’";
 }
@@ -40,10 +38,8 @@ body {
 } */
 
 header .chapter-title {
-    font-family: 'Minion Pro', 'Crimson', serif;
-    font-style: italic;
     text-transform: none;
-    font-size: 2.2rem;
+    font-size: 1rem;
     letter-spacing: normal;
 }
 
@@ -89,7 +85,11 @@ display: none
     border-left: 1px solid maroon;
     color: maroon !important;
 }
+
 .sidebar-title {
+    margin-top: .25rem;
+    padding-bottom: .5rem;
+    visibility: visible;
     font-family: helvetica, monospace;
     font-style: normal;
     text-transform: uppercase;
@@ -149,6 +149,10 @@ display: none
 
 #quarto-sidebar {
     background: transparent;
+}
+
+#quarto-sidebar.show {
+    background: white;
 }
 
 div.sidebar-item-container .active, div.sidebar-item-container :hover, div.sidebar-item-container .show>.nav-link, div.sidebar-item-container .sidebar-link>code {
